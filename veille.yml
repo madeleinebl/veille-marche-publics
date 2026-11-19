@@ -1,0 +1,75 @@
+name: Veille marchés publics
+
+on:
+  schedule:
+    # Tous les jours à 05:17 UTC (06:17 à Paris en hiver, 07:17 en été).
+    # Plus fréquent ? Remplacer par exemple par :  "17 5,11,16 * * 1-5"  (3 fois par jour en semaine)
+    - cron: "17 5 * * *"
+  workflow_dispatch:
+    inputs:
+      lookback_days:
+        description: "Nombre de jours à remonter (vide = automatique : 60 au 1er lancement, puis 10)"
+        required: false
+        default: ""
+      boamp_idweb:
+        description: "Identifiant(s) BOAMP à ajouter de force, séparés par des virgules (ex. 26-106060)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: veille
+  cancel-in-progress: false
+
+jobs:
+  collecte:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Récupérer le dépôt
+        uses: actions/checkout@v4
+
+      - name: Installer Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Installer les dépendances
+        run: pip install -r requirements-dev.txt
+
+      - name: Tests automatiques (hors réseau)
+        run: python -m pytest -q
+
+      - name: Collecte BOAMP + TED, scoring, tableau de bord
+        env:
+          LOOKBACK: ${{ github.event.inputs.lookback_days }}
+          IDWEB: ${{ github.event.inputs.boamp_idweb }}
+        run: |
+          ARGS=""
+          if [ -n "$LOOKBACK" ]; then ARGS="$ARGS --lookback $LOOKBACK"; fi
+          if [ -n "$IDWEB" ]; then ARGS="$ARGS --idweb $IDWEB"; fi
+          python -m veille.run $ARGS
+
+      - name: Enregistrer les données et le tableau de bord
+        if: always()
+        run: |
+          git config user.name "veille-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data docs
+          if git diff --cached --quiet; then echo "Aucun changement."; exit 0; fi
+          git commit -m "Veille : collecte du $(date -u +'%Y-%m-%d %H:%M') UTC"
+          for i in 1 2 3; do git pull --rebase --quiet && git push && break; sleep 5; done
+
+      - name: Tableau de bord téléchargeable (dépôts privés sans GitHub Pages)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: tableau-de-bord-veille
+          path: docs/index.html
+          retention-days: 30
+
+      - name: Contrôle de santé (alerte e-mail GitHub si une source est tombée)
+        run: python -m veille.health
