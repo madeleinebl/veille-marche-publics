@@ -2,9 +2,10 @@ name: Veille marchés publics
 
 on:
   schedule:
-    # Tous les jours à 05:17 UTC (06:17 à Paris en hiver, 07:17 en été).
-    # Plus fréquent ? Remplacer par exemple par :  "17 5,11,16 * * 1-5"  (3 fois par jour en semaine)
-    - cron: "17 5 * * *"
+    # 2 fois par jour : matin (7h Paris) et début d'après-midi (13h30 Paris)
+    # UTC = Paris − 1h (hiver) / − 2h (été), donc 06:00 et 12:30 UTC couvrent les deux créneaux
+    - cron: "0 6 * * *"
+    - cron: "30 12 * * 1-5"
   workflow_dispatch:
     inputs:
       lookback_days:
