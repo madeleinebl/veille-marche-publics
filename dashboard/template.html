@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Veille Marchés Publics — Services Juridiques</title>
+<style>
+:root {
+  --bg: #f6f7f9;
+  --surface: #ffffff;
+  --border: #e0e4eb;
+  --text: #1a1f36;
+  --text-2: #4a5568;
+  --text-3: #8898aa;
+  --pri: #1a237e;
+  --pri-l: #e8eaf6;
+  --acc: #0d47a1;
+  --urg: #c62828;
+  --urg-bg: #ffebee;
+  --soon: #e65100;
+  --soon-bg: #fff3e0;
+  --ok: #2e7d32;
+  --ok-bg: #e8f5e9;
+  --exp: #9e9e9e;
+  --exp-bg: #f5f5f5;
+  --r: 10px;
+  --sh: 0 1px 3px rgba(0,0,0,.07);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.5}
+
+.hdr{background:linear-gradient(135deg,#0d1b4a 0%,#1a3a7a 50%,#1565c0 100%);color:#fff;padding:2rem 2rem 1.5rem}
+.hdr-in{max-width:1400px;margin:0 auto}
+.hdr h1{font-size:1.6rem;font-weight:700;letter-spacing:-.02em;display:flex;align-items:center;gap:.5rem}
+.hdr .sub{font-size:.88rem;opacity:.75;margin-top:.2rem}
+.hdr-row{display:flex;gap:1.5rem;margin-top:1rem;flex-wrap:wrap}
+.hdr-row span{font-size:.78rem;opacity:.65;display:flex;align-items:center;gap:.25rem}
+
+.ctn{max-width:1400px;margin:0 auto;padding:1.5rem 2rem}
+
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:.85rem;margin-bottom:1.25rem}
+.sc{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:1.1rem 1.25rem;box-shadow:var(--sh)}
+.sc .v{font-size:2rem;font-weight:700;color:var(--pri);line-height:1.1}
+.sc .l{font-size:.78rem;color:var(--text-2);margin-top:.15rem}
+
+.src-bar{display:flex;gap:.6rem;margin-bottom:1.25rem;flex-wrap:wrap}
+.src-a{display:inline-flex;align-items:center;gap:.35rem;padding:.45rem .9rem;background:var(--surface);border:1px solid var(--border);border-radius:8px;color:var(--acc);text-decoration:none;font-size:.82rem;font-weight:500;box-shadow:var(--sh);transition:all .15s}
+.src-a:hover{border-color:var(--acc);background:var(--pri-l)}
+
+.lay{display:grid;grid-template-columns:1fr 280px;gap:1.25rem;align-items:start}
+
+.tabs{display:flex;border-bottom:2px solid var(--border);margin-bottom:0}
+.tab{padding:.65rem 1.25rem;font-size:.88rem;font-weight:600;color:var(--text-2);cursor:pointer;border:none;border-bottom:2px solid transparent;margin-bottom:-2px;background:none;transition:all .15s}
+.tab:hover{color:var(--text)}
+.tab.on{color:var(--pri);border-bottom-color:var(--pri)}
+.tab .cnt{display:inline-flex;align-items:center;justify-content:center;min-width:1.4rem;height:1.4rem;padding:0 .35rem;border-radius:9px;background:var(--pri-l);color:var(--pri);font-size:.72rem;font-weight:700;margin-left:.35rem}
+
+.fil{display:flex;gap:.6rem;padding:.85rem 0;flex-wrap:wrap;align-items:center}
+.fi{padding:.45rem .7rem;border:1px solid var(--border);border-radius:8px;font-size:.82rem;color:var(--text);background:var(--surface)}
+.fi:focus{outline:none;border-color:var(--acc);box-shadow:0 0 0 3px rgba(13,71,161,.1)}
+.fi-s{cursor:pointer}
+
+.tw{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);box-shadow:var(--sh);overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:.82rem}
+thead th{text-align:left;padding:.7rem .85rem;font-size:.7rem;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--text-3);border-bottom:1px solid var(--border);background:#fafbfc;white-space:nowrap;cursor:pointer;user-select:none}
+thead th:hover{color:var(--text)}
+tbody td{padding:.7rem .85rem;border-bottom:1px solid #f0f2f5;vertical-align:top}
+.nr:hover{background:#f8f9ff}
+.nr.exp{opacity:.5}
+
+.cd{white-space:nowrap;color:var(--text-2);min-width:85px}
+.cc{white-space:nowrap;min-width:60px}
+.ct{min-width:280px}
+.ct a{color:var(--text);text-decoration:none;font-weight:500;line-height:1.35;display:block}
+.ct a:hover{color:var(--acc)}
+.bn{font-size:.76rem;color:var(--text-2);margin-top:.15rem}
+.cpvs{display:flex;gap:.25rem;flex-wrap:wrap;margin-top:.25rem}
+.cpv{font-size:.68rem;padding:.05rem .35rem;background:var(--pri-l);color:var(--pri);border-radius:4px;font-family:'SF Mono',Monaco,monospace}
+
+.cty{white-space:nowrap}
+.tb{display:inline-block;padding:.15rem .5rem;border-radius:5px;font-size:.72rem;font-weight:600}
+.tb-call{background:#e3f2fd;color:#1565c0}
+.tb-award{background:var(--ok-bg);color:var(--ok)}
+.tb-prior{background:#f3e5f5;color:#7b1fa2}
+.tb-corr{background:#fff8e1;color:#f57f17}
+.tb-other{background:#f5f5f5;color:#616161}
+
+.cv{white-space:nowrap;font-weight:500;text-align:right}
+.cdl{white-space:nowrap}
+
+.bdg{display:inline-block;padding:.08rem .35rem;border-radius:4px;font-size:.68rem;font-weight:700;margin-left:.25rem}
+.bdg-u{background:var(--urg-bg);color:var(--urg)}
+.bdg-s{background:var(--soon-bg);color:var(--soon)}
+.bdg-o{background:var(--ok-bg);color:var(--ok)}
+.bdg-e{background:var(--exp-bg);color:var(--exp)}
+
+.bv{display:inline-block;padding:.25rem .6rem;background:var(--pri-l);color:var(--pri);border-radius:6px;text-decoration:none;font-size:.78rem;font-weight:600;white-space:nowrap;transition:all .15s}
+.bv:hover{background:var(--pri);color:#fff}
+.dom-bar{cursor:pointer;border-radius:4px;padding:.15rem .25rem;margin:-.15rem -.25rem;transition:background .15s}
+.dom-bar:hover{background:rgba(0,0,0,.04)}
+.dom-bar.active{background:#fff8e1;outline:2px solid #ff8f00;outline-offset:-1px}
+.dom-filter-msg{font-size:.72rem;color:#e65100;font-weight:600;margin-top:.5rem;display:none;align-items:center;gap:.3rem}
+.dom-filter-msg.on{display:flex}
+.dom-filter-msg span{cursor:pointer;text-decoration:underline}
+
+.kw-row{border-left:3px solid #ff8f00!important}
+.kw-tags{display:flex;gap:.25rem;flex-wrap:wrap;margin-top:.3rem}
+.kw{font-size:.65rem;padding:.1rem .4rem;background:#fff8e1;color:#e65100;border:1px solid #ffe082;border-radius:4px;font-weight:600;letter-spacing:.01em}
+.kw-flag{display:inline-flex;align-items:center;gap:.2rem;font-size:.68rem;padding:.1rem .45rem;background:linear-gradient(135deg,#ff8f00,#f57c00);color:#fff;border-radius:4px;font-weight:700;margin-left:.35rem;white-space:nowrap}
+.bdgs-cnt{background:linear-gradient(135deg,#ff8f00,#f57c00);color:#fff}
+
+.sb{position:sticky;top:1rem}
+.sbc{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:1.1rem;box-shadow:var(--sh);margin-bottom:.85rem}
+.sbc h3{font-size:.8rem;font-weight:600;color:var(--text-2);margin-bottom:.65rem;text-transform:uppercase;letter-spacing:.03em}
+.br{display:flex;align-items:center;gap:.4rem;margin-bottom:.4rem;font-size:.78rem}
+.bl{min-width:95px;white-space:nowrap;font-size:.75rem}
+.bt{flex:1;height:5px;background:var(--pri-l);border-radius:3px;overflow:hidden}
+.bf{height:100%;background:var(--pri);border-radius:3px}
+.bc{min-width:22px;text-align:right;font-weight:600;font-size:.75rem;color:var(--pri)}
+
+.cpvl{font-size:.75rem;color:var(--text-2)}
+.cpvl div{padding:.25rem 0;border-bottom:1px solid #f0f2f5}
+.cpvl code{font-family:'SF Mono',Monaco,monospace;font-size:.7rem;color:var(--pri);background:var(--pri-l);padding:.08rem .25rem;border-radius:3px}
+
+.pnl{display:none}.pnl.on{display:block}
+.empty{text-align:center;padding:2.5rem 1rem;color:var(--text-3)}
+.ft{text-align:center;padding:1.5rem;color:var(--text-3);font-size:.78rem}
+.ft a{color:var(--acc);text-decoration:none}
+
+
+.status-select{min-width:145px;padding:.32rem .45rem;border:1px solid var(--border);border-radius:6px;background:#fff;font-size:.72rem;color:var(--text)}
+.note-btn{border:1px solid var(--border);background:#fff;border-radius:6px;padding:.25rem .45rem;cursor:pointer;font-size:.72rem;color:var(--acc)}
+.note-btn:hover{background:var(--pri-l)}
+.row-note{display:block;color:var(--text-3);font-size:.68rem;margin-top:.25rem;max-width:260px;white-space:normal}
+.sc{transition:transform .15s}.sc:hover{transform:translateY(-1px)}
+button.fi{cursor:pointer}
+@media(max-width:900px){.tw{overflow-x:auto}table{min-width:1050px}}
+
+@media(max-width:1100px){.lay{grid-template-columns:1fr}.sb{position:static;display:grid;grid-template-columns:1fr 1fr;gap:.85rem}}
+@media(max-width:768px){.ctn{padding:1rem}.hdr{padding:1.25rem 1rem}.stats{grid-template-columns:repeat(2,1fr)}.sb{grid-template-columns:1fr}.cv,.cc{display:none}}
+/* --- ajouts V3 : collecte automatique, score, vérification --- */
+.banner{border-radius:8px;padding:.7rem 1rem;margin-bottom:1rem;display:flex;align-items:flex-start;gap:.55rem;font-size:.82rem;line-height:1.45}
+.banner b{font-weight:700}
+.bn-warn{background:#fff8e1;border:1px solid #ffe082;color:#8a4b00}
+.bn-ok{background:#e8f5e9;border:1px solid #a5d6a7;color:#1b5e20}
+.bn-err{background:#ffebee;border:1px solid #ef9a9a;color:#b71c1c}
+.bn-info{background:#e3f2fd;border:1px solid #90caf9;color:#0d47a1}
+.sc.clk{cursor:pointer}
+.sc.on{outline:2px solid #ff8f00;outline-offset:-2px;background:#fffdf5}
+.sc .v.hot{color:#e65100}
+.sc .v.red{color:var(--urg)}
+.prio{display:inline-block;padding:.12rem .45rem;border-radius:5px;font-size:.68rem;font-weight:700;white-space:nowrap}
+.p-high{background:#ffe0b2;color:#bf360c;border:1px solid #ffb74d}
+.p-medium{background:#fff8e1;color:#8a6d00;border:1px solid #ffe082}
+.p-low{background:#f5f5f5;color:#757575;border:1px solid #e0e0e0}
+.score{font-size:1.05rem;font-weight:800;color:var(--pri);line-height:1}
+.csc{white-space:nowrap;text-align:center;min-width:70px}
+.csc .prio{margin-top:.3rem}
+.why{font-size:.72rem;color:#5d4037;margin-top:.3rem;font-style:italic}
+.prc{display:inline-block;font-size:.64rem;padding:.05rem .4rem;border-radius:9px;background:#ede7f6;color:#4527a0;margin:.15rem .2rem 0 0;font-weight:600}
+.badge-new{display:inline-block;font-size:.62rem;font-weight:800;padding:.05rem .35rem;border-radius:4px;background:#2e7d32;color:#fff;margin-left:.3rem;letter-spacing:.03em;vertical-align:middle}
+.badge-corr{display:inline-block;font-size:.62rem;font-weight:700;padding:.05rem .35rem;border-radius:4px;background:#fff8e1;color:#f57f17;border:1px solid #ffe082;margin-left:.3rem;vertical-align:middle}
+.badge-awd{display:inline-block;font-size:.62rem;font-weight:700;padding:.05rem .35rem;border-radius:4px;background:var(--ok-bg);color:var(--ok);margin-left:.3rem;vertical-align:middle}
+.srcs{display:flex;gap:.3rem;flex-wrap:wrap;margin-top:.3rem}
+.sbadge{font-size:.63rem;padding:.05rem .35rem;border-radius:3px;text-decoration:none;font-weight:600}
+.s-BOAMP{background:#fff3e0;color:#e65100}
+.s-TED{background:#e3f2fd;color:#1565c0}
+.s-MANUEL{background:#eceff1;color:#455a64;border:1px dashed #90a4ae}
+.det{margin-top:.35rem;font-size:.72rem;color:var(--text-2)}
+.det summary{cursor:pointer;color:var(--acc);font-weight:600;font-size:.7rem}
+.det table{font-size:.7rem;margin:.35rem 0;width:auto}
+.det td{padding:.15rem .5rem .15rem 0;border:none}
+.det .pts{font-weight:700;text-align:right}
+.det .neg{color:var(--urg)}
+.det .muted{color:var(--text-3)}
+.srow{display:flex;justify-content:space-between;gap:.5rem;font-size:.75rem;padding:.3rem 0;border-bottom:1px solid #f0f2f5}
+.srow:last-child{border-bottom:none}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:.35rem}
+.d-ok{background:#43a047}.d-partial{background:#fb8c00}.d-failed{background:#e53935}.d-none{background:#bdbdbd}
+.small{font-size:.7rem;color:var(--text-3)}
+.btnrow{display:flex;gap:.4rem;flex-wrap:wrap;margin-top:.5rem}
+.btn-s{border:1px solid var(--border);background:#fff;border-radius:6px;padding:.3rem .55rem;cursor:pointer;font-size:.72rem;color:var(--acc)}
+.btn-s:hover{background:var(--pri-l)}
+.status-select.st-int{border-color:#ffb74d;background:#fff8e1}
+.status-select.st-cand{border-color:#64b5f6;background:#e3f2fd}
+.status-select.st-won{border-color:#81c784;background:#e8f5e9}
+.status-select.st-out{color:var(--text-3)}
+.hidden{display:none!important}
+</style>
+</head>
+<body>
+
+<div class="hdr">
+  <div class="hdr-in">
+    <h1>&#9878; Veille Marchés Publics &mdash; Services Juridiques</h1>
+    <div class="sub">Appels d'offres France &amp; Europe &mdash; CPV services juridiques et conseil + mots-clés Finance, Project Finance, Infrastructure, Corporate, Capital Markets</div>
+    <div class="hdr-row">
+      <span id="hdrUpdate">&#128197; Dernière collecte : —</span>
+      <span>&#128270; Sources officielles : BOAMP (Open Data DILA) + TED (API UE)</span>
+      <span>&#128202; Périmètre : France &amp; Europe</span>
+    </div>
+  </div>
+</div>
+
+<div class="ctn">
+  <div id="modeBanner"></div>
+  <div class="banner bn-warn">
+    <span style="font-size:1.1rem">&#9888;</span>
+    <span>Un avis publié aujourd'hui n'apparaît qu'à la collecte suivante. Chaque collecte rebalaye les <strong>10 derniers jours</strong> pour rattraper les avis indexés tardivement (MAPA notamment). En cas de doute, vérifiez sur la source officielle (liens ci-dessous et sur chaque avis).</span>
+  </div>
+  <div class="stats" id="statsGrid"></div>
+
+  <div class="src-bar">
+    <a href="https://ted.europa.eu/fr/search/result?query=classification-cpv%3D79111000&sortField=publication-date&sortOrder=DESC" target="_blank" rel="noopener" class="src-a">&#127466;&#127482; Rechercher sur TED</a>
+    <a href="https://www.boamp.fr/pages/recherche/?q=79111000&q.filtre_etat=En%20cours&sort=dateparution&rows=20" target="_blank" rel="noopener" class="src-a">&#127467;&#127479; Rechercher sur BOAMP</a>
+    <a href="https://www.marches-publics.gouv.fr/?page=Entreprise.AccueilEntreprise" target="_blank" rel="noopener" class="src-a">&#127963; PLACE</a>
+    <a href="https://ted.europa.eu/fr/search/result?query=classification-cpv%3D79111000%20AND%20buyer-country%3DFRA&sortField=publication-date&sortOrder=DESC" target="_blank" rel="noopener" class="src-a">&#128270; TED France seul</a>
+  </div>
+
+  <div class="lay">
+    <div class="main">
+      <div class="tabs">
+        <button class="tab on" data-tab="fr">&#127467;&#127479; France <span class="cnt" id="cntFr">0</span></button>
+        <button class="tab" data-tab="eu">&#127466;&#127482; Europe <span class="cnt" id="cntEu">0</span></button>
+      </div>
+      <div class="fil">
+        <input type="text" class="fi" id="q" placeholder="&#128270; Rechercher (titre, acheteur, lot, mot-clé, n° d'avis)..." style="min-width:240px">
+        <select class="fi fi-s" id="pf">
+          <option value="">Toutes priorités</option>
+          <option value="high">&#9873; Haute</option>
+          <option value="medium">Moyenne et +</option>
+          <option value="low">Faible</option>
+        </select>
+        <select class="fi fi-s" id="practf"><option value="">Tous domaines</option></select>
+        <select class="fi fi-s" id="tf">
+          <option value="">Tous types</option>
+          <option value="call">Appels d'offres</option>
+          <option value="award">Attributions</option>
+          <option value="prior">Avis préalables</option>
+          <option value="corrany">Avec rectificatif</option>
+        </select>
+        <select class="fi fi-s" id="df">
+          <option value="">Toutes échéances</option>
+          <option value="7">&le; 7 jours</option>
+          <option value="30">&le; 30 jours</option>
+          <option value="active">En cours</option>
+        </select>
+        <select class="fi fi-s" id="statusFilter"><option value="">Tous les suivis</option></select>
+        <select class="fi fi-s" id="of">
+          <option value="">Toutes origines</option>
+          <option value="auto">Collecte automatique</option>
+          <option value="manual">Saisie manuelle</option>
+          <option value="BOAMP">Source BOAMP</option>
+          <option value="TED">Source TED</option>
+        </select>
+        <select class="fi fi-s" id="sf">
+          <option value="score">Pertinence &darr;</option>
+          <option value="pub_desc">Date &darr;</option>
+          <option value="pub_asc">Date &uarr;</option>
+          <option value="dl_asc">Échéance &uarr;</option>
+          <option value="val_desc">Valeur &darr;</option>
+        </select>
+        <button class="fi" type="button" id="btnCsv">&#11015; Export CSV</button>
+      </div>
+      <div class="pnl on" id="pnl-fr"><div class="tw"><table><thead><tr><th>Date</th><th>Score</th><th>Titre / Acheteur</th><th>Type</th><th>Valeur</th><th>Échéance</th><th>Suivi</th><th></th></tr></thead><tbody id="tb-fr"></tbody></table></div></div>
+      <div class="pnl" id="pnl-eu"><div class="tw"><table><thead><tr><th>Date</th><th>Score</th><th>Titre / Acheteur</th><th>Type</th><th>Valeur</th><th>Échéance</th><th>Suivi</th><th></th></tr></thead><tbody id="tb-eu"></tbody></table></div></div>
+    </div>
+    <div class="sb">
+      <div class="sbc">
+        <h3>&#128737; Sources &amp; vérification</h3>
+        <div id="srcStatus"></div>
+        <div class="small" id="runHist" style="margin-top:.5rem"></div>
+      </div>
+      <div class="sbc" style="border:1.5px solid #ffe082;background:#fffdf5">
+        <h3 style="color:#e65100">&#9873; Mots-clés BDGS surveillés</h3>
+        <div id="kwList" style="font-size:.75rem;color:var(--text-2);line-height:1.7"></div>
+        <div id="kwStats" style="margin-top:.5rem;font-size:.78rem;font-weight:600;color:#e65100"></div>
+      </div>
+      <div class="sbc"><h3>Domaines de pratique</h3><div id="domainBars"></div><div class="dom-filter-msg" id="domFilterMsg">Filtre actif : <strong id="domFilterName"></strong> &mdash; <span id="domClear">effacer</span></div></div>
+      <div class="sbc">
+        <h3>Suivi interne</h3>
+        <div class="small">Statuts et notes sont enregistrés dans ce navigateur et conservés à chaque actualisation des données. Exportez-les pour les sauvegarder ou les transmettre.</div>
+        <div class="btnrow"><button class="btn-s" id="btnTrkExp">&#11015; Exporter le suivi</button><label class="btn-s">&#11014; Importer<input type="file" id="trkFile" accept=".json" class="hidden"></label></div>
+      </div>
+      <div class="sbc"><h3>Répartition par pays</h3><div id="countryBars"></div></div>
+      <div class="sbc">
+        <h3>Codes CPV surveillés</h3>
+        <div class="cpvl" id="cpvList"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="ft">
+  Données : <a href="https://boamp-datadila.opendatasoft.com/explore/dataset/boamp/" target="_blank" rel="noopener">BOAMP Open Data (DILA)</a> &amp; <a href="https://ted.europa.eu" target="_blank" rel="noopener">TED &mdash; Tenders Electronic Daily</a><br>
+  <span id="ftMode"></span><br>
+  Veille générée pour <strong>BDGS Associés</strong> &mdash; <span id="ftDate"></span>
+</div>
+
+<script>
+var VEILLE = /*__VEILLE_DATA__*/null;
+</script>
+<script>
+(function(){
+"use strict";
+if(!VEILLE){document.getElementById("modeBanner").innerHTML='<div class="banner bn-err">Données absentes : ouvrez le fichier docs/index.html généré par la collecte, pas le gabarit.</div>';return;}
+var DATA=VEILLE.notices||[];
+var LAST=VEILLE.last_success;
+var LAST_RUN_ID=LAST?LAST.run_id:null;
+
+/* ---------- utilitaires ---------- */
+function esc(s){return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#39;");}
+function norm(s){return String(s||"").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"");}
+function daysLeft(dl){if(!dl)return null;var d=new Date(dl+"T23:59:59"),now=new Date();return Math.floor((d-now)/864e5);}
+function fmtDate(d){if(!d)return"—";var dt=new Date(String(d).slice(0,10)+"T12:00:00");return isNaN(dt)?d:dt.toLocaleDateString("fr-FR");}
+function fmtDT(d){if(!d)return"—";var dt=new Date(d);return isNaN(dt)?d:dt.toLocaleString("fr-FR",{dateStyle:"short",timeStyle:"short"});}
+function fmtVal(v){if(!v)return"—";if(v>=1e6)return(v/1e6).toFixed(1).replace(".",",")+" M€";if(v>=1e3)return Math.round(v/1e3)+" k€";return v+" €";}
+function isNew(n){return LAST_RUN_ID&&n.first_seen===LAST_RUN_ID&&n.origin!=="manual";}
+function isAuto(n){return n.origin==="auto"||n.origin==="manual+auto";}
+var FLAGS={"FRA":"🇫🇷","DEU":"🇩🇪","BEL":"🇧🇪","LUX":"🇱🇺","ITA":"🇮🇹","ESP":"🇪🇸","NLD":"🇳🇱","AUT":"🇦🇹","GRC":"🇬🇷","POL":"🇵🇱","CZE":"🇨🇿","ROU":"🇷🇴","HRV":"🇭🇷","PRT":"🇵🇹","FIN":"🇫🇮","SWE":"🇸🇪","DNK":"🇩🇰","IRL":"🇮🇪","NOR":"🇳🇴","CHE":"🇨🇭","GBR":"🇬🇧","BGR":"🇧🇬","SVK":"🇸🇰","SVN":"🇸🇮","HUN":"🇭🇺","LTU":"🇱🇹","LVA":"🇱🇻","EST":"🇪🇪","CYP":"🇨🇾","MLT":"🇲🇹"};
+var CNAMES={"FRA":"France","DEU":"Allemagne","BEL":"Belgique","LUX":"Luxembourg","ITA":"Italie","ESP":"Espagne","NLD":"Pays-Bas","AUT":"Autriche","GRC":"Grèce","POL":"Pologne","CZE":"Tchéquie","ROU":"Roumanie","PRT":"Portugal","FIN":"Finlande","SWE":"Suède","DNK":"Danemark","IRL":"Irlande","NOR":"Norvège","CHE":"Suisse","HRV":"Croatie","BGR":"Bulgarie","SVK":"Slovaquie","SVN":"Slovénie","HUN":"Hongrie","LTU":"Lituanie","LVA":"Lettonie","EST":"Estonie","CYP":"Chypre","MLT":"Malte"};
+var TLABELS={"call":"Appel d'offres","award":"Attribution","prior":"Avis préalable","corr":"Rectificatif","cancel":"Annulation","other":"Autre"};
+var TCLS={"call":"tb-call","award":"tb-award","prior":"tb-prior","corr":"tb-corr","cancel":"tb-other","other":"tb-other"};
+var PLABEL={"high":"Haute","medium":"Moyenne","low":"Faible"};
+var PRANK={"high":3,"medium":2,"low":1};
+
+/* ---------- suivi interne (navigateur) ---------- */
+var TRACKING_KEY="bdgs_public_procurement_tracking_v1";
+var TRACK_STATUSES=["À analyser","Intéressant","Candidature en cours","Déposé","Remporté","Perdu","Écarté"];
+var TRACKING={};
+try{TRACKING=JSON.parse(localStorage.getItem(TRACKING_KEY)||"{}")||{};}catch(e){TRACKING={};}
+/* reprise des statuts saisis dans l'ancienne version (identifiants "BOAMP-26-xxxx" / "637431-2026") */
+(function migrate(){var ch=false;Object.keys(TRACKING).forEach(function(k){var nk=null;
+  if(/^BOAMP-\d{2}-\d+$/.test(k))nk="BOAMP:"+k.slice(6);else if(/^\d+-\d{4}$/.test(k))nk="TED:"+k;
+  if(nk&&!TRACKING[nk]){TRACKING[nk]=TRACKING[k];delete TRACKING[k];ch=true;}});if(ch)saveTracking();})();
+function saveTracking(){try{localStorage.setItem(TRACKING_KEY,JSON.stringify(TRACKING));}catch(e){}}
+function trackingFor(id){return TRACKING[id]||{status:"À analyser",note:""};}
+function stClass(st){return st==="Intéressant"?"st-int":(st==="Candidature en cours"||st==="Déposé")?"st-cand":st==="Remporté"?"st-won":(st==="Écarté"||st==="Perdu")?"st-out":"";}
+
+/* ---------- état des filtres ---------- */
+var curTab="fr",activeDomain=null,quick=null;
+function $(id){return document.getElementById(id);}
+
+/* ---------- rendu d'une ligne ---------- */
+function srcBadges(n){
+  var out=(n.sources||[]).map(function(s){var cls="s-"+(s.source==="BOAMP"||s.source==="TED"?s.source:"MANUEL");
+    var lbl=(s.source==="BOAMP"||s.source==="TED")?(s.source+" "+(s.source_id||"")+" ✓"):"Saisie manuelle";
+    return s.url?'<a class="sbadge '+cls+'" href="'+esc(s.url)+'" target="_blank" rel="noopener" title="Ouvrir l\'avis officiel">'+esc(lbl)+'</a>':'<span class="sbadge '+cls+'">'+esc(lbl)+'</span>';});
+  (n.corrigenda||[]).forEach(function(c){out.push('<a class="sbadge s-'+esc(c.source)+'" href="'+esc(c.url)+'" target="_blank" rel="noopener">Rectificatif '+esc(c.source_id)+' ('+fmtDate(c.pub)+')</a>');});
+  return '<div class="srcs">'+out.join("")+'</div>';
+}
+function detailBlock(n){
+  var rows=(n.breakdown||[]).map(function(b){return'<tr><td>'+esc(b.label)+'</td><td class="pts'+(b.points<0?' neg':'')+'">'+(b.points>0?'+':'')+b.points+'</td></tr>';}).join("");
+  var ch=(n.changes||[]).map(function(c){return'<div>• '+fmtDate(c.at)+' — '+esc(c.field)+' : '+esc(c.old==null?"—":c.old)+' → <b>'+esc(c.new)+'</b> <span class="muted">('+esc(c.via)+')</span></div>';}).join("");
+  var ver=isAuto(n)?('Collecté automatiquement le '+fmtDT(n.first_seen)+' · revu le '+fmtDT(n.last_seen)):'<b>Saisie manuelle</b> — non confirmée par la collecte officielle';
+  return '<details class="det"><summary>Détail du score &amp; vérification</summary>'+
+    '<table>'+rows+'<tr><td><b>Total</b></td><td class="pts">'+(n.score||0)+'</td></tr></table>'+
+    (ch?'<div><b>Modifications détectées</b>'+ch+'</div>':'')+
+    (n.matched_queries&&n.matched_queries.length?'<div class="muted">Trouvé par : '+esc(n.matched_queries.slice(0,6).join(" · "))+'</div>':'')+
+    (n.family||n.procedure_label?'<div class="muted">'+esc([n.family,n.procedure_label].filter(Boolean).join(" · "))+'</div>':'')+
+    (n.manual_note?'<div class="muted">Note : '+esc(n.manual_note)+'</div>':'')+
+    '<div class="muted">'+ver+'</div></details>';
+}
+function dlBadge(dl){var d=daysLeft(dl);if(d===null)return"—";var ds=fmtDate(dl);
+  if(d<0)return ds+' <span class="bdg bdg-e">Expiré</span>';if(d<=7)return ds+' <span class="bdg bdg-u">'+d+'j</span>';
+  if(d<=30)return ds+' <span class="bdg bdg-s">'+d+'j</span>';return ds+' <span class="bdg bdg-o">'+d+'j</span>';}
+function row(n){
+  var dl=daysLeft(n.dl),t=trackingFor(n.id);
+  var cls="nr"+(dl!==null&&dl<0?" exp":"")+(n.priority==="high"?" kw-row":"");
+  var flag=FLAGS[n.country]||"🏳️";
+  var cpvH=(n.cpv||[]).slice(0,4).map(function(c){return'<span class="cpv">'+esc(c)+'</span>';}).join("");
+  var lotsH=n.lots?'<div style="font-size:.7rem;color:var(--text-3);margin-top:.15rem">'+esc(String(n.lots).slice(0,400))+'</div>':'';
+  var kwH=(n.matched||[]).length?'<div class="kw-tags">'+n.matched.slice(0,10).map(function(k){return'<span class="kw">'+esc(k)+'</span>';}).join("")+'</div>':'';
+  var prH=(n.practices||[]).map(function(p){return'<span class="prc">'+esc(p)+'</span>';}).join("");
+  var opts=TRACK_STATUSES.map(function(st){return'<option'+(t.status===st?' selected':'')+'>'+esc(st)+'</option>';}).join("");
+  return '<tr class="'+cls+'">'+
+    '<td class="cd">'+flag+' '+esc(fmtDate(n.pub))+'</td>'+
+    '<td class="csc"><div class="score">'+(n.score||0)+'</div><span class="prio p-'+esc(n.priority||"low")+'">'+(PLABEL[n.priority]||"Faible")+'</span></td>'+
+    '<td class="ct"><a href="'+esc(n.url)+'" target="_blank" rel="noopener">'+esc(String(n.title).slice(0,180))+'</a>'+
+      (isNew(n)?'<span class="badge-new">NOUVEAU</span>':'')+
+      ((n.corrigenda||[]).length?'<span class="badge-corr">Rectifié '+fmtDate(n.last_corrigendum)+'</span>':'')+
+      (n.award_published?'<span class="badge-awd">Attribué '+fmtDate(n.award_published)+'</span>':'')+
+      '<div class="bn">'+esc(n.buyer||"Acheteur non renseigné")+'</div>'+
+      '<div class="cpvs">'+cpvH+'</div>'+lotsH+
+      (n.why?'<div class="why">'+esc(n.why)+'</div>':'')+
+      (prH?'<div>'+prH+'</div>':'')+kwH+srcBadges(n)+detailBlock(n)+'</td>'+
+    '<td class="cty"><span class="tb '+(TCLS[n.type]||"tb-other")+'">'+esc(TLABELS[n.type]||n.type)+'</span></td>'+
+    '<td class="cv">'+fmtVal(n.value)+'</td>'+
+    '<td class="cdl">'+dlBadge(n.dl)+'</td>'+
+    '<td><select class="status-select '+stClass(t.status)+'" data-id="'+esc(n.id)+'">'+opts+'</select>'+
+      '<button class="note-btn" data-note="'+esc(n.id)+'">&#9998; Note</button>'+
+      (t.note?'<span class="row-note">'+esc(String(t.note).slice(0,160))+'</span>':'')+'</td>'+
+    '<td><a href="'+esc(n.url)+'" target="_blank" rel="noopener" class="bv">Voir ↗</a></td></tr>';
+}
+
+/* ---------- filtres ---------- */
+function getFiltered(tab){
+  var items=DATA.filter(function(n){return tab==="fr"?n.country==="FRA":n.country!=="FRA";});
+  var q=norm($("q").value),pf=$("pf").value,tf=$("tf").value,df=$("df").value,sf=$("sf").value,
+      st=$("statusFilter").value,of=$("of").value,pr=$("practf").value;
+  if(q)items=items.filter(function(n){return norm([n.title,n.buyer,n.id,(n.cpv||[]).join(" "),n.lots,n.description,(n.matched||[]).join(" "),(n.practices||[]).join(" "),trackingFor(n.id).note].join(" ")).indexOf(q)!==-1;});
+  if(pf==="high")items=items.filter(function(n){return n.priority==="high";});
+  else if(pf==="medium")items=items.filter(function(n){return n.priority!=="low";});
+  else if(pf==="low")items=items.filter(function(n){return n.priority==="low";});
+  var dom=pr||activeDomain;
+  if(dom)items=items.filter(function(n){return(n.practices||[]).indexOf(dom)!==-1;});
+  if(tf==="corrany")items=items.filter(function(n){return(n.corrigenda||[]).length||n.type==="corr";});
+  else if(tf)items=items.filter(function(n){return n.type===tf;});
+  if(df==="active")items=items.filter(function(n){var d=daysLeft(n.dl);return d===null||d>=0;});
+  else if(df){var mx=parseInt(df,10);items=items.filter(function(n){var d=daysLeft(n.dl);return d!==null&&d>=0&&d<=mx;});}
+  if(st)items=items.filter(function(n){return trackingFor(n.id).status===st;});
+  if(of==="auto")items=items.filter(isAuto);
+  else if(of==="manual")items=items.filter(function(n){return n.origin==="manual";});
+  else if(of)items=items.filter(function(n){return(n.sources||[]).some(function(s){return s.source===of;});});
+  if(quick)items=items.filter(QUICK[quick].f);
+  items.sort(function(a,b){
+    if(sf==="pub_desc")return(b.pub||"").localeCompare(a.pub||"");
+    if(sf==="pub_asc")return(a.pub||"").localeCompare(b.pub||"");
+    if(sf==="dl_asc")return(a.dl||"9999").localeCompare(b.dl||"9999");
+    if(sf==="val_desc")return(b.value||0)-(a.value||0);
+    return(PRANK[b.priority]||0)-(PRANK[a.priority]||0)||(b.score||0)-(a.score||0)||(b.pub||"").localeCompare(a.pub||"");
+  });
+  return items;
+}
+var EMPTY='<tr><td colspan="8" class="empty">Aucun avis ne correspond aux filtres</td></tr>';
+function render(){
+  var fr=getFiltered("fr"),eu=getFiltered("eu");
+  $("tb-fr").innerHTML=fr.length?fr.map(row).join(""):EMPTY;
+  $("tb-eu").innerHTML=eu.length?eu.map(row).join(""):EMPTY;
+  $("cntFr").textContent=fr.length;$("cntEu").textContent=eu.length;
+}
+
+/* ---------- cartes de synthèse (cliquables = filtres rapides) ---------- */
+var QUICK={
+  "new":{l:"🆕 Nouveaux depuis la dernière collecte",f:isNew},
+  "high":{l:"⚑ Haute pertinence (en cours)",f:function(n){var d=daysLeft(n.dl);return n.priority==="high"&&(d===null||d>=0);},cls:"hot"},
+  "d7":{l:"⏰ Échéance ≤ 7 jours",f:function(n){var d=daysLeft(n.dl);return d!==null&&d>=0&&d<=7;},cls:"red"},
+  "d30":{l:"📅 Échéance ≤ 30 jours",f:function(n){var d=daysLeft(n.dl);return d!==null&&d>=0&&d<=30;}},
+  "corr":{l:"✎ Rectificatifs",f:function(n){return(n.corrigenda||[]).length>0||n.type==="corr";}}
+};
+function buildStats(){
+  var html=Object.keys(QUICK).map(function(k){var c=DATA.filter(QUICK[k].f).length;
+    return'<div class="sc clk'+(quick===k?' on':'')+'" data-quick="'+k+'" title="Cliquer pour filtrer"><div class="v '+(QUICK[k].cls||"")+'">'+c+'</div><div class="l">'+QUICK[k].l+'</div></div>';}).join("");
+  html+='<div class="sc"><div class="v">'+DATA.length+'</div><div class="l">📊 Avis en base ('+DATA.filter(isAuto).length+' collectés, '+DATA.filter(function(n){return n.origin==="manual";}).length+' manuels)</div></div>';
+  $("statsGrid").innerHTML=html;
+}
+
+/* ---------- bandeaux d'état ---------- */
+function buildBanners(){
+  var m=VEILLE.data_mode,b="",lr=VEILLE.last_run;
+  if(m==="no-collection-yet")b='<div class="banner bn-info"><span>ℹ️</span><span><b>Aucune collecte automatique n\'a encore abouti.</b> Seules les saisies manuelles (badge « Saisie manuelle ») sont affichées. Lancez le workflow GitHub « Veille marchés publics » (voir README).</span></div>';
+  else if(m==="live-empty")b='<div class="banner bn-info"><span>ℹ️</span><span>La collecte fonctionne mais n\'a encore trouvé aucun avis au-dessus du seuil de pertinence.</span></div>';
+  if(lr&&lr.status==="failed")b+='<div class="banner bn-err"><span>⛔</span><span><b>La dernière collecte ('+fmtDT(lr.run_id)+') a échoué.</b> Les données affichées datent de la dernière collecte réussie ('+(LAST?fmtDT(LAST.finished_at):"aucune")+'). '+esc(srcErrors(lr))+'</span></div>';
+  else if(lr&&lr.status==="partial")b+='<div class="banner bn-warn"><span>⚠</span><span><b>Collecte partielle le '+fmtDT(lr.run_id)+'</b> — certaines requêtes ont échoué. '+esc(srcErrors(lr))+'</span></div>';
+  else if(LAST)b+='<div class="banner bn-ok"><span>✓</span><span>Données <b>collectées automatiquement</b> sur les sources officielles le <b>'+fmtDT(LAST.finished_at)+'</b> (avis publiés depuis le '+fmtDate(LAST.since)+').</span></div>';
+  $("modeBanner").innerHTML=b;
+  $("hdrUpdate").textContent="📅 Dernière collecte réussie : "+(LAST?fmtDT(LAST.finished_at):"aucune");
+  $("ftMode").textContent=m==="no-collection-yet"?"Aucune donnée collectée automatiquement pour l'instant — saisies manuelles uniquement.":"Données issues des API officielles ; les saisies manuelles sont signalées comme telles. Aucune donnée d'exemple.";
+  $("ftDate").textContent=fmtDT(VEILLE.generated_at);
+}
+function srcErrors(r){return Object.keys(r.sources||{}).filter(function(k){return(r.sources[k].errors||[]).length;}).map(function(k){return k+" : "+r.sources[k].errors[0];}).join(" | ").slice(0,400);}
+
+function buildSourceStatus(){
+  var lr=VEILLE.last_run,info=VEILLE.sources_info||{};
+  var html=["BOAMP","TED"].map(function(k){var s=lr&&lr.sources?lr.sources[k]:null;var st=s?s.status:"none";
+    return'<div class="srow"><span><span class="dot d-'+st+'"></span><a href="'+esc(info[k]&&info[k].url)+'" target="_blank" rel="noopener" style="color:var(--text);text-decoration:none"><b>'+k+'</b></a> <span class="small">'+(st==="none"?"jamais collecté":st==="ok"?"OK":st==="partial"?"partiel":"échec")+'</span></span>'+
+      '<span class="small">'+(s?((s.records||0)+" reçus · "+(s.new||0)+" nouv. · "+(s.duration_s||0)+" s"):"—")+'</span></div>';}).join("");
+  html+='<div class="srow"><span><span class="dot d-none"></span><b>PLACE</b> <span class="small">pas d\'API publique</span></span><span class="small">via BOAMP/TED</span></div>';
+  $("srcStatus").innerHTML=html;
+  var runs=(VEILLE.runs||[]).slice(-6).reverse();
+  $("runHist").innerHTML=runs.length?('<b>Dernières exécutions</b><br>'+runs.map(function(r){return'<span class="dot d-'+esc(r.status)+'"></span>'+fmtDT(r.run_id)+' · '+(r.duration_s||0)+' s · '+((r.totals||{}).new||0)+' nouveaux';}).join("<br>")):"Aucune exécution enregistrée.";
+}
+
+function buildKWSidebar(){
+  var sc=VEILLE.scoring||{},html="";
+  var groups=[["Mission juridique",sc.legal||[]]].concat(Object.keys(sc.practices||{}).map(function(k){return[k,sc.practices[k]];}));
+  var total=0;
+  groups.forEach(function(g){total+=g[1].length;
+    html+='<div style="margin-bottom:.4rem"><strong style="font-size:.68rem;color:#bf360c;text-transform:uppercase;letter-spacing:.03em">'+esc(g[0])+'</strong><br>'+
+      g[1].map(function(kw){return'<span style="display:inline-block;padding:.05rem .35rem;background:#fff8e1;border:1px solid #ffe082;border-radius:4px;margin:.08rem;font-size:.65rem;color:#e65100">'+esc(kw)+'</span>';}).join("")+'</div>';});
+  $("kwList").innerHTML=html;
+  var th=sc.thresholds||{};
+  $("kwStats").textContent=DATA.filter(function(n){return n.priority==="high";}).length+" avis haute priorité sur "+DATA.length+" · "+total+" mots-clés FR/EN · seuils : haute ≥ "+th.high+", moyenne ≥ "+th.medium;
+}
+function buildDomainChart(){
+  var dc={};DATA.forEach(function(n){(n.practices||[]).forEach(function(d){dc[d]=(dc[d]||0)+1;});});
+  var sorted=Object.entries(dc).sort(function(a,b){return b[1]-a[1];}),mx=sorted[0]?sorted[0][1]:1;
+  var COLS=["#1565c0","#0277bd","#2e7d32","#6a1b9a","#4a148c","#00695c","#c62828","#ef6c00","#00838f","#546e7a"];
+  $("domainBars").innerHTML=sorted.length?sorted.map(function(e,i){var col=COLS[i%COLS.length];
+    return'<div class="br dom-bar'+(activeDomain===e[0]?' active':'')+'" data-dom="'+esc(e[0])+'" title="Cliquer pour filtrer"><span class="bl" style="min-width:125px">'+esc(e[0])+'</span><div class="bt"><div class="bf" style="width:'+(e[1]/mx*100)+'%;background:'+col+'"></div></div><span class="bc" style="color:'+col+'">'+e[1]+'</span></div>';}).join(""):'<div class="small">Aucun domaine détecté.</div>';
+  var sel=$("practf"),cur=sel.value;
+  sel.innerHTML='<option value="">Tous domaines</option>'+Object.keys((VEILLE.scoring||{}).practices||{}).concat(["Conseil juridique général"]).map(function(p){return'<option'+(p===cur?' selected':'')+'>'+esc(p)+'</option>';}).join("");
+}
+function buildCountries(){
+  var cc={};DATA.forEach(function(n){cc[n.country]=(cc[n.country]||0)+1;});
+  var sorted=Object.entries(cc).sort(function(a,b){return b[1]-a[1];}).slice(0,8),mx=sorted[0]?sorted[0][1]:1;
+  $("countryBars").innerHTML=sorted.map(function(e){return'<div class="br"><span class="bl">'+(FLAGS[e[0]]||"")+" "+esc(CNAMES[e[0]]||e[0])+'</span><div class="bt"><div class="bf" style="width:'+(e[1]/mx*100)+'%"></div></div><span class="bc">'+e[1]+'</span></div>';}).join("");
+}
+function buildCpv(){
+  var L={"79100000":"Services juridiques","79110000":"Conseils et représentation juridiques","79111000":"Conseil juridique","79112000":"Représentation juridique","79112100":"Représentation des parties prenantes","79120000":"Conseil en brevets et droits d'auteur","79121000":"Conseil en droits d'auteur","79121100":"Conseil en droits d'auteur de logiciels","79130000":"Documentation et certification juridiques","79131000":"Services de documentation","79132000":"Services de certification","79132100":"Certification de signature électronique","79140000":"Conseil et information juridiques","66171000":"Conseil financier","79411000":"Conseil en gestion générale","79411100":"Conseil en développement d'entreprises","79412000":"Conseil en gestion financière","79419000":"Conseil en évaluation"};
+  $("cpvList").innerHTML=(VEILLE.cpv_legal||[]).concat(VEILLE.cpv_advisory||[]).map(function(c){return'<div><code>'+esc(c)+'</code> '+esc(L[c]||"")+'</div>';}).join("");
+}
+
+/* ---------- export CSV ---------- */
+function exportCSV(){
+  var rows=getFiltered(curTab);
+  var headers=["ID","Publication","Score","Priorité","Domaines","Mots-clés","Pourquoi","Titre","Acheteur","Pays","Type","CPV","Valeur EUR","Échéance","Sources","URL","Rectificatifs","Origine","Statut suivi","Note"];
+  var csv=[headers].concat(rows.map(function(n){var t=trackingFor(n.id);return[n.id,n.pub,n.score,PLABEL[n.priority],(n.practices||[]).join(" | "),(n.matched||[]).join(" | "),n.why,n.title,n.buyer,n.country,TLABELS[n.type]||n.type,(n.cpv||[]).join(" | "),n.value||"",n.dl||"",(n.sources||[]).map(function(s){return s.source+" "+s.source_id;}).join(" | "),n.url,(n.corrigenda||[]).map(function(c){return c.source_id;}).join(" | "),n.origin,t.status,t.note];}));
+  var content=csv.map(function(r){return r.map(function(v){return'"'+String(v==null?"":v).replace(/"/g,'""')+'"';}).join(";");}).join("\r\n");
+  saveFile("veille-marches-publics-bdgs.csv","﻿"+content,"text/csv;charset=utf-8");
+}
+function saveFile(fn,data,type){
+  var p=(window.claude&&window.claude.use)?window.claude.use("downloads"):Promise.resolve(null);
+  p.then(function(dl){if(dl)return dl.save({filename:fn,data:data}).catch(function(){});
+    var blob=new Blob([data],{type:type});var a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download=fn;document.body.appendChild(a);a.click();
+    setTimeout(function(){URL.revokeObjectURL(a.href);a.remove();},1000);});
+}
+
+/* ---------- événements ---------- */
+function refresh(){buildStats();render();}
+["q"].forEach(function(id){$(id).addEventListener("input",render);});
+["pf","practf","tf","df","statusFilter","of","sf"].forEach(function(id){$(id).addEventListener("change",render);});
+$("statusFilter").innerHTML='<option value="">Tous les suivis</option>'+TRACK_STATUSES.map(function(s){return'<option>'+esc(s)+'</option>';}).join("");
+$("btnCsv").addEventListener("click",exportCSV);
+$("btnTrkExp").addEventListener("click",function(){saveFile("suivi-veille-bdgs.json",JSON.stringify(TRACKING,null,1),"application/json");});
+$("trkFile").addEventListener("change",function(e){var f=e.target.files[0];if(!f)return;var r=new FileReader();r.onload=function(){try{var o=JSON.parse(r.result);Object.keys(o).forEach(function(k){TRACKING[k]=o[k];});saveTracking();refresh();}catch(err){window.alert("Fichier de suivi illisible.");}};r.readAsText(f);});
+document.querySelectorAll(".tab").forEach(function(b){b.addEventListener("click",function(){curTab=b.getAttribute("data-tab");
+  document.querySelectorAll(".tab").forEach(function(x){x.classList.toggle("on",x===b);});
+  $("pnl-fr").classList.toggle("on",curTab==="fr");$("pnl-eu").classList.toggle("on",curTab==="eu");});});
+$("statsGrid").addEventListener("click",function(e){var c=e.target.closest("[data-quick]");if(!c)return;var k=c.getAttribute("data-quick");quick=(quick===k)?null:k;refresh();});
+$("domainBars").addEventListener("click",function(e){var c=e.target.closest("[data-dom]");if(!c)return;var d=c.getAttribute("data-dom");activeDomain=activeDomain===d?null:d;
+  $("domFilterMsg").classList.toggle("on",!!activeDomain);$("domFilterName").textContent=activeDomain||"";buildDomainChart();render();});
+$("domClear").addEventListener("click",function(){activeDomain=null;$("domFilterMsg").classList.remove("on");buildDomainChart();render();});
+document.addEventListener("change",function(e){var s=e.target;if(s.classList&&s.classList.contains("status-select")){var id=s.getAttribute("data-id"),t=trackingFor(id);t.status=s.value;TRACKING[id]=t;saveTracking();refresh();}});
+document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest("[data-note]");if(!b)return;var id=b.getAttribute("data-note"),t=trackingFor(id);
+  var note=window.prompt("Note interne pour cet avis :",t.note||"");if(note===null)return;t.note=note;TRACKING[id]=t;saveTracking();render();});
+
+buildBanners();buildSourceStatus();buildKWSidebar();buildDomainChart();buildCountries();buildCpv();buildStats();render();
+})();
+</script>
+</body>
+</html>

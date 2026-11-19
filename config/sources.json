@@ -1,0 +1,46 @@
+{
+  "_comment": "Paramètres de collecte. Modifiable sans toucher au code.",
+  "lookback_days_daily": 10,
+  "lookback_days_first_run": 60,
+  "max_pages_per_query": 20,
+  "request_timeout_s": 60,
+
+  "cpv_legal": [
+    "79100000", "79110000", "79111000", "79112000", "79112100",
+    "79120000", "79121000", "79121100", "79130000", "79131000",
+    "79132000", "79132100", "79140000"
+  ],
+  "cpv_advisory": [
+    "66171000", "79412000", "79411000", "79411100", "79419000"
+  ],
+
+  "boamp": {
+    "enabled": true,
+    "endpoint": "https://boamp-datadila.opendatasoft.com/api/explore/v2.1/catalog/datasets/boamp/records",
+    "keyword_queries": [
+      "conseil juridique", "assistance juridique", "prestations juridiques",
+      "services juridiques", "avocat", "avocats", "juridique et financier",
+      "juridique et financière", "conseil financier", "montage juridique",
+      "financement de projet", "partenariat public-privé", "contrat de concession",
+      "délégation de service public", "restructuration financière",
+      "émission obligataire", "garanties", "titrisation"
+    ]
+  },
+
+  "ted": {
+    "enabled": true,
+    "endpoint": "https://api.ted.europa.eu/v3/notices/search",
+    "keyword_queries": [
+      "conseil juridique", "assistance juridique", "prestations juridiques",
+      "legal services", "legal advice", "legal advisory", "transaction advisory",
+      "financial advisory", "project finance", "financement de projet",
+      "public-private partnership", "partenariat public-privé"
+    ],
+    "page_size": 100
+  },
+
+  "manual": {
+    "enabled": true,
+    "file": "data/manual_notices.json"
+  }
+}

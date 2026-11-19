@@ -1,0 +1,58 @@
+{
+ "_comment": "DONNÉES SYNTHÉTIQUES DE TEST — imitent le format de l'API Opendatasoft BOAMP. Ne sont jamais publiées dans le tableau de bord.",
+ "total_count": 4,
+ "results": [
+  {
+   "idweb": "99-000001",
+   "objet": "TEST — Conseil juridique pour la mise en place de garanties rehaussées et financements structurés",
+   "nomacheteur": "TEST Bpifrance Assurance Export",
+   "dateparution": "2026-11-02",
+   "datelimitereponse": "2026-11-25T12:00:00+01:00",
+   "nature": "APPEL_OFFRE",
+   "nature_libelle": "Avis de marché",
+   "famille_libelle": "Marchés entre 90 k€ et seuils européens",
+   "procedure_libelle": "Procédure adaptée",
+   "code_departement": ["75"],
+   "descripteur_libelle": ["Prestations juridiques"],
+   "url_avis": "https://www.boamp.fr/pages/avis/?q=idweb:99-000001",
+   "donnees": "{\"EFORMS\":{\"ContractNotice\":{\"cac:ProcurementProject\":{\"cbc:ContractFolderID\":\"11111111-2222-3333-4444-555555555555\",\"cac:MainCommodityClassification\":{\"cbc:ItemClassificationCode\":\"79111000\"},\"cbc:Description\":\"Expertise en financements structurés export, actif, maritime et projet, Common Law anglaise et assurance-crédit.\"},\"cac:ProcurementProjectLot\":[{\"cbc:ID\":\"LOT-0001\",\"cac:ProcurementProject\":{\"cbc:Name\":\"Lot unique conseil juridique garanties\"}}],\"cbc:EstimatedOverallContractAmount\":\"600012\"}}}",
+   "gestion": "{\"REFERENCE\":{\"IDWEB\":\"99-000001\"}}"
+  },
+  {
+   "idweb": "99-000002",
+   "objet": "TEST — Prestations de nettoyage des locaux administratifs",
+   "nomacheteur": "TEST Commune de Exemple",
+   "dateparution": "2026-11-03",
+   "datelimitereponse": "2026-12-01T12:00:00+01:00",
+   "nature": "APPEL_OFFRE",
+   "nature_libelle": "Avis de marché",
+   "url_avis": "https://www.boamp.fr/pages/avis/?q=idweb:99-000002",
+   "donnees": "{}",
+   "gestion": "{}"
+  },
+  {
+   "idweb": "99-000003",
+   "objet": "TEST — Rectificatif : conseil juridique pour la mise en place de garanties rehaussées",
+   "nomacheteur": "TEST Bpifrance Assurance Export",
+   "dateparution": "2026-11-10",
+   "datelimitereponse": "2026-12-02T12:00:00+01:00",
+   "nature": "RECTIFICATIF",
+   "nature_libelle": "Avis rectificatif",
+   "url_avis": "https://www.boamp.fr/pages/avis/?q=idweb:99-000003",
+   "donnees": "{}",
+   "gestion": "{\"REFERENCE\":{\"IDWEB\":\"99-000003\"},\"ANNONCE_ANTERIEURE\":{\"IDWEB\":\"99-000001\"}}"
+  },
+  {
+   "idweb": "99-000004",
+   "objet": "TEST — Assistance juridique et financière pour un contrat de concession de réseau de chaleur",
+   "nomacheteur": "TEST Métropole Exemple",
+   "dateparution": "2026-11-05",
+   "datelimitereponse": "2026-12-10T12:00:00+01:00",
+   "nature": "APPEL_OFFRE",
+   "nature_libelle": "Avis de marché",
+   "url_avis": "https://www.boamp.fr/pages/avis/?q=idweb:99-000004",
+   "donnees": "{\"cbc:ContractFolderID\":\"aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee\",\"CPV\":{\"CODE\":\"79111000\"}}",
+   "gestion": "{}"
+  }
+ ]
+}

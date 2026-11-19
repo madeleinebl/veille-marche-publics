@@ -1,0 +1,390 @@
+{
+ "_comment": "Avis ajoutés à la main. Pour un avis BOAMP ou TED, indiquez source + source_id (idweb BOAMP, ex. 26-106060 ; numéro TED, ex. 637431-2026) : la collecte officielle le confirmera et le complétera. Supprimez une entrée pour la retirer du tableau de bord.",
+ "notices": [
+  {
+   "source": "BOAMP",
+   "source_id": "26-106060",
+   "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-106060",
+   "title": "Conseil juridique pour la mise en place et le suivi de garanties rehaussees",
+   "buyer": "Bpifrance Assurance Export",
+   "country": "FRA",
+   "pub": "2026-11-02",
+   "dl": "2026-11-25",
+   "type": "call",
+   "cpv": [
+    "79111000"
+   ],
+   "value": 600012,
+   "lots": "DJG MAPA 009 — Expertise financements structures (export, actif, maritime, projet), Common Law anglaise, droit francais, assurance-credit",
+   "note": "Repris de la veille manuelle précédente (recherche web) — à confirmer par la collecte officielle"
+  },
+  {
+   "source": "TED",
+   "source_id": "637431-2026",
+   "url": "https://ted.europa.eu/en/notice/-/detail/637431-2026",
+   "title": "Conseil juridique, assistance et representation en justice",
+   "buyer": "SEQENS SA d'HLM",
+   "country": "FRA",
+   "pub": "2026-09-07",
+   "dl": "2026-10-09",
+   "type": "call",
+   "cpv": [
+    "79110000",
+    "79111000"
+   ],
+   "value": null,
+   "lots": "3 lots : Direction generale, Droit social, Droit immobilier",
+   "note": "Repris de la veille manuelle précédente (recherche web) — à confirmer par la collecte officielle"
+  },
+  {
+   "source": "TED",
+   "source_id": "540283-2026",
+   "url": "https://ted.europa.eu/en/notice/-/detail/540283-2026",
+   "title": "Marches de prestations juridiques pour le GIP MansA",
+   "buyer": "GIP MansA — Maison des Mondes Africains (Paris)",
+   "country": "FRA",
+   "pub": "2026-08-04",
+   "dl": "2026-09-15",
+   "type": "call",
+   "cpv": [
+    "79111000",
+    "79140000"
+   ],
+   "value": 280000,
+   "lots": "2 lots",
+   "note": "Repris de la veille manuelle précédente (recherche web) — à confirmer par la collecte officielle"
+  },
+  {
+   "source": "TED",
+   "source_id": "418046-2026",
+   "url": "https://ted.europa.eu/en/notice/-/detail/418046-2026",
+   "title": "Services juridiques de representation en justice et de conseil juridique pour le Departement",
+   "buyer": "Departement de la Seine-Saint-Denis",
+   "country": "FRA",
+   "pub": "2026-06-18",
+   "dl": "2026-07-25",
+   "type": "award",
+   "cpv": [
+    "79100000",
+    "79110000"
+   ],
+   "value": null,
+   "lots": "Plusieurs lots",
+   "note": "Repris de la veille manuelle précédente (recherche web) — à confirmer par la collecte officielle"
+  },
+  {
+   "source": "TED",
+   "source_id": "317964-2026",
+   "url": "https://ted.europa.eu/en/notice/-/detail/317964-2026",
+   "title": "Services de conseils et de representation juridiques",
+   "buyer": "SGAR PACA (Prefecture de region Provence-Alpes-Cote d'Azur)",
+   "country": "FRA",
+   "pub": "2026-05-12",
+   "dl": "2026-06-20",
+   "type": "call",
+   "cpv": [
+    "79110000",
+    "79111000"
+   ],
+   "value": null,
+   "lots": null,
+   "note": "Repris de la veille manuelle précédente (recherche web) — à confirmer par la collecte officielle"
+  },
+  {
+   "source": "TED",
+   "source_id": "301814-2026",
+   "url": "https://ted.europa.eu/en/notice/-/detail/301814-2026",
+   "title": "Prestations juridiques de consultation, conseil, assistance et representation",
+   "buyer": "Office des Transports de la Corse (OTC)",
+   "country": "FRA",
+   "pub": "2026-05-04",
+   "dl": "2026-06-15",
+   "type": "call",
+   "cpv": [
+    "79111000",
+    "79100000",
+    "79110000"
+   ],
+   "value": 900000,
+   "lots": "3 lots — Duree 48 mois",
+   "note": "Repris de la veille manuelle précédente (recherche web) — à confirmer par la collecte officielle"
+  },
+  {
+   "source": "TED",
+   "source_id": "299002-2026",
+   "url": "https://ted.europa.eu/en/notice/-/detail/299002-2026",
+   "title": "Prestations de conseils juridiques (rectificatif)",
+   "buyer": "Conseil Regional Centre-Val de Loire",
+   "country": "FRA",
+   "pub": "2026-04-30",
+   "dl": "2026-06-08",
+   "type": "corr",
+   "cpv": [
+    "79111000"
+   ],
+   "value": null,
+   "lots": "Rectificatif d'avis",
+   "note": "Repris de la veille manuelle précédente (recherche web) — à confirmer par la collecte officielle"
+  },
+  {
+   "source": "TED",
+   "source_id": "296228-2026",
+   "url": "https://ted.europa.eu/en/notice/-/detail/296228-2026",
+   "title": "Mission de consultation juridique d'assistance et de conseil, et de representation en justice",
+   "buyer": "Pouvoir adjudicateur (non precise)",
+   "country": "FRA",
+   "pub": "2026-04-30",
+   "dl": "2026-06-10",
+   "type": "call",
+   "cpv": [
+    "79100000",
+    "79111000"
+   ],
+   "value": null,
+   "lots": "Duree 48 mois",
+   "note": "Repris de la veille manuelle précédente (recherche web) — à confirmer par la collecte officielle"
+  },
+  {
+   "source": "TED",
+   "source_id": "276665-2026",
+   "url": "https://ted.europa.eu/en/notice/-/detail/276665-2026",
+   "title": "Assistance et representation en justice de la Ville de Lille",
+   "buyer": "Ville de Lille",
+   "country": "FRA",
+   "pub": "2026-04-22",
+   "dl": "2026-05-30",
+   "type": "call",
+   "cpv": [
+    "79110000",
+    "79100000",
+    "79111000"
+   ],
+   "value": null,
+   "lots": null,
+   "note": "Repris de la veille manuelle précédente (recherche web) — à confirmer par la collecte officielle"
+  },
+  {
+   "source": "TED",
+   "source_id": "245644-2026",
+   "url": "https://ted.europa.eu/en/notice/-/detail/245644-2026",
+   "title": "Prestations de conseils juridiques",
+   "buyer": "Conseil Regional Centre-Val de Loire",
+   "country": "FRA",
+   "pub": "2026-04-10",
+   "dl": "2026-06-08",
+   "type": "call",
+   "cpv": [
+    "79111000"
+   ],
+   "value": null,
+   "lots": "Multi-lots",
+   "note": "Repris de la veille manuelle précédente (recherche web) — à confirmer par la collecte officielle"
+  },
+  {
+   "source": "TED",
+   "source_id": "124210-2026",
+   "url": "https://ted.europa.eu/en/notice/-/detail/124210-2026",
+   "title": "Accord-cadre de prestations juridiques",
+   "buyer": "SPL PARSEF",
+   "country": "FRA",
+   "pub": "2026-02-23",
+   "dl": "2026-03-30",
+   "type": "call",
+   "cpv": [
+    "79111000"
+   ],
+   "value": null,
+   "lots": "3 lots : Conseil general, Social, Commande publique",
+   "note": "Repris de la veille manuelle précédente (recherche web) — à confirmer par la collecte officielle"
+  },
+  {
+   "source": "TED",
+   "source_id": "85634-2026",
+   "url": "https://ted.europa.eu/en/notice/-/detail/85634-2026",
+   "title": "Conseil et contentieux sur le territoire national y compris d'outre-mer",
+   "buyer": "APIJ (Agence Publique pour l'Immobilier de la Justice)",
+   "country": "FRA",
+   "pub": "2026-02-05",
+   "dl": "2026-03-15",
+   "type": "call",
+   "cpv": [
+    "79110000",
+    "79111000"
+   ],
+   "value": 440000,
+   "lots": "Accord-cadre 440 000 EUR",
+   "note": "Repris de la veille manuelle précédente (recherche web) — à confirmer par la collecte officielle"
+  },
+  {
+   "source": "BOAMP",
+   "source_id": "26-55680",
+   "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-55680",
+   "title": "Services de conseil juridique — prevention contentieux",
+   "buyer": "Acheteur public",
+   "country": "FRA",
+   "pub": "2026-06-15",
+   "dl": "2026-07-20",
+   "type": "call",
+   "cpv": [
+    "79111000"
+   ],
+   "value": null,
+   "lots": null,
+   "note": "Repris de la veille manuelle précédente (recherche web) — à confirmer par la collecte officielle"
+  },
+  {
+   "source": "BOAMP",
+   "source_id": "26-53892",
+   "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-53892",
+   "title": "Services de conseil juridique — Accord-cadre 48 mois",
+   "buyer": "Acheteur public",
+   "country": "FRA",
+   "pub": "2026-06-10",
+   "dl": "2026-07-15",
+   "type": "call",
+   "cpv": [
+    "79111000"
+   ],
+   "value": null,
+   "lots": "Periode initiale 1 an, 3 reconductions",
+   "note": "Repris de la veille manuelle précédente (recherche web) — à confirmer par la collecte officielle"
+  },
+  {
+   "source": "BOAMP",
+   "source_id": "26-43439",
+   "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-43439",
+   "title": "Prestations de conseil juridique",
+   "buyer": "Conseil Regional Centre-Val de Loire",
+   "country": "FRA",
+   "pub": "2026-04-28",
+   "dl": "2026-06-08",
+   "type": "call",
+   "cpv": [
+    "79111000"
+   ],
+   "value": null,
+   "lots": "Droit du travail, droit syndical, hygiene et securite",
+   "note": "Repris de la veille manuelle précédente (recherche web) — à confirmer par la collecte officielle"
+  },
+  {
+   "source": "BOAMP",
+   "source_id": "26-40455",
+   "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-40455",
+   "title": "Conseil juridique pour mecanismes de protection de l'Etat dans le secteur de la defense",
+   "buyer": "SGA / SDPAMG / BPI (Ministere des Armees)",
+   "country": "FRA",
+   "pub": "2026-04-20",
+   "dl": "2026-03-11",
+   "type": "award",
+   "cpv": [
+    "79111000"
+   ],
+   "value": null,
+   "lots": "Marche attribue le 26/03/2026",
+   "note": "Repris de la veille manuelle précédente (recherche web) — à confirmer par la collecte officielle"
+  },
+  {
+   "source": "BOAMP",
+   "source_id": "26-36689",
+   "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-36689",
+   "title": "Conseil juridique en droit public general, droit public economique, droit immobilier et construction",
+   "buyer": "Collectivite territoriale",
+   "country": "FRA",
+   "pub": "2026-04-10",
+   "dl": "2026-05-15",
+   "type": "call",
+   "cpv": [
+    "79111000"
+   ],
+   "value": null,
+   "lots": "4 lots specialises",
+   "note": "Repris de la veille manuelle précédente (recherche web) — à confirmer par la collecte officielle"
+  },
+  {
+   "source": "BOAMP",
+   "source_id": "26-20855",
+   "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-20855",
+   "title": "Services de conseil juridique — Coeur Defense",
+   "buyer": "Pouvoir adjudicateur — Coeur Defense, Tour B, La Defense",
+   "country": "FRA",
+   "pub": "2026-03-05",
+   "dl": "2026-04-01",
+   "type": "call",
+   "cpv": [
+    "79111000"
+   ],
+   "value": null,
+   "lots": "Lot 1: Droit de la commande publique / Lot 2: Droit de l'urbanisme et de l'amenagement / Lot 3: Droit de l'expropriation et de la maitrise fonciere / Lot 4: Droit public general / Lot 5: Droit de l'immobilier et de la construction / Lot 6: Droit prive de la personne publique / Lot 7: Droit social / Lot 8: Droit des societes, droit financier et droit fiscal / Lot 9: Droit de l'environnement",
+   "note": "Repris de la veille manuelle précédente (recherche web) — à confirmer par la collecte officielle"
+  },
+  {
+   "source": "BOAMP",
+   "source_id": "26-17909",
+   "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-17909",
+   "title": "Services de conseil juridique — Seine-et-Marne",
+   "buyer": "Acheteur public — Seine-et-Marne",
+   "country": "FRA",
+   "pub": "2026-02-20",
+   "dl": "2026-03-25",
+   "type": "call",
+   "cpv": [
+    "79111000"
+   ],
+   "value": null,
+   "lots": "3 lots dont Conseil juridique social",
+   "note": "Repris de la veille manuelle précédente (recherche web) — à confirmer par la collecte officielle"
+  },
+  {
+   "source": "BOAMP",
+   "source_id": "26-13787",
+   "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-13787",
+   "title": "Appui juridique specialise — execution contrats de partenariat (montage concessif)",
+   "buyer": "Pouvoir adjudicateur",
+   "country": "FRA",
+   "pub": "2026-02-10",
+   "dl": "2026-03-20",
+   "type": "call",
+   "cpv": [
+    "79111000"
+   ],
+   "value": 160000,
+   "lots": "Accord-cadre mono-attributaire — 160 000 EUR max",
+   "note": "Repris de la veille manuelle précédente (recherche web) — à confirmer par la collecte officielle"
+  },
+  {
+   "source": "BOAMP",
+   "source_id": "26-4445",
+   "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-4445",
+   "title": "Appui juridique specialise — contrats de partenariat d'innovation (operations penitentiaires)",
+   "buyer": "Ministere de la Justice",
+   "country": "FRA",
+   "pub": "2026-01-15",
+   "dl": "2026-02-28",
+   "type": "call",
+   "cpv": [
+    "79111000"
+   ],
+   "value": 160000,
+   "lots": "Accord-cadre 160 000 EUR HT — 4 ans max",
+   "note": "Repris de la veille manuelle précédente (recherche web) — à confirmer par la collecte officielle"
+  },
+  {
+   "source": "BOAMP",
+   "source_id": "26-7061",
+   "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-7061",
+   "title": "Prestations de conseil juridique",
+   "buyer": "Collectivite — Administration generale",
+   "country": "FRA",
+   "pub": "2026-01-10",
+   "dl": "2026-02-15",
+   "type": "call",
+   "cpv": [
+    "79111000",
+    "79140000"
+   ],
+   "value": null,
+   "lots": "Duree initiale 12 mois",
+   "note": "Repris de la veille manuelle précédente (recherche web) — à confirmer par la collecte officielle"
+  }
+ ]
+}

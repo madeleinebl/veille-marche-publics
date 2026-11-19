@@ -1,0 +1,41 @@
+{
+ "_comment": "DONNÉES SYNTHÉTIQUES DE TEST — imitent le format de la TED Search API v3 (champs multilingues). Ne sont jamais publiées.",
+ "totalNoticeCount": 3,
+ "iterationNextToken": null,
+ "notices": [
+  {
+   "publication-number": "999001-2026",
+   "publication-date": "2026-11-06+01:00",
+   "notice-title": {"fra": ["TEST — Assistance juridique et financière pour un contrat de concession de réseau de chaleur"], "eng": ["TEST — Legal and financial assistance for a heat network concession"]},
+   "buyer-name": {"fra": ["TEST Métropole Exemple"]},
+   "buyer-country": ["FRA"],
+   "classification-cpv": ["79111000", "66171000"],
+   "deadline-receipt-tender-date-lot": ["2026-12-10+01:00"],
+   "notice-type": "cn-standard",
+   "form-type": "competition",
+   "procedure-identifier": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+   "estimated-value-proc": 450000,
+   "links": {"html": {"FRA": "https://ted.europa.eu/fr/notice/-/detail/999001-2026"}}
+  },
+  {
+   "publication-number": "999002-2026",
+   "publication-date": "2026-11-07+01:00",
+   "notice-title": {"deu": ["TEST — Rechtsberatung für Projektfinanzierung"], "eng": ["TEST — Legal advisory for project finance and bond issuance"]},
+   "buyer-name": {"deu": ["TEST Stadtwerke Beispiel"]},
+   "buyer-country": ["DEU"],
+   "classification-cpv": ["79110000"],
+   "deadline-receipt-tender-date-lot": ["2026-12-20+01:00", "2026-12-15+01:00"],
+   "notice-type": "cn-standard",
+   "procedure-identifier": "99999999-0000-0000-0000-000000000001"
+  },
+  {
+   "publication-number": "999003-2026",
+   "publication-date": "2026-11-08+01:00",
+   "notice-title": {"fra": ["TEST — Avis d'attribution : conseil juridique droit social"]},
+   "buyer-name": {"fra": ["TEST Département Exemple"]},
+   "buyer-country": ["FRA"],
+   "classification-cpv": ["79111000"],
+   "notice-type": "can-standard"
+  }
+ ]
+}

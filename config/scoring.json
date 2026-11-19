@@ -1,0 +1,147 @@
+{
+  "_comment": "Grille de pertinence BDGS. Chaque mot-clé trouvé rapporte des points. Les accents et majuscules sont ignorés. Un mot-clé ne compte qu'une fois par avis.",
+
+  "thresholds": {
+    "high": 50,
+    "medium": 36,
+    "min_to_keep": 10,
+    "_note": "Un avis sous 'min_to_keep' n'est pas conservé. 'high' exige aussi un signal juridique ou de conseil."
+  },
+
+  "legal_signal": {
+    "label": "Mission juridique / conseil",
+    "cap": 30,
+    "cpv_points": {"legal": 25, "advisory": 12},
+    "keywords": {
+      "conseil juridique": 20, "assistance juridique": 20, "prestations juridiques": 20,
+      "services juridiques": 20, "consultation juridique": 15, "representation en justice": 10,
+      "avocat": 15, "avocats": 15, "cabinet d'avocats": 20, "juridique et financier": 20,
+      "juridique et financiere": 20, "amo juridique": 20, "assistance a maitrise d'ouvrage juridique": 20,
+      "montage juridique": 15, "expertise juridique": 15, "appui juridique": 15, "juridique": 8,
+      "legal services": 20, "legal advice": 20, "legal advisory": 20, "legal counsel": 20,
+      "law firm": 20, "legal assistance": 15, "transaction advisory": 12, "financial advisory": 10,
+      "conseil financier": 10
+    }
+  },
+
+  "practices": {
+    "Finance & Bancaire": {
+      "keywords": {
+        "financement": 6, "financements structures": 12, "financement structure": 12,
+        "bancaire": 8, "credit": 5, "contrat de credit": 12, "convention de credit": 12,
+        "credit syndique": 12, "syndication": 8, "refinancement": 10, "emprunt": 6, "pret": 5,
+        "dette": 6, "covenant": 10, "suretes": 12, "surete": 12, "nantissement": 12,
+        "hypotheque": 8, "fiducie": 10, "garantie autonome": 12, "garanties": 8, "garantie": 5,
+        "garanties rehaussees": 15, "rehaussement": 10, "assurance-credit": 12, "assurance credit": 12,
+        "credit export": 12, "export credit": 12, "intercreanciers": 15, "subordination": 8,
+        "banking": 8, "loan": 6, "loan agreement": 12, "facility agreement": 12, "security package": 12,
+        "guarantee": 6, "structured finance": 12, "trade finance": 10
+      }
+    },
+    "Project Finance & Infrastructure": {
+      "keywords": {
+        "financement de projet": 15, "project finance": 15, "project financing": 15,
+        "societe de projet": 12, "spv": 10, "infrastructure": 8, "infrastructures": 8,
+        "grands projets": 8, "major project": 8, "concedant": 8, "bancabilite": 12, "bankability": 12,
+        "transport": 3, "autoroute": 6, "ferroviaire": 6, "aeroport": 6, "port": 3, "reseau": 3,
+        "data center": 6, "fibre": 4, "tres haut debit": 6
+      }
+    },
+    "Energie, Nucleaire & Renouvelables": {
+      "keywords": {
+        "energie": 6, "energy": 6, "nucleaire": 12, "nuclear": 12, "epr": 10, "edf": 8,
+        "renouvelable": 10, "renouvelables": 10, "renewable": 10, "renewables": 10,
+        "photovoltaique": 8, "solaire": 6, "eolien": 8, "offshore": 8, "hydrogene": 8, "hydrogen": 8,
+        "bess": 12, "stockage d'energie": 12, "battery storage": 12, "batteries": 4,
+        "biomethane": 8, "geothermie": 8, "chaleur": 3, "reseau de chaleur": 8, "ppa": 10,
+        "power purchase agreement": 12, "corporate ppa": 12
+      }
+    },
+    "Corporate / M&A": {
+      "keywords": {
+        "acquisition": 8, "cession": 8, "cession de titres": 12, "cession d'actions": 12,
+        "fusion": 8, "absorption": 6, "prise de participation": 12, "participations": 6,
+        "due diligence": 12, "audit d'acquisition": 12, "pacte d'actionnaires": 12, "actionnaires": 6,
+        "garantie d'actif et de passif": 12, "droit des societes": 8, "sem": 4, "semop": 10,
+        "societe d'economie mixte": 8, "m&a": 12, "merger": 10, "share purchase": 12,
+        "shareholders agreement": 12, "corporate": 5, "privatisation": 12, "ouverture du capital": 12
+      }
+    },
+    "LBO & Private Equity": {
+      "keywords": {
+        "lbo": 15, "leveraged": 12, "leverage": 10, "private equity": 15, "capital-investissement": 15,
+        "capital investissement": 15, "fonds d'investissement": 12, "investment fund": 10,
+        "management package": 12, "unitranche": 15, "mezzanine": 12, "dette privee": 12,
+        "private debt": 12, "direct lending": 12, "fonds de fonds": 10, "co-investissement": 10
+      }
+    },
+    "Capital Markets & Dette": {
+      "keywords": {
+        "emission obligataire": 15, "emissions obligataires": 15, "obligations": 6, "obligataire": 10,
+        "euro pp": 15, "placement prive": 10, "prospectus": 10, "titrisation": 12, "securitisation": 12,
+        "programme emtn": 15, "emtn": 12, "neu cp": 12, "neu mtn": 12, "billets de tresorerie": 10,
+        "bond issuance": 15, "capital markets": 12, "marches de capitaux": 12, "green bonds": 12,
+        "obligations vertes": 12, "notation": 4, "agence de notation": 8
+      }
+    },
+    "Restructuring & Insolvency": {
+      "keywords": {
+        "restructuration": 8, "restructuration financiere": 15, "sauvegarde": 10,
+        "redressement judiciaire": 12, "liquidation judiciaire": 10, "procedure collective": 12,
+        "procedures collectives": 12, "conciliation": 8, "mandat ad hoc": 12, "difficultes des entreprises": 12,
+        "restructuring": 12, "insolvency": 12, "creanciers": 6
+      }
+    },
+    "PPP & Concessions": {
+      "keywords": {
+        "ppp": 12, "partenariat public-prive": 15, "partenariat public prive": 15,
+        "public-private partnership": 15, "marche de partenariat": 15, "contrat de partenariat": 12,
+        "concession": 10, "contrat de concession": 12, "concessions": 10, "delegation de service public": 12,
+        "dsp": 6, "affermage": 8, "montage contractuel": 10, "montage concessif": 12, "bail emphyteotique": 10,
+        "beh": 6, "sem a operation unique": 12
+      }
+    },
+    "Construction & Immobilier": {
+      "keywords": {
+        "construction": 4, "travaux": 2, "vefa": 10, "promotion immobiliere": 8, "immobilier": 5,
+        "maitrise d'ouvrage": 4, "contrat de construction": 10, "conception-realisation": 8,
+        "marche global de performance": 10, "epc": 8, "fidic": 12, "real estate": 6
+      }
+    }
+  },
+
+  "strategic_buyers": {
+    "points": 6,
+    "names": [
+      "bpifrance", "caisse des depots", "banque des territoires", "edf", "rte", "enedis", "engie",
+      "orano", "framatome", "cea", "ademe", "agence des participations de l'etat",
+      "direction generale du tresor", "tresor", "sncf", "sgp", "societe des grands projets", "ratp",
+      "aeroports de paris", "groupe adp", "banque de france", "afd", "agence francaise de developpement",
+      "european investment bank", "banque europeenne d'investissement", "eib", "bei", "ebrd", "berd",
+      "fin infra", "france travail"
+    ]
+  },
+
+  "negative": {
+    "label": "Hors cible",
+    "keywords": {
+      "traduction": -10, "interpretariat": -10, "formation": -6, "nettoyage": -15, "restauration": -10,
+      "commissaire de justice": -8, "huissier": -8, "recouvrement de creances": -6,
+      "fourniture de": -6, "maintenance": -6, "assurances dommages": -6, "assurance flotte": -10
+    }
+  },
+
+  "value_bonus": [
+    {"min": 1000000, "points": 8},
+    {"min": 300000, "points": 4}
+  ],
+
+  "type_adjust": {
+    "award": -10,
+    "prior": 0,
+    "corr": 0,
+    "call": 0,
+    "cancel": -20,
+    "other": 0
+  }
+}
