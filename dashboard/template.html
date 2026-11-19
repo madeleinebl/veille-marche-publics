@@ -493,7 +493,7 @@ var QUICK={
 function buildStats(){
   var html=Object.keys(QUICK).map(function(k){var c=DATA.filter(QUICK[k].f).length;
     return'<div class="sc clk'+(quick===k?' on':'')+'" data-quick="'+k+'" title="Cliquer pour filtrer"><div class="v '+(QUICK[k].cls||"")+'">'+c+'</div><div class="l">'+QUICK[k].l+'</div></div>';}).join("");
-  html+='<div class="sc"><div class="v">'+DATA.length+'</div><div class="l">📊 Avis en base ('+DATA.filter(isAuto).length+' collectés, '+DATA.filter(function(n){return n.origin==="manual";}).length+' manuels)</div></div>';
+  html+='<div class="sc"><div class="v">'+DATA.length+'</div><div class="l">📊 Avis en base</div></div>';
   $("statsGrid").innerHTML=html;
 }
 
