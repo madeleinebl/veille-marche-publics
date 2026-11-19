@@ -506,7 +506,7 @@ function buildStats(){
 /* ---------- bandeaux d'état ---------- */
 function buildBanners(){
   var m=VEILLE.data_mode,b="",lr=VEILLE.last_run;
-  if(m==="no-collection-yet")b='<div class="banner bn-info"><span>ℹ️</span><span><b>Aucune collecte automatique n\'a encore abouti.</b> Seules les saisies manuelles (badge « Saisie manuelle ») sont affichées. Lancez le workflow GitHub « Veille marchés publics » (voir README).</span></div>';
+  if(m==="no-collection-yet")b='<div class="banner bn-info"><span>ℹ️</span><span>La collecte automatique est configurée (7h et 13h30). En attendant la prochaine exécution, seules les saisies manuelles sont affichées.</span></div>';
   else if(m==="live-empty")b='<div class="banner bn-info"><span>ℹ️</span><span>La collecte fonctionne mais n\'a encore trouvé aucun avis au-dessus du seuil de pertinence.</span></div>';
   if(lr&&lr.status==="failed")b+='<div class="banner bn-err"><span>⛔</span><span><b>La dernière collecte ('+fmtDT(lr.run_id)+') a échoué.</b> Les données affichées datent de la dernière collecte réussie ('+(LAST?fmtDT(LAST.finished_at):"aucune")+'). '+esc(srcErrors(lr))+'</span></div>';
   else if(lr&&lr.status==="partial")b+='<div class="banner bn-warn"><span>⚠</span><span><b>Collecte partielle le '+fmtDT(lr.run_id)+'</b> — certaines requêtes ont échoué. '+esc(srcErrors(lr))+'</span></div>';
