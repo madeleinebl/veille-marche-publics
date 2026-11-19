@@ -44,9 +44,6 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
 .sc .v{font-size:2rem;font-weight:700;color:var(--pri);line-height:1.1}
 .sc .l{font-size:.78rem;color:var(--text-2);margin-top:.15rem}
 
-.src-bar{display:flex;gap:.6rem;margin-bottom:1.25rem;flex-wrap:wrap}
-.src-a{display:inline-flex;align-items:center;gap:.35rem;padding:.45rem .9rem;background:var(--surface);border:1px solid var(--border);border-radius:8px;color:var(--acc);text-decoration:none;font-size:.82rem;font-weight:500;box-shadow:var(--sh);transition:all .15s}
-.src-a:hover{border-color:var(--acc);background:var(--pri-l)}
 
 .lay{display:grid;grid-template-columns:1fr 280px;gap:1.25rem;align-items:start}
 
@@ -104,7 +101,6 @@ tbody td{padding:.7rem .85rem;border-bottom:1px solid #f0f2f5;vertical-align:top
 .dom-filter-msg.on{display:flex}
 .dom-filter-msg span{cursor:pointer;text-decoration:underline}
 
-.kw-row{border-left:3px solid #ff8f00!important}
 .kw-tags{display:flex;gap:.25rem;flex-wrap:wrap;margin-top:.3rem}
 .kw{font-size:.65rem;padding:.1rem .4rem;background:#fff8e1;color:#e65100;border:1px solid #ffe082;border-radius:4px;font-weight:600;letter-spacing:.01em}
 .kw-flag{display:inline-flex;align-items:center;gap:.2rem;font-size:.68rem;padding:.1rem .45rem;background:linear-gradient(135deg,#ff8f00,#f57c00);color:#fff;border-radius:4px;font-weight:700;margin-left:.35rem;white-space:nowrap}
@@ -150,13 +146,6 @@ button.fi{cursor:pointer}
 .sc.on{outline:2px solid #ff8f00;outline-offset:-2px;background:#fffdf5}
 .sc .v.hot{color:#e65100}
 .sc .v.red{color:var(--urg)}
-.prio{display:inline-block;padding:.12rem .45rem;border-radius:5px;font-size:.68rem;font-weight:700;white-space:nowrap}
-.p-high{background:#ffe0b2;color:#bf360c;border:1px solid #ffb74d}
-.p-medium{background:#fff8e1;color:#8a6d00;border:1px solid #ffe082}
-.p-low{background:#f5f5f5;color:#757575;border:1px solid #e0e0e0}
-.score{font-size:1.05rem;font-weight:800;color:var(--pri);line-height:1}
-.csc{white-space:nowrap;text-align:center;min-width:70px}
-.csc .prio{margin-top:.3rem}
 .why{font-size:.72rem;color:#5d4037;margin-top:.3rem;font-style:italic}
 .prc{display:inline-block;font-size:.64rem;padding:.05rem .4rem;border-radius:9px;background:#ede7f6;color:#4527a0;margin:.15rem .2rem 0 0;font-weight:600}
 .badge-new{display:inline-block;font-size:.62rem;font-weight:800;padding:.05rem .35rem;border-radius:4px;background:#2e7d32;color:#fff;margin-left:.3rem;letter-spacing:.03em;vertical-align:middle}
@@ -193,30 +182,17 @@ button.fi{cursor:pointer}
 
 <div class="hdr">
   <div class="hdr-in">
-    <h1>&#9878; Veille Marchés Publics &mdash; Services Juridiques</h1>
-    <div class="sub">Appels d'offres France &amp; Europe &mdash; CPV services juridiques et conseil + mots-clés Finance, Project Finance, Infrastructure, Corporate, Capital Markets</div>
+    <h1>&#9878; Veille Marchés Publics</h1>
+    <div class="sub">Collecte automatique BOAMP + TED &mdash; tous les jours à 7h, et à 13h30 en semaine</div>
     <div class="hdr-row">
-      <span id="hdrUpdate">&#128197; Dernière collecte : —</span>
-      <span>&#128270; Sources officielles : BOAMP (Open Data DILA) + TED (API UE)</span>
-      <span>&#128202; Périmètre : France &amp; Europe</span>
+      <span id="hdrUpdate">Dernière collecte : —</span>
     </div>
   </div>
 </div>
 
 <div class="ctn">
   <div id="modeBanner"></div>
-  <div class="banner bn-warn">
-    <span style="font-size:1.1rem">&#9888;</span>
-    <span>Un avis publié aujourd'hui n'apparaît qu'à la collecte suivante. Chaque collecte rebalaye les <strong>10 derniers jours</strong> pour rattraper les avis indexés tardivement (MAPA notamment). En cas de doute, vérifiez sur la source officielle (liens ci-dessous et sur chaque avis).</span>
-  </div>
   <div class="stats" id="statsGrid"></div>
-
-  <div class="src-bar">
-    <a href="https://ted.europa.eu/fr/search/result?query=classification-cpv%3D79111000&sortField=publication-date&sortOrder=DESC" target="_blank" rel="noopener" class="src-a">&#127466;&#127482; Rechercher sur TED</a>
-    <a href="https://www.boamp.fr/pages/recherche/?q=79111000&q.filtre_etat=En%20cours&sort=dateparution&rows=20" target="_blank" rel="noopener" class="src-a">&#127467;&#127479; Rechercher sur BOAMP</a>
-    <a href="https://www.marches-publics.gouv.fr/?page=Entreprise.AccueilEntreprise" target="_blank" rel="noopener" class="src-a">&#127963; PLACE</a>
-    <a href="https://ted.europa.eu/fr/search/result?query=classification-cpv%3D79111000%20AND%20buyer-country%3DFRA&sortField=publication-date&sortOrder=DESC" target="_blank" rel="noopener" class="src-a">&#128270; TED France seul</a>
-  </div>
 
   <div class="lay">
     <div class="main">
@@ -286,9 +262,7 @@ button.fi{cursor:pointer}
 </div>
 
 <div class="ft">
-  Données : <a href="https://boamp-datadila.opendatasoft.com/explore/dataset/boamp/" target="_blank" rel="noopener">BOAMP Open Data (DILA)</a> &amp; <a href="https://ted.europa.eu" target="_blank" rel="noopener">TED &mdash; Tenders Electronic Daily</a><br>
-  <span id="ftMode"></span><br>
-  Veille générée pour <strong>BDGS Associés</strong> &mdash; <span id="ftDate"></span>
+  <span id="ftMode"></span> · <span id="ftDate"></span>
 </div>
 
 <script>
@@ -436,14 +410,12 @@ function buildStats(){
 /* ---------- bandeaux d'état ---------- */
 function buildBanners(){
   var m=VEILLE.data_mode,b="",lr=VEILLE.last_run;
-  if(m==="no-collection-yet")b='<div class="banner bn-info"><span>ℹ️</span><span><b>Aucune collecte automatique n\'a encore abouti.</b> Seules les saisies manuelles (badge « Saisie manuelle ») sont affichées. Lancez le workflow GitHub « Veille marchés publics » (voir README).</span></div>';
-  else if(m==="live-empty")b='<div class="banner bn-info"><span>ℹ️</span><span>La collecte fonctionne mais n\'a encore trouvé aucun avis au-dessus du seuil de pertinence.</span></div>';
-  if(lr&&lr.status==="failed")b+='<div class="banner bn-err"><span>⛔</span><span><b>La dernière collecte ('+fmtDT(lr.run_id)+') a échoué.</b> Les données affichées datent de la dernière collecte réussie ('+(LAST?fmtDT(LAST.finished_at):"aucune")+'). '+esc(srcErrors(lr))+'</span></div>';
-  else if(lr&&lr.status==="partial")b+='<div class="banner bn-warn"><span>⚠</span><span><b>Collecte partielle le '+fmtDT(lr.run_id)+'</b> — certaines requêtes ont échoué. '+esc(srcErrors(lr))+'</span></div>';
-  else if(LAST)b+='<div class="banner bn-ok"><span>✓</span><span>Données <b>collectées automatiquement</b> sur les sources officielles le <b>'+fmtDT(LAST.finished_at)+'</b> (avis publiés depuis le '+fmtDate(LAST.since)+').</span></div>';
+  if(m==="no-collection-yet")b='<div class="banner bn-info"><span>ℹ️</span><span>En attente de la première collecte automatique. Seules les saisies manuelles sont affichées.</span></div>';
+  if(lr&&lr.status==="failed")b+='<div class="banner bn-err"><span>⛔</span><span>Dernière collecte échouée ('+fmtDT(lr.run_id)+'). '+esc(srcErrors(lr))+'</span></div>';
+  else if(lr&&lr.status==="partial")b+='<div class="banner bn-warn"><span>⚠</span><span>Collecte partielle le '+fmtDT(lr.run_id)+'. '+esc(srcErrors(lr))+'</span></div>';
   $("modeBanner").innerHTML=b;
-  $("hdrUpdate").textContent="📅 Dernière collecte réussie : "+(LAST?fmtDT(LAST.finished_at):"aucune");
-  $("ftMode").textContent=m==="no-collection-yet"?"Aucune donnée collectée automatiquement pour l'instant — saisies manuelles uniquement.":"Données issues des API officielles ; les saisies manuelles sont signalées comme telles. Aucune donnée d'exemple.";
+  $("hdrUpdate").textContent="Dernière collecte : "+(LAST?fmtDT(LAST.finished_at):"en attente");
+  $("ftMode").textContent=m==="no-collection-yet"?"Saisies manuelles uniquement.":"Sources : BOAMP + TED.";
   $("ftDate").textContent=fmtDT(VEILLE.generated_at);
 }
 function srcErrors(r){return Object.keys(r.sources||{}).filter(function(k){return(r.sources[k].errors||[]).length;}).map(function(k){return k+" : "+r.sources[k].errors[0];}).join(" | ").slice(0,400);}
