@@ -319,9 +319,9 @@ button.fi{cursor:pointer}
         <div class="small" id="runHist" style="margin-top:.5rem"></div>
       </div>
       <div class="sbc" style="border:1.5px solid #ffe082;background:#fffdf5">
-        <h3 style="color:#e65100">&#9873; Mots-clés BDGS surveillés</h3>
-        <div id="kwList" style="font-size:.75rem;color:var(--text-2);line-height:1.7"></div>
-        <div id="kwStats" style="margin-top:.5rem;font-size:.78rem;font-weight:600;color:#e65100"></div>
+        <h3 style="color:#e65100">&#9873; Mots-clés surveillés</h3>
+        <div id="kwList" style="max-height:220px;overflow-y:auto;display:flex;flex-wrap:wrap;gap:.25rem;padding:.25rem 0"></div>
+        <div id="kwStats" style="margin-top:.5rem;font-size:.72rem;color:#e65100"></div>
       </div>
       <div class="sbc"><h3>Domaines de pratique</h3><div id="domainBars"></div><div class="dom-filter-msg" id="domFilterMsg">Filtre actif : <strong id="domFilterName"></strong> &mdash; <span id="domClear">effacer</span></div></div>
       <div class="sbc">
@@ -370,6 +370,24 @@ var TLABELS={"call":"Appel d'offres","award":"Attribution","prior":"Avis préala
 var TCLS={"call":"tb-call","award":"tb-award","prior":"tb-prior","corr":"tb-corr","cancel":"tb-other","other":"tb-other"};
 var PLABEL={"high":"Haute","medium":"Moyenne","low":"Faible"};
 var PRANK={"high":3,"medium":2,"low":1};
+
+/* ---------- alertes personnalisées (variables — avant row() pour matchesAlert) ---------- */
+var ALERT_KEY="bdgs_alert_prefs_v1";
+var ALERT_SEEN_KEY="bdgs_alert_seen_v1";
+var alertPrefs={practices:[],keywords:[]};
+try{alertPrefs=JSON.parse(localStorage.getItem(ALERT_KEY)||"null")||{practices:[],keywords:[]};}catch(e){}
+var alertSeen={};
+try{alertSeen=JSON.parse(localStorage.getItem(ALERT_SEEN_KEY)||"{}")||{};}catch(e){}
+function matchesAlert(n){
+  if(!alertPrefs.practices.length&&!alertPrefs.keywords.length)return false;
+  var prMatch=alertPrefs.practices.some(function(p){return(n.practices||[]).indexOf(p)!==-1;});
+  if(prMatch)return true;
+  if(alertPrefs.keywords.length){
+    var txt=norm([n.title,n.buyer,n.lots,(n.matched||[]).join(" "),(n.description||"")].join(" "));
+    return alertPrefs.keywords.some(function(kw){return txt.indexOf(norm(kw))!==-1;});
+  }
+  return false;
+}
 
 /* ---------- suivi interne (navigateur) ---------- */
 var TRACKING_KEY="bdgs_public_procurement_tracking_v1";
@@ -524,15 +542,13 @@ function buildSourceStatus(){
 }
 
 function buildKWSidebar(){
-  var sc=VEILLE.scoring||{},html="";
-  var groups=[["Mission juridique",sc.legal||[]]].concat(Object.keys(sc.practices||{}).map(function(k){return[k,sc.practices[k]];}));
-  var total=0;
-  groups.forEach(function(g){total+=g[1].length;
-    html+='<div style="margin-bottom:.4rem"><strong style="font-size:.68rem;color:#bf360c;text-transform:uppercase;letter-spacing:.03em">'+esc(g[0])+'</strong><br>'+
-      g[1].map(function(kw){return'<span style="display:inline-block;padding:.05rem .35rem;background:#fff8e1;border:1px solid #ffe082;border-radius:4px;margin:.08rem;font-size:.65rem;color:#e65100">'+esc(kw)+'</span>';}).join("")+'</div>';});
-  $("kwList").innerHTML=html;
-  var th=sc.thresholds||{};
-  $("kwStats").textContent=DATA.filter(function(n){return n.priority==="high";}).length+" avis haute priorité sur "+DATA.length+" · "+total+" mots-clés FR/EN · seuils : haute ≥ "+th.high+", moyenne ≥ "+th.medium;
+  var sc=VEILLE.scoring||{};
+  var all=(sc.legal||[]).slice();
+  Object.keys(sc.practices||{}).forEach(function(k){all=all.concat(sc.practices[k]||[]);});
+  var seen={},unique=[];all.forEach(function(kw){var lk=kw.toLowerCase();if(!seen[lk]){seen[lk]=1;unique.push(kw);}});
+  unique.sort(function(a,b){return a.toLowerCase().localeCompare(b.toLowerCase());});
+  $("kwList").innerHTML=unique.map(function(kw){return'<span style="display:inline-block;padding:.1rem .4rem;background:#fff8e1;border:1px solid #ffe082;border-radius:4px;font-size:.65rem;color:#e65100">'+esc(kw)+'</span>';}).join("");
+  $("kwStats").textContent=unique.length+" mots-clés surveillés (FR/EN)";
 }
 function buildDomainChart(){
   var dc={};DATA.forEach(function(n){(n.practices||[]).forEach(function(d){dc[d]=(dc[d]||0)+1;});});
@@ -587,14 +603,7 @@ document.addEventListener("change",function(e){var s=e.target;if(s.classList&&s.
 document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest("[data-note]");if(!b)return;var id=b.getAttribute("data-note"),t=trackingFor(id);
   var note=window.prompt("Note interne pour cet avis :",t.note||"");if(note===null)return;t.note=note;TRACKING[id]=t;saveTracking();render();});
 
-/* ---------- alertes personnalisées (localStorage) ---------- */
-var ALERT_KEY="bdgs_alert_prefs_v1";
-var ALERT_SEEN_KEY="bdgs_alert_seen_v1";
-var alertPrefs={practices:[],keywords:[]};
-try{alertPrefs=JSON.parse(localStorage.getItem(ALERT_KEY)||"null")||{practices:[],keywords:[]};}catch(e){}
-var alertSeen={};
-try{alertSeen=JSON.parse(localStorage.getItem(ALERT_SEEN_KEY)||"{}")||{};}catch(e){}
-
+/* ---------- alertes personnalisées (UI) ---------- */
 function buildAlertPanel(){
   var pracs=Object.keys((VEILLE.scoring||{}).practices||{}).concat(["Conseil juridique général"]);
   $("alertPractices").innerHTML=pracs.map(function(p){
@@ -613,16 +622,6 @@ function saveAlertPrefs(){
   $("alertStatus").textContent="✓ Enregistré";
   setTimeout(function(){$("alertStatus").textContent="";},2000);
   checkAlertNew();
-}
-function matchesAlert(n){
-  if(!alertPrefs.practices.length&&!alertPrefs.keywords.length)return false;
-  var prMatch=alertPrefs.practices.some(function(p){return(n.practices||[]).indexOf(p)!==-1;});
-  if(prMatch)return true;
-  if(alertPrefs.keywords.length){
-    var txt=norm([n.title,n.buyer,n.lots,(n.matched||[]).join(" "),(n.description||"")].join(" "));
-    return alertPrefs.keywords.some(function(kw){return txt.indexOf(norm(kw))!==-1;});
-  }
-  return false;
 }
 function checkAlertNew(){
   var newForMe=DATA.filter(function(n){return isNew(n)&&matchesAlert(n)&&!alertSeen[n.id];});
