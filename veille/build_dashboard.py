@@ -3,6 +3,7 @@ import json
 from datetime import datetime, timezone
 
 from . import DOCS_DIR, ROOT
+from .enrich import build_competition_data
 
 TEMPLATE = ROOT / "dashboard" / "template.html"
 MARKER = "/*__VEILLE_DATA__*/null"
@@ -10,7 +11,8 @@ MARKER = "/*__VEILLE_DATA__*/null"
 DASH_FIELDS = ["id", "origin", "src", "url", "title", "buyer", "country", "pub", "dl", "type", "type_label",
                "cpv", "value", "lots", "family", "procedure_label", "sources", "corrigenda", "last_corrigendum",
                "award_published", "first_seen", "last_seen", "last_changed", "score", "priority", "practices",
-               "matched", "why", "breakdown", "has_legal_signal", "manual_note", "matched_queries"]
+               "matched", "why", "breakdown", "has_legal_signal", "manual_note", "matched_queries",
+               "winners", "criteria", "lot_count"]
 
 SOURCES_INFO = {
     "BOAMP": {"label": "BOAMP — Open Data DILA", "official": True,
@@ -54,6 +56,7 @@ def _payload(notices, runs, cfg, scfg):
             "practices": {k: list(v["keywords"].keys()) for k, v in scfg["practices"].items()},
         },
         "notices": slim,
+        "competition": build_competition_data(notices),
     }
 
 

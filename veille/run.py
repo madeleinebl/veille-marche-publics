@@ -19,6 +19,7 @@ from .build_dashboard import build
 from .http import SourceError, make_session
 from .scoring import load_scoring, score_notice
 from .store import Store, load_json, manual_to_record, save_json
+from .enrich import enrich_notice, extract_lot_count
 from .ted import TedCollector
 
 NOTICES = DATA_DIR / "notices.json"
@@ -148,6 +149,10 @@ def main(argv=None):
 
     for n in store.notices:
         apply_score(n, scfg, cfg)
+        # Enrichissement : nombre de lots
+        lc = extract_lot_count(n)
+        if lc and not n.get("lot_count"):
+            n["lot_count"] = lc
     store.notices.sort(key=lambda n: (n.get("pub") or "", n["id"]), reverse=True)
 
     statuses = [v["status"] for k, v in run["sources"].items() if k in ("BOAMP", "TED")]

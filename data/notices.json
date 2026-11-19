@@ -35,7 +35,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-19T11:00:31.599+00:00",
+  "last_seen": "2026-11-19T16:36:00.941+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -119,7 +119,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-19T11:00:31.599+00:00",
+  "last_seen": "2026-11-19T16:36:00.941+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -155,7 +155,8 @@
     "points": 5
    }
   ],
-  "has_legal_signal": true
+  "has_legal_signal": true,
+  "lot_count": 3
  },
  {
   "id": "TED:540283-2026",
@@ -194,7 +195,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-19T11:00:31.599+00:00",
+  "last_seen": "2026-11-19T16:36:00.941+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -224,7 +225,8 @@
     "points": -15
    }
   ],
-  "has_legal_signal": true
+  "has_legal_signal": true,
+  "lot_count": 2
  },
  {
   "id": "TED:418046-2026",
@@ -263,7 +265,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-19T11:00:31.599+00:00",
+  "last_seen": "2026-11-19T16:36:00.941+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -337,7 +339,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-19T11:00:31.599+00:00",
+  "last_seen": "2026-11-19T16:36:00.941+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -405,7 +407,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-19T11:00:31.599+00:00",
+  "last_seen": "2026-11-19T16:36:00.941+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -474,7 +476,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-19T11:00:31.599+00:00",
+  "last_seen": "2026-11-19T16:36:00.941+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -534,7 +536,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-19T11:00:31.599+00:00",
+  "last_seen": "2026-11-19T16:36:00.941+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -568,7 +570,8 @@
     "points": 4
    }
   ],
-  "has_legal_signal": true
+  "has_legal_signal": true,
+  "lot_count": 3
  },
  {
   "id": "TED:299002-2026",
@@ -606,7 +609,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-19T11:00:31.599+00:00",
+  "last_seen": "2026-11-19T16:36:00.941+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -665,7 +668,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-19T11:00:31.599+00:00",
+  "last_seen": "2026-11-19T16:36:00.941+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -734,7 +737,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-19T11:00:31.599+00:00",
+  "last_seen": "2026-11-19T16:36:00.941+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -804,7 +807,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-19T11:00:31.599+00:00",
+  "last_seen": "2026-11-19T16:36:00.941+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -872,7 +875,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-19T11:00:31.599+00:00",
+  "last_seen": "2026-11-19T16:36:00.941+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -906,7 +909,8 @@
     "points": -10
    }
   ],
-  "has_legal_signal": true
+  "has_legal_signal": true,
+  "lot_count": 3
  },
  {
   "id": "TED:245644-2026",
@@ -944,7 +948,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-19T11:00:31.599+00:00",
+  "last_seen": "2026-11-19T16:36:00.941+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -1002,7 +1006,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-19T11:00:31.599+00:00",
+  "last_seen": "2026-11-19T16:36:00.941+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -1038,7 +1042,8 @@
     "points": 9
    }
   ],
-  "has_legal_signal": true
+  "has_legal_signal": true,
+  "lot_count": 4
  },
  {
   "id": "BOAMP:26-20855",
@@ -1076,7 +1081,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-19T11:00:31.599+00:00",
+  "last_seen": "2026-11-19T16:36:00.941+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -1118,7 +1123,8 @@
     "points": 8
    }
   ],
-  "has_legal_signal": true
+  "has_legal_signal": true,
+  "lot_count": 9
  },
  {
   "id": "TED:124210-2026",
@@ -1156,7 +1162,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-19T11:00:31.599+00:00",
+  "last_seen": "2026-11-19T16:36:00.941+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -1186,7 +1192,8 @@
     "points": -15
    }
   ],
-  "has_legal_signal": true
+  "has_legal_signal": true,
+  "lot_count": 3
  },
  {
   "id": "BOAMP:26-17909",
@@ -1224,7 +1231,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-19T11:00:31.599+00:00",
+  "last_seen": "2026-11-19T16:36:00.941+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -1254,7 +1261,8 @@
     "points": -15
    }
   ],
-  "has_legal_signal": true
+  "has_legal_signal": true,
+  "lot_count": 3
  },
  {
   "id": "BOAMP:26-13787",
@@ -1292,7 +1300,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-19T11:00:31.599+00:00",
+  "last_seen": "2026-11-19T16:36:00.941+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -1366,7 +1374,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-19T11:00:31.599+00:00",
+  "last_seen": "2026-11-19T16:36:00.941+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -1434,7 +1442,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-19T11:00:31.599+00:00",
+  "last_seen": "2026-11-19T16:36:00.941+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -1503,7 +1511,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-19T11:00:31.599+00:00",
+  "last_seen": "2026-11-19T16:36:00.941+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [

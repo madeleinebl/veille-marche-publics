@@ -8,6 +8,7 @@ import json
 import re
 from datetime import datetime, timezone
 
+from .enrich import extract_winners_from_donnees, extract_criteria_from_donnees
 from .http import SourceError, request_json
 
 UUID_RE = re.compile(r"\b[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}\b", re.I)
@@ -136,7 +137,13 @@ def parse_record(r, fetched_at):
     libelle = r.get("nature_libelle")
     typ = _type_from_nature(nature, libelle)
     lots = d["lots"]
-    return {
+    # Extraction des titulaires pour les attributions
+    winners = []
+    criteria = []
+    if typ == "award":
+        winners = extract_winners_from_donnees(r.get("donnees"))
+    criteria = extract_criteria_from_donnees(r.get("donnees"))
+    rec = {
         "uid": f"BOAMP:{idweb}",
         "source": "BOAMP",
         "source_id": idweb,
@@ -164,6 +171,11 @@ def parse_record(r, fetched_at):
         "linked_ids": linked_idwebs(r.get("gestion"), idweb),
         "fetched_at": fetched_at,
     }
+    if winners:
+        rec["winners"] = winners
+    if criteria:
+        rec["criteria"] = criteria
+    return rec
 
 
 class BoampCollector:

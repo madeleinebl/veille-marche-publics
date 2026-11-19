@@ -187,6 +187,29 @@ button.fi{cursor:pointer}
 .status-select.st-won{border-color:#81c784;background:#e8f5e9}
 .status-select.st-out{color:var(--text-3)}
 .hidden{display:none!important}
+/* --- Concurrence (competition tracking) --- */
+.comp-tbl{width:100%;border-collapse:collapse;font-size:.75rem;margin-top:.5rem}
+.comp-tbl th{text-align:left;font-size:.65rem;text-transform:uppercase;letter-spacing:.03em;color:var(--text-3);padding:.3rem .4rem;border-bottom:1px solid var(--border)}
+.comp-tbl td{padding:.3rem .4rem;border-bottom:1px solid #f0f2f5}
+.comp-name{font-weight:600;color:var(--text);max-width:140px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.comp-cnt{font-weight:700;color:var(--pri);text-align:center}
+.comp-val{text-align:right;white-space:nowrap;color:var(--text-2)}
+.winner-tag{display:inline-block;font-size:.65rem;padding:.05rem .35rem;background:#e8f5e9;color:#2e7d32;border:1px solid #a5d6a7;border-radius:4px;margin:.1rem .15rem 0 0;font-weight:600}
+.crit-tag{display:inline-block;font-size:.63rem;padding:.05rem .3rem;background:#e3f2fd;color:#1565c0;border:1px solid #90caf9;border-radius:4px;margin:.1rem .1rem 0 0}
+/* --- Alertes personnalisées --- */
+.alert-panel{background:#fffdf5;border:1.5px solid #ffe082;border-radius:var(--r);padding:1.1rem;margin-bottom:.85rem}
+.alert-panel h3{font-size:.8rem;font-weight:600;color:#e65100;margin-bottom:.65rem;text-transform:uppercase;letter-spacing:.03em}
+.alert-checks{display:flex;flex-wrap:wrap;gap:.35rem}
+.alert-chk{display:flex;align-items:center;gap:.25rem;font-size:.75rem;cursor:pointer;padding:.2rem .45rem;border:1px solid var(--border);border-radius:6px;background:#fff;transition:all .15s;user-select:none}
+.alert-chk:hover{border-color:#ffb74d;background:#fff8e1}
+.alert-chk.on{border-color:#ff8f00;background:#fff3e0;font-weight:600;color:#e65100}
+.alert-chk input{display:none}
+.alert-kw-input{width:100%;margin-top:.5rem;padding:.35rem .5rem;border:1px solid var(--border);border-radius:6px;font-size:.75rem;background:#fff}
+.alert-kw-input:focus{outline:none;border-color:#ff8f00;box-shadow:0 0 0 3px rgba(255,143,0,.12)}
+.alert-new{position:relative}
+.alert-dot{position:absolute;top:-2px;right:-2px;width:8px;height:8px;border-radius:50%;background:#e53935;border:1.5px solid #fff}
+.alert-count{display:inline-flex;align-items:center;justify-content:center;min-width:1.3rem;height:1.3rem;padding:0 .3rem;border-radius:9px;background:#e53935;color:#fff;font-size:.65rem;font-weight:700;margin-left:.35rem}
+.lotc{display:inline-block;font-size:.63rem;padding:.05rem .3rem;background:#f3e5f5;color:#7b1fa2;border-radius:4px;margin-top:.15rem}
 </style>
 </head>
 <body>
@@ -267,6 +290,29 @@ button.fi{cursor:pointer}
       <div class="pnl" id="pnl-eu"><div class="tw"><table><thead><tr><th>Date</th><th>Score</th><th>Titre / Acheteur</th><th>Type</th><th>Valeur</th><th>Échéance</th><th>Suivi</th><th></th></tr></thead><tbody id="tb-eu"></tbody></table></div></div>
     </div>
     <div class="sb">
+      <div class="alert-panel" id="alertPanel">
+        <h3>&#128276; Mes alertes personnalisées</h3>
+        <div class="small" style="margin-bottom:.5rem">Choisissez vos domaines et mots-clés — les nouveaux avis correspondants seront mis en évidence.</div>
+        <div class="alert-checks" id="alertPractices"></div>
+        <input type="text" class="alert-kw-input" id="alertKw" placeholder="Mots-clés supplémentaires (séparés par des virgules)..." title="Ex: PPP, concession, énergie">
+        <div class="btnrow" style="margin-top:.5rem">
+          <button class="btn-s" id="btnAlertSave" title="Enregistrer vos préférences">&#128190; Enregistrer</button>
+          <button class="btn-s" id="btnAlertNotif" title="Activer les notifications navigateur">&#128276; Notifications</button>
+          <span class="small" id="alertStatus" style="line-height:1.9"></span>
+        </div>
+        <div id="alertNewBanner" style="display:none;margin-top:.5rem;padding:.4rem .6rem;background:#ffebee;border:1px solid #ef9a9a;border-radius:6px;font-size:.78rem;color:#c62828;cursor:pointer">
+          <strong>&#128276;</strong> <span id="alertNewCount">0</span> nouvel(s) avis correspondant à vos critères &mdash; <span style="text-decoration:underline">voir</span>
+        </div>
+      </div>
+      <div class="sbc" id="compSection" style="display:none">
+        <h3>&#127942; Concurrence — Attributions</h3>
+        <div class="small" style="margin-bottom:.5rem">Cabinets ayant remporté des marchés publics (services juridiques)</div>
+        <table class="comp-tbl" id="compTable">
+          <thead><tr><th>Cabinet / Titulaire</th><th style="text-align:center">Marchés</th><th style="text-align:right">Valeur</th></tr></thead>
+          <tbody id="compBody"></tbody>
+        </table>
+        <div id="compRecent" style="margin-top:.6rem"></div>
+      </div>
       <div class="sbc">
         <h3>&#128737; Sources &amp; vérification</h3>
         <div id="srcStatus"></div>
@@ -384,7 +430,12 @@ function row(n){
       '<div class="bn">'+esc(n.buyer||"Acheteur non renseigné")+'</div>'+
       '<div class="cpvs">'+cpvH+'</div>'+lotsH+
       (n.why?'<div class="why">'+esc(n.why)+'</div>':'')+
-      (prH?'<div>'+prH+'</div>':'')+kwH+srcBadges(n)+detailBlock(n)+'</td>'+
+      (prH?'<div>'+prH+'</div>':'')+kwH+
+      ((n.winners||[]).length?'<div style="margin-top:.3rem">'+n.winners.map(function(w){return'<span class="winner-tag">🏆 '+esc(w.name)+'</span>';}).join("")+'</div>':'')+
+      ((n.criteria||[]).length?'<div style="margin-top:.2rem">'+n.criteria.slice(0,4).map(function(c){return'<span class="crit-tag">'+esc(c.name)+(c.weight?' ('+c.weight+'%)':'')+'</span>';}).join("")+'</div>':'')+
+      (n.lot_count?'<span class="lotc">'+n.lot_count+' lot'+(n.lot_count>1?'s':'')+'</span>':'')+
+      (matchesAlert(n)?'<span style="display:inline-block;font-size:.6rem;font-weight:800;padding:.05rem .35rem;border-radius:4px;background:#e53935;color:#fff;margin-left:.3rem;vertical-align:middle">🔔 ALERTE</span>':'')+
+      srcBadges(n)+detailBlock(n)+'</td>'+
     '<td class="cty"><span class="tb '+(TCLS[n.type]||"tb-other")+'">'+esc(TLABELS[n.type]||n.type)+'</span></td>'+
     '<td class="cv">'+fmtVal(n.value)+'</td>'+
     '<td class="cdl">'+dlBadge(n.dl)+'</td>'+
@@ -536,7 +587,98 @@ document.addEventListener("change",function(e){var s=e.target;if(s.classList&&s.
 document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest("[data-note]");if(!b)return;var id=b.getAttribute("data-note"),t=trackingFor(id);
   var note=window.prompt("Note interne pour cet avis :",t.note||"");if(note===null)return;t.note=note;TRACKING[id]=t;saveTracking();render();});
 
-buildBanners();buildSourceStatus();buildKWSidebar();buildDomainChart();buildCountries();buildCpv();buildStats();render();
+/* ---------- alertes personnalisées (localStorage) ---------- */
+var ALERT_KEY="bdgs_alert_prefs_v1";
+var ALERT_SEEN_KEY="bdgs_alert_seen_v1";
+var alertPrefs={practices:[],keywords:[]};
+try{alertPrefs=JSON.parse(localStorage.getItem(ALERT_KEY)||"null")||{practices:[],keywords:[]};}catch(e){}
+var alertSeen={};
+try{alertSeen=JSON.parse(localStorage.getItem(ALERT_SEEN_KEY)||"{}")||{};}catch(e){}
+
+function buildAlertPanel(){
+  var pracs=Object.keys((VEILLE.scoring||{}).practices||{}).concat(["Conseil juridique général"]);
+  $("alertPractices").innerHTML=pracs.map(function(p){
+    var on=alertPrefs.practices.indexOf(p)!==-1;
+    return'<label class="alert-chk'+(on?" on":"")+'"><input type="checkbox" value="'+esc(p)+'"'+(on?' checked':'')+'>'+esc(p)+'</label>';
+  }).join("");
+  $("alertKw").value=(alertPrefs.keywords||[]).join(", ");
+}
+function saveAlertPrefs(){
+  var checks=document.querySelectorAll("#alertPractices input[type=checkbox]");
+  alertPrefs.practices=[];
+  checks.forEach(function(c){if(c.checked)alertPrefs.practices.push(c.value);});
+  var kws=$("alertKw").value.split(",").map(function(s){return s.trim();}).filter(Boolean);
+  alertPrefs.keywords=kws;
+  try{localStorage.setItem(ALERT_KEY,JSON.stringify(alertPrefs));}catch(e){}
+  $("alertStatus").textContent="✓ Enregistré";
+  setTimeout(function(){$("alertStatus").textContent="";},2000);
+  checkAlertNew();
+}
+function matchesAlert(n){
+  if(!alertPrefs.practices.length&&!alertPrefs.keywords.length)return false;
+  var prMatch=alertPrefs.practices.some(function(p){return(n.practices||[]).indexOf(p)!==-1;});
+  if(prMatch)return true;
+  if(alertPrefs.keywords.length){
+    var txt=norm([n.title,n.buyer,n.lots,(n.matched||[]).join(" "),(n.description||"")].join(" "));
+    return alertPrefs.keywords.some(function(kw){return txt.indexOf(norm(kw))!==-1;});
+  }
+  return false;
+}
+function checkAlertNew(){
+  var newForMe=DATA.filter(function(n){return isNew(n)&&matchesAlert(n)&&!alertSeen[n.id];});
+  if(newForMe.length>0){
+    $("alertNewBanner").style.display="block";
+    $("alertNewCount").textContent=newForMe.length;
+  }else{
+    $("alertNewBanner").style.display="none";
+  }
+}
+$("btnAlertSave").addEventListener("click",saveAlertPrefs);
+$("alertNewBanner").addEventListener("click",function(){
+  // Mark all as seen and filter to show them
+  DATA.filter(function(n){return isNew(n)&&matchesAlert(n);}).forEach(function(n){alertSeen[n.id]=1;});
+  try{localStorage.setItem(ALERT_SEEN_KEY,JSON.stringify(alertSeen));}catch(e){}
+  $("alertNewBanner").style.display="none";
+  $("q").value="";quick="new";refresh();
+});
+$("btnAlertNotif").addEventListener("click",function(){
+  if(!("Notification" in window)){window.alert("Votre navigateur ne supporte pas les notifications.");return;}
+  Notification.requestPermission().then(function(p){
+    if(p==="granted"){$("alertStatus").textContent="🔔 Notifications activées";
+      var cnt=DATA.filter(function(n){return isNew(n)&&matchesAlert(n)&&!alertSeen[n.id];}).length;
+      if(cnt>0)new Notification("Veille Marchés Publics BDGS",{body:cnt+" nouvel(s) avis correspondant à vos critères",icon:"data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚖</text></svg>"});
+    }else{$("alertStatus").textContent="Notifications refusées";}
+  });
+});
+$("alertPractices").addEventListener("change",function(e){
+  if(e.target.type==="checkbox")e.target.parentElement.classList.toggle("on",e.target.checked);
+});
+
+/* ---------- concurrence (competition tracking) ---------- */
+function buildCompetition(){
+  var comp=VEILLE.competition||{};
+  var winners=comp.winners||{};
+  var keys=Object.keys(winners);
+  if(!keys.length){$("compSection").style.display="none";return;}
+  $("compSection").style.display="block";
+  var top=keys.slice(0,10);
+  $("compBody").innerHTML=top.map(function(k){var w=winners[k];
+    return'<tr><td class="comp-name" title="'+esc(w.name)+'">'+esc(w.name)+'</td><td class="comp-cnt">'+w.count+'</td><td class="comp-val">'+fmtVal(w.total_value)+'</td></tr>';
+  }).join("");
+  var recent=(comp.recent_awards||[]).slice(0,5);
+  if(recent.length){
+    $("compRecent").innerHTML='<div style="font-size:.7rem;font-weight:600;color:var(--text-2);margin-bottom:.3rem">Dernières attributions</div>'+
+      recent.map(function(a){
+        return'<div style="font-size:.72rem;padding:.25rem 0;border-bottom:1px solid #f0f2f5">'+
+          '<div style="font-weight:500">'+esc(String(a.title).slice(0,100))+'</div>'+
+          '<div style="color:var(--text-3)">'+esc(a.buyer)+' · '+fmtDate(a.pub)+
+          (a.winners&&a.winners.length?' · <span style="color:#2e7d32;font-weight:600">'+esc(a.winners.join(", "))+'</span>':'')+
+          '</div></div>';
+      }).join("");
+  }
+}
+
+buildBanners();buildSourceStatus();buildKWSidebar();buildDomainChart();buildCountries();buildCpv();buildStats();buildAlertPanel();buildCompetition();checkAlertNew();render();
 })();
 </script>
 </body>

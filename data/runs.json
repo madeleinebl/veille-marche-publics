@@ -19,5 +19,26 @@
   "status": "ok",
   "finished_at": "2026-11-19T11:00:31.621+00:00",
   "duration_s": 0.0
+ },
+ {
+  "run_id": "2026-11-19T16:36:00.941+00:00",
+  "started_at": "2026-11-19T16:36:00.941+00:00",
+  "mode": "offline",
+  "since": "2026-09-20",
+  "lookback_days": 60,
+  "sources": {
+   "Saisie manuelle": {
+    "status": "ok",
+    "records": 22
+   }
+  },
+  "totals": {
+   "notices": 22,
+   "new": 0,
+   "high": 1
+  },
+  "status": "ok",
+  "finished_at": "2026-11-19T16:36:00.961+00:00",
+  "duration_s": 0.0
  }
 ]

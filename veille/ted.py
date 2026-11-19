@@ -6,6 +6,7 @@ Pagination : paginationMode=ITERATION + iterationNextToken.
 """
 from datetime import datetime, timezone
 
+from .enrich import extract_winners_from_ted
 from .http import SourceError, request_json
 
 FIELD_SETS = [
@@ -96,7 +97,8 @@ def parse_notice(n, fetched_at):
     lots_t = pick(n.get("title-lot"), " / ")
     lots_d = pick(n.get("description-lot"), " / ")
     proc = as_list(n.get("procedure-identifier"))
-    return {
+    typ = map_type(nt, ft)
+    rec = {
         "uid": f"TED:{pn}",
         "source": "TED",
         "source_id": pn,
@@ -107,7 +109,7 @@ def parse_notice(n, fetched_at):
         "pub": (pick(n.get("publication-date")) or "")[:10] or None,
         "dl": dls[0] if dls else None,
         "dl_raw": dls[0] if dls else None,
-        "type": map_type(nt, ft),
+        "type": typ,
         "type_label": nt or ft or None,
         "family": "TED / JOUE",
         "cpv": cpvs,
@@ -119,6 +121,12 @@ def parse_notice(n, fetched_at):
         "linked_ids": [],
         "fetched_at": fetched_at,
     }
+    # Extract winners for award notices
+    if typ == "award":
+        winners = extract_winners_from_ted(n)
+        if winners:
+            rec["winners"] = winners
+    return rec
 
 
 class TedCollector:
