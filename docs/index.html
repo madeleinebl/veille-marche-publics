@@ -226,12 +226,6 @@ button.fi{cursor:pointer}
       </div>
       <div class="fil">
         <input type="text" class="fi" id="q" placeholder="&#128270; Rechercher (titre, acheteur, lot, mot-clé, n° d'avis)..." style="min-width:240px">
-        <select class="fi fi-s" id="pf">
-          <option value="">Toutes priorités</option>
-          <option value="high">&#9873; Haute</option>
-          <option value="medium">Moyenne et +</option>
-          <option value="low">Faible</option>
-        </select>
         <select class="fi fi-s" id="practf"><option value="">Tous domaines</option></select>
         <select class="fi fi-s" id="tf">
           <option value="">Tous types</option>
@@ -255,7 +249,6 @@ button.fi{cursor:pointer}
           <option value="TED">Source TED</option>
         </select>
         <select class="fi fi-s" id="sf">
-          <option value="score">Pertinence &darr;</option>
           <option value="pub_desc">Date &darr;</option>
           <option value="pub_asc">Date &uarr;</option>
           <option value="dl_asc">Échéance &uarr;</option>
@@ -263,8 +256,8 @@ button.fi{cursor:pointer}
         </select>
         <button class="fi" type="button" id="btnCsv">&#11015; Export CSV</button>
       </div>
-      <div class="pnl on" id="pnl-fr"><div class="tw"><table><thead><tr><th>Date</th><th>Score</th><th>Titre / Acheteur</th><th>Type</th><th>Valeur</th><th>Échéance</th><th>Suivi</th><th></th></tr></thead><tbody id="tb-fr"></tbody></table></div></div>
-      <div class="pnl" id="pnl-eu"><div class="tw"><table><thead><tr><th>Date</th><th>Score</th><th>Titre / Acheteur</th><th>Type</th><th>Valeur</th><th>Échéance</th><th>Suivi</th><th></th></tr></thead><tbody id="tb-eu"></tbody></table></div></div>
+      <div class="pnl on" id="pnl-fr"><div class="tw"><table><thead><tr><th>Date</th><th>Titre / Acheteur</th><th>Type</th><th>Valeur</th><th>Échéance</th><th>Suivi</th><th></th></tr></thead><tbody id="tb-fr"></tbody></table></div></div>
+      <div class="pnl" id="pnl-eu"><div class="tw"><table><thead><tr><th>Date</th><th>Titre / Acheteur</th><th>Type</th><th>Valeur</th><th>Échéance</th><th>Suivi</th><th></th></tr></thead><tbody id="tb-eu"></tbody></table></div></div>
     </div>
     <div class="sb">
       <div class="sbc">
@@ -322,8 +315,7 @@ var FLAGS={"FRA":"🇫🇷","DEU":"🇩🇪","BEL":"🇧🇪","LUX":"🇱🇺","
 var CNAMES={"FRA":"France","DEU":"Allemagne","BEL":"Belgique","LUX":"Luxembourg","ITA":"Italie","ESP":"Espagne","NLD":"Pays-Bas","AUT":"Autriche","GRC":"Grèce","POL":"Pologne","CZE":"Tchéquie","ROU":"Roumanie","PRT":"Portugal","FIN":"Finlande","SWE":"Suède","DNK":"Danemark","IRL":"Irlande","NOR":"Norvège","CHE":"Suisse","HRV":"Croatie","BGR":"Bulgarie","SVK":"Slovaquie","SVN":"Slovénie","HUN":"Hongrie","LTU":"Lituanie","LVA":"Lettonie","EST":"Estonie","CYP":"Chypre","MLT":"Malte"};
 var TLABELS={"call":"Appel d'offres","award":"Attribution","prior":"Avis préalable","corr":"Rectificatif","cancel":"Annulation","other":"Autre"};
 var TCLS={"call":"tb-call","award":"tb-award","prior":"tb-prior","corr":"tb-corr","cancel":"tb-other","other":"tb-other"};
-var PLABEL={"high":"Haute","medium":"Moyenne","low":"Faible"};
-var PRANK={"high":3,"medium":2,"low":1};
+/* PLABEL/PRANK removed — score/priority no longer displayed */
 
 /* ---------- suivi interne (navigateur) ---------- */
 var TRACKING_KEY="bdgs_public_procurement_tracking_v1";
@@ -354,8 +346,7 @@ function detailBlock(n){
   var rows=(n.breakdown||[]).map(function(b){return'<tr><td>'+esc(b.label)+'</td><td class="pts'+(b.points<0?' neg':'')+'">'+(b.points>0?'+':'')+b.points+'</td></tr>';}).join("");
   var ch=(n.changes||[]).map(function(c){return'<div>• '+fmtDate(c.at)+' — '+esc(c.field)+' : '+esc(c.old==null?"—":c.old)+' → <b>'+esc(c.new)+'</b> <span class="muted">('+esc(c.via)+')</span></div>';}).join("");
   var ver=isAuto(n)?('Collecté automatiquement le '+fmtDT(n.first_seen)+' · revu le '+fmtDT(n.last_seen)):'<b>Saisie manuelle</b> — non confirmée par la collecte officielle';
-  return '<details class="det"><summary>Détail du score &amp; vérification</summary>'+
-    '<table>'+rows+'<tr><td><b>Total</b></td><td class="pts">'+(n.score||0)+'</td></tr></table>'+
+  return '<details class="det"><summary>Vérification</summary>'+
     (ch?'<div><b>Modifications détectées</b>'+ch+'</div>':'')+
     (n.matched_queries&&n.matched_queries.length?'<div class="muted">Trouvé par : '+esc(n.matched_queries.slice(0,6).join(" · "))+'</div>':'')+
     (n.family||n.procedure_label?'<div class="muted">'+esc([n.family,n.procedure_label].filter(Boolean).join(" · "))+'</div>':'')+
@@ -367,7 +358,7 @@ function dlBadge(dl){var d=daysLeft(dl);if(d===null)return"—";var ds=fmtDate(d
   if(d<=30)return ds+' <span class="bdg bdg-s">'+d+'j</span>';return ds+' <span class="bdg bdg-o">'+d+'j</span>';}
 function row(n){
   var dl=daysLeft(n.dl),t=trackingFor(n.id);
-  var cls="nr"+(dl!==null&&dl<0?" exp":"")+(n.priority==="high"?" kw-row":"");
+  var cls="nr"+(dl!==null&&dl<0?" exp":"");
   var flag=FLAGS[n.country]||"🏳️";
   var cpvH=(n.cpv||[]).slice(0,4).map(function(c){return'<span class="cpv">'+esc(c)+'</span>';}).join("");
   var lotsH=n.lots?'<div style="font-size:.7rem;color:var(--text-3);margin-top:.15rem">'+esc(String(n.lots).slice(0,400))+'</div>':'';
@@ -376,7 +367,6 @@ function row(n){
   var opts=TRACK_STATUSES.map(function(st){return'<option'+(t.status===st?' selected':'')+'>'+esc(st)+'</option>';}).join("");
   return '<tr class="'+cls+'">'+
     '<td class="cd">'+flag+' '+esc(fmtDate(n.pub))+'</td>'+
-    '<td class="csc"><div class="score">'+(n.score||0)+'</div><span class="prio p-'+esc(n.priority||"low")+'">'+(PLABEL[n.priority]||"Faible")+'</span></td>'+
     '<td class="ct"><a href="'+esc(n.url)+'" target="_blank" rel="noopener">'+esc(String(n.title).slice(0,180))+'</a>'+
       (isNew(n)?'<span class="badge-new">NOUVEAU</span>':'')+
       ((n.corrigenda||[]).length?'<span class="badge-corr">Rectifié '+fmtDate(n.last_corrigendum)+'</span>':'')+
@@ -397,12 +387,9 @@ function row(n){
 /* ---------- filtres ---------- */
 function getFiltered(tab){
   var items=DATA.filter(function(n){return tab==="fr"?n.country==="FRA":n.country!=="FRA";});
-  var q=norm($("q").value),pf=$("pf").value,tf=$("tf").value,df=$("df").value,sf=$("sf").value,
+  var q=norm($("q").value),tf=$("tf").value,df=$("df").value,sf=$("sf").value,
       st=$("statusFilter").value,of=$("of").value,pr=$("practf").value;
   if(q)items=items.filter(function(n){return norm([n.title,n.buyer,n.id,(n.cpv||[]).join(" "),n.lots,n.description,(n.matched||[]).join(" "),(n.practices||[]).join(" "),trackingFor(n.id).note].join(" ")).indexOf(q)!==-1;});
-  if(pf==="high")items=items.filter(function(n){return n.priority==="high";});
-  else if(pf==="medium")items=items.filter(function(n){return n.priority!=="low";});
-  else if(pf==="low")items=items.filter(function(n){return n.priority==="low";});
   var dom=pr||activeDomain;
   if(dom)items=items.filter(function(n){return(n.practices||[]).indexOf(dom)!==-1;});
   if(tf==="corrany")items=items.filter(function(n){return(n.corrigenda||[]).length||n.type==="corr";});
@@ -419,11 +406,11 @@ function getFiltered(tab){
     if(sf==="pub_asc")return(a.pub||"").localeCompare(b.pub||"");
     if(sf==="dl_asc")return(a.dl||"9999").localeCompare(b.dl||"9999");
     if(sf==="val_desc")return(b.value||0)-(a.value||0);
-    return(PRANK[b.priority]||0)-(PRANK[a.priority]||0)||(b.score||0)-(a.score||0)||(b.pub||"").localeCompare(a.pub||"");
+    return(b.pub||"").localeCompare(a.pub||"");
   });
   return items;
 }
-var EMPTY='<tr><td colspan="8" class="empty">Aucun avis ne correspond aux filtres</td></tr>';
+var EMPTY='<tr><td colspan="7" class="empty">Aucun avis ne correspond aux filtres</td></tr>';
 function render(){
   var fr=getFiltered("fr"),eu=getFiltered("eu");
   $("tb-fr").innerHTML=fr.length?fr.map(row).join(""):EMPTY;
@@ -434,7 +421,7 @@ function render(){
 /* ---------- cartes de synthèse (cliquables = filtres rapides) ---------- */
 var QUICK={
   "new":{l:"🆕 Nouveaux depuis la dernière collecte",f:isNew},
-  "high":{l:"⚑ Haute pertinence (en cours)",f:function(n){var d=daysLeft(n.dl);return n.priority==="high"&&(d===null||d>=0);},cls:"hot"},
+  "active":{l:"✅ Avis en cours",f:function(n){var d=daysLeft(n.dl);return d===null||d>=0;},cls:"hot"},
   "d7":{l:"⏰ Échéance ≤ 7 jours",f:function(n){var d=daysLeft(n.dl);return d!==null&&d>=0&&d<=7;},cls:"red"},
   "d30":{l:"📅 Échéance ≤ 30 jours",f:function(n){var d=daysLeft(n.dl);return d!==null&&d>=0&&d<=30;}},
   "corr":{l:"✎ Rectificatifs",f:function(n){return(n.corrigenda||[]).length>0||n.type==="corr";}}
@@ -485,7 +472,7 @@ function buildKWSidebar(){
     html+='</div>';});
   $("kwList").innerHTML=html;
   var th=sc.thresholds||{};
-  $("kwStats").textContent=DATA.filter(function(n){return n.priority==="high";}).length+" avis haute priorité sur "+DATA.length+" · "+total+" mots-clés FR/EN · seuils : haute ≥ "+th.high+", moyenne ≥ "+th.medium;
+  $("kwStats").textContent=DATA.length+" avis surveillés · "+total+" mots-clés FR/EN";
 }
 function buildDomainChart(){
   var dc={};DATA.forEach(function(n){(n.practices||[]).forEach(function(d){dc[d]=(dc[d]||0)+1;});});
@@ -519,8 +506,8 @@ function buildCpv(){
 /* ---------- export CSV ---------- */
 function exportCSV(){
   var rows=getFiltered(curTab);
-  var headers=["ID","Publication","Score","Priorité","Domaines","Mots-clés","Pourquoi","Titre","Acheteur","Pays","Type","CPV","Valeur EUR","Échéance","Sources","URL","Rectificatifs","Origine","Statut suivi","Note"];
-  var csv=[headers].concat(rows.map(function(n){var t=trackingFor(n.id);return[n.id,n.pub,n.score,PLABEL[n.priority],(n.practices||[]).join(" | "),(n.matched||[]).join(" | "),n.why,n.title,n.buyer,n.country,TLABELS[n.type]||n.type,(n.cpv||[]).join(" | "),n.value||"",n.dl||"",(n.sources||[]).map(function(s){return s.source+" "+s.source_id;}).join(" | "),n.url,(n.corrigenda||[]).map(function(c){return c.source_id;}).join(" | "),n.origin,t.status,t.note];}));
+  var headers=["ID","Publication","Domaines","Mots-clés","Pourquoi","Titre","Acheteur","Pays","Type","CPV","Valeur EUR","Échéance","Sources","URL","Rectificatifs","Origine","Statut suivi","Note"];
+  var csv=[headers].concat(rows.map(function(n){var t=trackingFor(n.id);return[n.id,n.pub,(n.practices||[]).join(" | "),(n.matched||[]).join(" | "),n.why,n.title,n.buyer,n.country,TLABELS[n.type]||n.type,(n.cpv||[]).join(" | "),n.value||"",n.dl||"",(n.sources||[]).map(function(s){return s.source+" "+s.source_id;}).join(" | "),n.url,(n.corrigenda||[]).map(function(c){return c.source_id;}).join(" | "),n.origin,t.status,t.note];}));
   var content=csv.map(function(r){return r.map(function(v){return'"'+String(v==null?"":v).replace(/"/g,'""')+'"';}).join(";");}).join("\r\n");
   saveFile("veille-marches-publics-bdgs.csv","﻿"+content,"text/csv;charset=utf-8");
 }
@@ -534,7 +521,7 @@ function saveFile(fn,data,type){
 /* ---------- événements ---------- */
 function refresh(){buildStats();render();}
 ["q"].forEach(function(id){$(id).addEventListener("input",render);});
-["pf","practf","tf","df","statusFilter","of","sf"].forEach(function(id){$(id).addEventListener("change",render);});
+["practf","tf","df","statusFilter","of","sf"].forEach(function(id){$(id).addEventListener("change",render);});
 $("statusFilter").innerHTML='<option value="">Tous les suivis</option>'+TRACK_STATUSES.map(function(s){return'<option>'+esc(s)+'</option>';}).join("");
 $("btnCsv").addEventListener("click",exportCSV);
 $("btnTrkExp").addEventListener("click",function(){saveFile("suivi-veille-bdgs.json",JSON.stringify(TRACKING,null,1),"application/json");});
