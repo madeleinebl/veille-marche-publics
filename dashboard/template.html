@@ -253,7 +253,6 @@ button.fi{cursor:pointer}
           <option value="call">Appels d'offres</option>
           <option value="award">Attributions</option>
           <option value="prior">Avis préalables</option>
-          <option value="corrany">Avec rectificatif</option>
         </select>
         <select class="fi fi-s" id="df">
           <option value="">Toutes échéances</option>
@@ -410,7 +409,6 @@ function srcBadges(n){
   var out=(n.sources||[]).map(function(s){var cls="s-"+(s.source==="BOAMP"||s.source==="TED"?s.source:"MANUEL");
     var lbl=(s.source==="BOAMP"||s.source==="TED")?(s.source+" "+(s.source_id||"")+" ✓"):"Saisie manuelle";
     return s.url?'<a class="sbadge '+cls+'" href="'+esc(s.url)+'" target="_blank" rel="noopener" title="Ouvrir l\'avis officiel">'+esc(lbl)+'</a>':'<span class="sbadge '+cls+'">'+esc(lbl)+'</span>';});
-  (n.corrigenda||[]).forEach(function(c){out.push('<a class="sbadge s-'+esc(c.source)+'" href="'+esc(c.url)+'" target="_blank" rel="noopener">Rectificatif '+esc(c.source_id)+' ('+fmtDate(c.pub)+')</a>');});
   return '<div class="srcs">'+out.join("")+'</div>';
 }
 function detailBlock(n){
@@ -441,7 +439,6 @@ function row(n){
     '<td class="cd">'+flag+' '+esc(fmtDate(n.pub))+'</td>'+
     '<td class="ct"><a href="'+esc(n.url)+'" target="_blank" rel="noopener">'+esc(String(n.title).slice(0,180))+'</a>'+
       (isNew(n)?'<span class="badge-new">NOUVEAU</span>':'')+
-      ((n.corrigenda||[]).length?'<span class="badge-corr">Rectifié '+fmtDate(n.last_corrigendum)+'</span>':'')+
       (n.award_published?'<span class="badge-awd">Attribué '+fmtDate(n.award_published)+'</span>':'')+
       '<div class="bn">'+esc(n.buyer||"Acheteur non renseigné")+'</div>'+
       '<div class="cpvs">'+cpvH+'</div>'+lotsH+
@@ -506,7 +503,6 @@ var QUICK={
   "high":{l:"⚑ Haute pertinence (en cours)",f:function(n){var d=daysLeft(n.dl);return n.priority==="high"&&(d===null||d>=0);},cls:"hot"},
   "d7":{l:"⏰ Échéance ≤ 7 jours",f:function(n){var d=daysLeft(n.dl);return d!==null&&d>=0&&d<=7;},cls:"red"},
   "d30":{l:"📅 Échéance ≤ 30 jours",f:function(n){var d=daysLeft(n.dl);return d!==null&&d>=0&&d<=30;}},
-  "corr":{l:"✎ Rectificatifs",f:function(n){return(n.corrigenda||[]).length>0||n.type==="corr";}}
 };
 function buildStats(){
   var html=Object.keys(QUICK).map(function(k){var c=DATA.filter(QUICK[k].f).length;
