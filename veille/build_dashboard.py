@@ -12,7 +12,7 @@ DASH_FIELDS = ["id", "origin", "src", "url", "title", "buyer", "country", "pub",
                "cpv", "value", "lots", "family", "procedure_label", "sources", "corrigenda", "last_corrigendum",
                "award_published", "first_seen", "last_seen", "last_changed", "score", "priority", "practices",
                "matched", "why", "breakdown", "has_legal_signal", "manual_note", "matched_queries",
-               "winners", "criteria", "lot_count"]
+               "winners", "criteria", "lot_count", "related_call", "related_award"]
 
 SOURCES_INFO = {
     "BOAMP": {"label": "BOAMP — Open Data DILA", "official": True,

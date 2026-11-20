@@ -153,6 +153,8 @@ def main(argv=None):
         lc = extract_lot_count(n)
         if lc and not n.get("lot_count"):
             n["lot_count"] = lc
+    # Relier les attributions aux appels d'offres correspondants
+    store.link_awards_to_calls()
     store.notices.sort(key=lambda n: (n.get("pub") or "", n["id"]), reverse=True)
 
     statuses = [v["status"] for k, v in run["sources"].items() if k in ("BOAMP", "TED")]

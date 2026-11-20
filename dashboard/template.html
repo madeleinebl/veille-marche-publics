@@ -210,6 +210,9 @@ button.fi{cursor:pointer}
 .alert-dot{position:absolute;top:-2px;right:-2px;width:8px;height:8px;border-radius:50%;background:#e53935;border:1.5px solid #fff}
 .alert-count{display:inline-flex;align-items:center;justify-content:center;min-width:1.3rem;height:1.3rem;padding:0 .3rem;border-radius:9px;background:#e53935;color:#fff;font-size:.65rem;font-weight:700;margin-left:.35rem}
 .lotc{display:inline-block;font-size:.63rem;padding:.05rem .3rem;background:#f3e5f5;color:#7b1fa2;border-radius:4px;margin-top:.15rem}
+.link-badge{display:inline-block;font-size:.63rem;padding:.1rem .4rem;border-radius:4px;margin-top:.2rem;cursor:pointer;text-decoration:none;font-weight:600}
+.link-call{background:#e3f2fd;color:#1565c0;border:1px solid #90caf9}
+.link-award{background:#e8f5e9;color:#2e7d32;border:1px solid #a5d6a7}
 </style>
 </head>
 <body>
@@ -360,6 +363,13 @@ var TCLS={"call":"tb-call","award":"tb-award","prior":"tb-prior","corr":"tb-corr
 var PLABEL={"high":"Haute","medium":"Moyenne","low":"Faible"};
 var PRANK={"high":3,"medium":2,"low":1};
 
+/* ---------- index par ID (pour liens appel ↔ résultat) ---------- */
+var BY_ID={};DATA.forEach(function(n){BY_ID[n.id]=n;});
+window.highlightNotice=function(id){
+  var el=document.querySelector('[data-id="'+id+'"]');
+  if(el){var tr=el.closest("tr");if(tr){tr.scrollIntoView({behavior:"smooth",block:"center"});tr.style.transition="background .3s";tr.style.background="#fff9c4";setTimeout(function(){tr.style.background="";},2500);}}
+};
+
 /* ---------- alertes personnalisées (variables — avant row() pour matchesAlert) ---------- */
 var ALERT_KEY="bdgs_alert_prefs_v1";
 var ALERT_SEEN_KEY="bdgs_alert_seen_v1";
@@ -440,6 +450,8 @@ function row(n){
       ((n.winners||[]).length?'<div style="margin-top:.3rem">'+n.winners.map(function(w){return'<span class="winner-tag">🏆 '+esc(w.name)+'</span>';}).join("")+'</div>':'')+
       ((n.criteria||[]).length?'<div style="margin-top:.2rem">'+n.criteria.slice(0,4).map(function(c){return'<span class="crit-tag">'+esc(c.name)+(c.weight?' ('+c.weight+'%)':'')+'</span>';}).join("")+'</div>':'')+
       (n.lot_count?'<span class="lotc">'+n.lot_count+' lot'+(n.lot_count>1?'s':'')+'</span>':'')+
+      (n.related_call?'<div><span class="link-badge link-call" onclick="window.highlightNotice(\''+esc(n.related_call)+'\')">📋 Voir l\'appel initial</span></div>':'')+
+      (n.related_award?'<div><span class="link-badge link-award" onclick="window.highlightNotice(\''+esc(n.related_award)+'\')">✅ Voir le résultat</span></div>':'')+
       (matchesAlert(n)?'<span style="display:inline-block;font-size:.6rem;font-weight:800;padding:.05rem .35rem;border-radius:4px;background:#e53935;color:#fff;margin-left:.3rem;vertical-align:middle">🔔 ALERTE</span>':'')+
       srcBadges(n)+detailBlock(n)+'</td>'+
     '<td class="cty"><span class="tb '+(TCLS[n.type]||"tb-other")+'">'+esc(TLABELS[n.type]||n.type)+'</span></td>'+

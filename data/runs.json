@@ -42,52 +42,171 @@
   "duration_s": 0.0
  },
  {
-  "run_id": "2026-11-20T06:57:36.458+00:00",
-  "started_at": "2026-11-20T06:57:36.458+00:00",
-  "mode": "collect",
-  "since": "2026-09-21",
+  "run_id": "2026-11-19T16:38:55.010+00:00",
+  "started_at": "2026-11-19T16:38:55.010+00:00",
+  "mode": "offline",
+  "since": "2026-09-20",
   "lookback_days": 60,
   "sources": {
-   "BOAMP": {
-    "status": "ok",
-    "records": 554,
-    "kept": 338,
-    "new": 313,
-    "updated": 1,
-    "merged": 22,
-    "corrigenda": 2,
-    "filtered_low_score": 216,
-    "errors": [],
-    "queries": 36,
-    "raw_rows": 783,
-    "duration_s": 30.7
-   },
-   "TED": {
-    "status": "ok",
-    "records": 1108,
-    "kept": 915,
-    "new": 714,
-    "updated": 0,
-    "merged": 201,
-    "corrigenda": 0,
-    "filtered_low_score": 193,
-    "errors": [],
-    "queries": 14,
-    "raw_rows": 1817,
-    "duration_s": 70.1
-   },
    "Saisie manuelle": {
     "status": "ok",
     "records": 22
    }
   },
   "totals": {
-   "notices": 1049,
-   "new": 1027,
-   "high": 13
+   "notices": 22,
+   "new": 0,
+   "high": 1
   },
   "status": "ok",
-  "finished_at": "2026-11-20T06:59:22.933+00:00",
-  "duration_s": 106.5
+  "finished_at": "2026-11-19T16:38:55.032+00:00",
+  "duration_s": 0.0
+ },
+ {
+  "run_id": "2026-11-19T16:39:17.481+00:00",
+  "started_at": "2026-11-19T16:39:17.481+00:00",
+  "mode": "offline",
+  "since": "2026-09-20",
+  "lookback_days": 60,
+  "sources": {
+   "Saisie manuelle": {
+    "status": "ok",
+    "records": 22
+   }
+  },
+  "totals": {
+   "notices": 22,
+   "new": 0,
+   "high": 1
+  },
+  "status": "ok",
+  "finished_at": "2026-11-19T16:39:17.514+00:00",
+  "duration_s": 0.0
+ },
+ {
+  "run_id": "2026-11-19T16:42:38.926+00:00",
+  "started_at": "2026-11-19T16:42:38.926+00:00",
+  "mode": "offline",
+  "since": "2026-09-20",
+  "lookback_days": 60,
+  "sources": {
+   "Saisie manuelle": {
+    "status": "ok",
+    "records": 22
+   }
+  },
+  "totals": {
+   "notices": 22,
+   "new": 0,
+   "high": 1
+  },
+  "status": "ok",
+  "finished_at": "2026-11-19T16:42:38.949+00:00",
+  "duration_s": 0.0
+ },
+ {
+  "run_id": "2026-11-19T17:43:05.722+00:00",
+  "started_at": "2026-11-19T17:43:05.722+00:00",
+  "mode": "offline",
+  "since": "2026-09-20",
+  "lookback_days": 60,
+  "sources": {
+   "Saisie manuelle": {
+    "status": "ok",
+    "records": 22
+   }
+  },
+  "totals": {
+   "notices": 22,
+   "new": 0,
+   "high": 1
+  },
+  "status": "ok",
+  "finished_at": "2026-11-19T17:43:05.755+00:00",
+  "duration_s": 0.0
+ },
+ {
+  "run_id": "2026-11-19T17:44:11.703+00:00",
+  "started_at": "2026-11-19T17:44:11.703+00:00",
+  "mode": "offline",
+  "since": "2026-09-20",
+  "lookback_days": 60,
+  "sources": {
+   "Saisie manuelle": {
+    "status": "ok",
+    "records": 22
+   }
+  },
+  "totals": {
+   "notices": 22,
+   "new": 0,
+   "high": 1
+  },
+  "status": "ok",
+  "finished_at": "2026-11-19T17:44:11.733+00:00",
+  "duration_s": 0.0
+ },
+ {
+  "run_id": "2026-11-19T17:48:15.909+00:00",
+  "started_at": "2026-11-19T17:48:15.909+00:00",
+  "mode": "offline",
+  "since": "2026-09-20",
+  "lookback_days": 60,
+  "sources": {
+   "Saisie manuelle": {
+    "status": "ok",
+    "records": 22
+   }
+  },
+  "totals": {
+   "notices": 22,
+   "new": 0,
+   "high": 1
+  },
+  "status": "ok",
+  "finished_at": "2026-11-19T17:48:15.932+00:00",
+  "duration_s": 0.0
+ },
+ {
+  "run_id": "2026-11-20T10:11:02.444+00:00",
+  "started_at": "2026-11-20T10:11:02.444+00:00",
+  "mode": "offline",
+  "since": "2026-09-21",
+  "lookback_days": 60,
+  "sources": {
+   "Saisie manuelle": {
+    "status": "ok",
+    "records": 22
+   }
+  },
+  "totals": {
+   "notices": 22,
+   "new": 0,
+   "high": 1
+  },
+  "status": "ok",
+  "finished_at": "2026-11-20T10:11:02.466+00:00",
+  "duration_s": 0.0
+ },
+ {
+  "run_id": "2026-11-20T10:11:32.939+00:00",
+  "started_at": "2026-11-20T10:11:32.939+00:00",
+  "mode": "offline",
+  "since": "2026-09-21",
+  "lookback_days": 60,
+  "sources": {
+   "Saisie manuelle": {
+    "status": "ok",
+    "records": 22
+   }
+  },
+  "totals": {
+   "notices": 22,
+   "new": 0,
+   "high": 1
+  },
+  "status": "ok",
+  "finished_at": "2026-11-20T10:11:32.963+00:00",
+  "duration_s": 0.0
  }
 ]

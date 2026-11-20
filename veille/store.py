@@ -197,6 +197,48 @@ class Store:
         self._index(n)
         return "corr_new" if rec["type"] == "corr" else "new"
 
+    def link_awards_to_calls(self):
+        """Relie chaque award à l'appel d'offres le plus probable (même acheteur + titre similaire)."""
+        awards = [n for n in self.notices if n["type"] == "award"]
+        calls = [n for n in self.notices if n["type"] in ("call", "prior")]
+        for aw in awards:
+            if aw.get("related_call"):
+                continue  # déjà relié
+            # 1. par procedure_id / UUID
+            best, best_s = None, 0
+            if aw.get("procedure_id"):
+                for c in calls:
+                    if c.get("procedure_id") and c["procedure_id"] == aw["procedure_id"]:
+                        best = c
+                        break
+            if not best:
+                common_uuids = set(aw.get("uuids", []))
+                if common_uuids:
+                    for c in calls:
+                        if common_uuids & set(c.get("uuids", [])):
+                            best = c
+                            break
+            # 2. par fuzzy match titre + acheteur (intra-source aussi)
+            if not best:
+                att = title_tokens(aw.get("title"))
+                abt = title_tokens(aw.get("buyer"))
+                for c in calls:
+                    if _days_between(c.get("pub"), aw.get("pub")) > 365:
+                        continue
+                    ts = jaccard(att, title_tokens(c.get("title")))
+                    bs = jaccard(abt, title_tokens(c.get("buyer"))) if abt else 0
+                    score = ts * 0.6 + bs * 0.4
+                    if ts >= 0.4 and bs >= 0.5 and score > best_s:
+                        best, best_s = c, score
+            if best:
+                aw["related_call"] = best["id"]
+                best.setdefault("related_award", aw["id"])
+                # Propager les winners et la date d'attribution
+                if aw.get("winners") and not best.get("winners"):
+                    best["winners"] = aw["winners"]
+                if not best.get("award_published"):
+                    best["award_published"] = aw.get("pub")
+
     def remove(self, nid):
         n = self.by_id.pop(nid, None)
         if n:
