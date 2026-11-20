@@ -499,10 +499,8 @@ function render(){
 
 /* ---------- cartes de synthèse (cliquables = filtres rapides) ---------- */
 var QUICK={
-  "new":{l:"🆕 Nouveaux depuis la dernière collecte",f:isNew},
-  "high":{l:"⚑ Haute pertinence (en cours)",f:function(n){var d=daysLeft(n.dl);return n.priority==="high"&&(d===null||d>=0);},cls:"hot"},
-  "d7":{l:"⏰ Échéance ≤ 7 jours",f:function(n){var d=daysLeft(n.dl);return d!==null&&d>=0&&d<=7;},cls:"red"},
-  "d30":{l:"📅 Échéance ≤ 30 jours",f:function(n){var d=daysLeft(n.dl);return d!==null&&d>=0&&d<=30;}},
+  "new":{l:"🆕 Nouveaux",f:isNew},
+  "high":{l:"⚑ Pertinence BDGS",f:function(n){return n.priority==="high";},cls:"hot"},
 };
 function buildStats(){
   var html=Object.keys(QUICK).map(function(k){var c=DATA.filter(QUICK[k].f).length;
