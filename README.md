@@ -26,7 +26,7 @@ Chaque jour, GitHub interroge les **sources officielles** (BOAMP et TED), attrib
 
 | Étape | Détail |
 |---|---|
-| **Collecte** | BOAMP (Open Data officiel de la DILA) et TED (API de l'Office des publications de l'UE). Recherche par **codes CPV** (services juridiques, conseil financier) **et par mots-clés** en français et en anglais. |
+| **Collecte** | BOAMP (Open Data officiel de la DILA) et TED (API de l'Office des publications de l'UE). Recherche par **code CPV 79111000 (conseil juridique)** **et par mots-clés** en français et en anglais. |
 | **Rattrapage** | Chaque exécution rebalaye les **10 derniers jours** (60 jours au premier lancement) pour récupérer les avis indexés tardivement, notamment les MAPA. |
 | **Fusion** | Un même marché publié au BOAMP **et** à TED n'apparaît qu'une fois, avec les deux liens officiels. |
 | **Rectificatifs** | Un avis rectificatif est rattaché à l'avis initial ; la nouvelle échéance est appliquée et l'historique conservé. |
@@ -41,8 +41,7 @@ Le score additionne des points visibles dans le tableau de bord (bouton **« Dé
 
 | Critère | Points |
 |---|---|
-| Mission juridique : CPV 791xxxxx (services juridiques) | +25 |
-| Mission de conseil financier : CPV 66171000, 7941xxxx | +12 |
+| Mission juridique : CPV 79111000 (conseil juridique) | +25 |
 | Mots « conseil juridique », « assistance juridique », « legal advice », « avocat »… | jusqu'à +20 (plafond juridique total : 30) |
 | Mots-clés de chaque domaine BDGS (ex. « sûretés », « financement de projet », « LBO », « émission obligataire », « BESS »…) | jusqu'à +25 par domaine (total plafonné à 50) |
 | Acheteur stratégique (Bpifrance, Caisse des Dépôts, EDF, SNCF, APE…) | +6 |
@@ -153,7 +152,7 @@ Tout se modifie dans le navigateur (icône crayon ✏️ sur le fichier, puis **
 | changer les seuils Haute/Moyenne | `config/scoring.json` | `thresholds` |
 | ajouter un acheteur stratégique | `config/scoring.json` | `strategic_buyers.names` |
 | chercher un nouveau mot sur BOAMP/TED | `config/sources.json` | `boamp.keyword_queries` / `ted.keyword_queries` |
-| ajouter un code CPV | `config/sources.json` | `cpv_legal` ou `cpv_advisory` |
+| ajouter un code CPV | `config/sources.json` | `cpv_legal` (ex. `["79111000", "79110000"]`) |
 | rebalayer plus de jours | `config/sources.json` | `lookback_days_daily` |
 | collecter plus souvent | `.github/workflows/veille.yml` | ligne `cron`, ex. `"17 5,11,16 * * 1-5"` = 3 fois par jour en semaine |
 

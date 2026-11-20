@@ -172,10 +172,11 @@ class TedCollector:
         fetched_at = datetime.now(timezone.utc).isoformat(timespec="seconds")
         d = since.replace("-", "")
         tail = f" AND publication-date>={d} SORT BY publication-number DESC"
-        queries = [
-            ("CPV juridiques", "classification-cpv IN (" + " ".join(self.cfg["cpv_legal"]) + ")" + tail),
-            ("CPV conseil financier", "classification-cpv IN (" + " ".join(self.cfg["cpv_advisory"]) + ")" + tail),
-        ]
+        queries = []
+        if self.cfg.get("cpv_legal"):
+            queries.append(("CPV juridiques", "classification-cpv IN (" + " ".join(self.cfg["cpv_legal"]) + ")" + tail))
+        if self.cfg.get("cpv_advisory"):
+            queries.append(("CPV conseil financier", "classification-cpv IN (" + " ".join(self.cfg["cpv_advisory"]) + ")" + tail))
         for kw in self.cfg["ted"]["keyword_queries"]:
             queries.append((kw, 'FT~("' + kw.replace('"', "") + '")' + tail))
         by_id = {}
