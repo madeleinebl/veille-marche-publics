@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-20T15:27:22+00:00",
+ "generated_at": "2026-11-20T16:41:22+00:00",
  "data_mode": "live",
  "last_run": {
   "run_id": "2026-11-20T13:40:51.664+00:00",
@@ -3747,7 +3747,7 @@
    "buyer": "Kviteseid Kommune",
    "country": "NOR",
    "pub": "2026-11-18",
-   "type": "other",
+   "type": "award",
    "type_label": "veat",
    "cpv": [
     "79400000",
@@ -3772,7 +3772,13 @@
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 0,
    "priority": "low",
-   "why": "Pas de signal juridique explicite — à vérifier.",
+   "why": "Pas de signal juridique explicite — à vérifier · avis d'attribution (veille concurrentielle).",
+   "breakdown": [
+    {
+     "label": "Type d'avis (award)",
+     "points": -10
+    }
+   ],
    "has_legal_signal": false,
    "matched_queries": [
     "CPV conseil financier"
@@ -11391,7 +11397,7 @@
    "buyer": "The Office of Government Procurement",
    "country": "IRL",
    "pub": "2026-11-11",
-   "type": "other",
+   "type": "prior",
    "type_label": "pmc",
    "cpv": [
     "79130000",
@@ -12134,7 +12140,7 @@
    "buyer": "ProRail B.V.",
    "country": "NLD",
    "pub": "2026-11-10",
-   "type": "other",
+   "type": "award",
    "type_label": "veat",
    "cpv": [
     "79130000"
@@ -12158,7 +12164,13 @@
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 0,
    "priority": "low",
-   "why": "Pas de signal juridique explicite — à vérifier.",
+   "why": "Pas de signal juridique explicite — à vérifier · avis d'attribution (veille concurrentielle).",
+   "breakdown": [
+    {
+     "label": "Type d'avis (award)",
+     "points": -10
+    }
+   ],
    "has_legal_signal": false,
    "matched_queries": [
     "CPV juridiques"
@@ -12390,7 +12402,7 @@
    "buyer": "Varsinais-Suomen hyvinvointialue",
    "country": "FIN",
    "pub": "2026-11-10",
-   "type": "other",
+   "type": "prior",
    "type_label": "pmc",
    "cpv": [
     "79411000",
@@ -14933,7 +14945,7 @@
    "buyer": "Gemeente Eindhoven",
    "country": "NLD",
    "pub": "2026-11-06",
-   "type": "other",
+   "type": "prior",
    "type_label": "pmc",
    "cpv": [
     "79411000"
@@ -18330,7 +18342,7 @@
    "buyer": "Ministerie van Economische Zaken",
    "country": "NLD",
    "pub": "2026-11-04",
-   "type": "other",
+   "type": "prior",
    "type_label": "pmc",
    "cpv": [
     "66171000",
@@ -20606,7 +20618,7 @@
    "buyer": "Aalborg Universitet",
    "country": "DNK",
    "pub": "2026-11-02",
-   "type": "other",
+   "type": "award",
    "type_label": "veat",
    "cpv": [
     "79000000",
@@ -20630,7 +20642,7 @@
    "first_seen": "2026-11-20T10:15:58.451+00:00",
    "last_seen": "2026-11-20T10:15:58.451+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
-   "score": 20,
+   "score": 10,
    "priority": "low",
    "practices": [
     "Corporate / M&A",
@@ -20640,7 +20652,7 @@
     "due diligence",
     "infrastructure"
    ],
-   "why": "Pas de signal juridique explicite — à vérifier · domaine(s) : Corporate / M&A, Project Finance & Infrastructure.",
+   "why": "Pas de signal juridique explicite — à vérifier · domaine(s) : Corporate / M&A, Project Finance & Infrastructure · avis d'attribution (veille concurrentielle).",
    "breakdown": [
     {
      "label": "Corporate / M&A : due diligence",
@@ -20649,6 +20661,10 @@
     {
      "label": "Project Finance & Infrastructure : infrastructure",
      "points": 8
+    },
+    {
+     "label": "Type d'avis (award)",
+     "points": -10
     }
    ],
    "has_legal_signal": false,
@@ -21706,7 +21722,7 @@
     }
    ],
    "first_seen": "2026-11-19T11:00:31.599+00:00",
-   "last_seen": "2026-11-20T15:27:14.869+00:00",
+   "last_seen": "2026-11-20T16:41:14.672+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 65,
    "priority": "high",
@@ -22885,7 +22901,7 @@
    "buyer": "Gemeente Baarn",
    "country": "NLD",
    "pub": "2026-10-30",
-   "type": "other",
+   "type": "award",
    "type_label": "veat",
    "cpv": [
     "79100000",
@@ -22908,7 +22924,7 @@
    "first_seen": "2026-11-20T10:15:58.451+00:00",
    "last_seen": "2026-11-20T10:15:58.451+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
-   "score": 20,
+   "score": 10,
    "priority": "low",
    "practices": [
     "Conseil juridique général"
@@ -22916,11 +22932,15 @@
    "matched": [
     "services juridiques"
    ],
-   "why": "Mission juridique/conseil (« services juridiques »).",
+   "why": "Mission juridique/conseil (« services juridiques ») · avis d'attribution (veille concurrentielle).",
    "breakdown": [
     {
      "label": "Mission juridique : services juridiques",
      "points": 20
+    },
+    {
+     "label": "Type d'avis (award)",
+     "points": -10
     }
    ],
    "has_legal_signal": true,
@@ -28554,7 +28574,7 @@
    "buyer": "Ministerie van Economische Zaken en Klimaat, Rijksdienst voor Ondernemend Nederland (RVO)",
    "country": "NLD",
    "pub": "2026-10-27",
-   "type": "other",
+   "type": "prior",
    "type_label": "pmc",
    "cpv": [
     "75210000",
@@ -33352,7 +33372,7 @@
    "buyer": "Hämeenlinnan kaupunki",
    "country": "FIN",
    "pub": "2026-10-21",
-   "type": "other",
+   "type": "prior",
    "type_label": "pmc",
    "cpv": [
     "79100000",
@@ -41061,7 +41081,7 @@
    "buyer": "Rechtsamt",
    "country": "DEU",
    "pub": "2026-10-14",
-   "type": "other",
+   "type": "award",
    "type_label": "veat",
    "cpv": [
     "72320000",
@@ -41086,7 +41106,13 @@
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 0,
    "priority": "low",
-   "why": "Pas de signal juridique explicite — à vérifier.",
+   "why": "Pas de signal juridique explicite — à vérifier · avis d'attribution (veille concurrentielle).",
+   "breakdown": [
+    {
+     "label": "Type d'avis (award)",
+     "points": -10
+    }
+   ],
    "has_legal_signal": false,
    "matched_queries": [
     "CPV juridiques",
@@ -41604,7 +41630,7 @@
    "buyer": "Kristiansund kommune",
    "country": "NOR",
    "pub": "2026-10-14",
-   "type": "other",
+   "type": "award",
    "type_label": "veat",
    "cpv": [
     "79411100",
@@ -41629,7 +41655,13 @@
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 0,
    "priority": "low",
-   "why": "Pas de signal juridique explicite — à vérifier.",
+   "why": "Pas de signal juridique explicite — à vérifier · avis d'attribution (veille concurrentielle).",
+   "breakdown": [
+    {
+     "label": "Type d'avis (award)",
+     "points": -10
+    }
+   ],
    "has_legal_signal": false,
    "matched_queries": [
     "CPV conseil financier"
@@ -45103,7 +45135,7 @@
    "buyer": "Göng og brú ohf",
    "country": "ISL",
    "pub": "2026-10-09",
-   "type": "other",
+   "type": "prior",
    "type_label": "pmc",
    "cpv": [
     "66171000",
@@ -46538,7 +46570,7 @@
    "buyer": "Oikeusrekisterikeskus",
    "country": "FIN",
    "pub": "2026-10-08",
-   "type": "other",
+   "type": "prior",
    "type_label": "pmc",
    "cpv": [
     "79100000"
@@ -46707,7 +46739,7 @@
    "buyer": "Landkreis Oberspreewald-Lausitz",
    "country": "DEU",
    "pub": "2026-10-08",
-   "type": "other",
+   "type": "award",
    "type_label": "veat",
    "cpv": [
     "79100000",
@@ -46730,7 +46762,7 @@
    "first_seen": "2026-11-20T10:15:58.451+00:00",
    "last_seen": "2026-11-20T10:15:58.451+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
-   "score": 20,
+   "score": 10,
    "priority": "low",
    "practices": [
     "Conseil juridique général"
@@ -46738,11 +46770,15 @@
    "matched": [
     "services juridiques"
    ],
-   "why": "Mission juridique/conseil (« services juridiques »).",
+   "why": "Mission juridique/conseil (« services juridiques ») · avis d'attribution (veille concurrentielle).",
    "breakdown": [
     {
      "label": "Mission juridique : services juridiques",
      "points": 20
+    },
+    {
+     "label": "Type d'avis (award)",
+     "points": -10
     }
    ],
    "has_legal_signal": true,
@@ -48881,7 +48917,7 @@
    "buyer": "Interconnect Malta",
    "country": "MLT",
    "pub": "2026-10-06",
-   "type": "other",
+   "type": "award",
    "type_label": "veat",
    "cpv": [
     "79100000"
@@ -48903,7 +48939,7 @@
    "first_seen": "2026-11-20T10:15:58.451+00:00",
    "last_seen": "2026-11-20T10:15:58.451+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
-   "score": 20,
+   "score": 10,
    "priority": "low",
    "practices": [
     "Conseil juridique général"
@@ -48912,11 +48948,15 @@
     "services juridiques",
     "legal advisory"
    ],
-   "why": "Mission juridique/conseil (« services juridiques »).",
+   "why": "Mission juridique/conseil (« services juridiques ») · avis d'attribution (veille concurrentielle).",
    "breakdown": [
     {
      "label": "Mission juridique : services juridiques, legal advisory",
      "points": 20
+    },
+    {
+     "label": "Type d'avis (award)",
+     "points": -10
     }
    ],
    "has_legal_signal": true,
@@ -62818,7 +62858,7 @@
     }
    ],
    "first_seen": "2026-11-19T11:00:31.599+00:00",
-   "last_seen": "2026-11-20T15:27:14.869+00:00",
+   "last_seen": "2026-11-20T16:41:14.672+00:00",
    "last_changed": "2026-11-19T11:00:31.599+00:00",
    "score": 35,
    "priority": "low",
@@ -62887,7 +62927,7 @@
     }
    ],
    "first_seen": "2026-11-19T11:00:31.599+00:00",
-   "last_seen": "2026-11-20T15:27:14.869+00:00",
+   "last_seen": "2026-11-20T16:41:14.672+00:00",
    "last_changed": "2026-11-19T11:00:31.599+00:00",
    "score": 30,
    "priority": "low",
@@ -62949,7 +62989,7 @@
     }
    ],
    "first_seen": "2026-11-19T11:00:31.599+00:00",
-   "last_seen": "2026-11-20T15:27:14.869+00:00",
+   "last_seen": "2026-11-20T16:41:14.672+00:00",
    "last_changed": "2026-11-19T11:00:31.599+00:00",
    "score": 10,
    "priority": "low",
@@ -63006,7 +63046,7 @@
     }
    ],
    "first_seen": "2026-11-19T11:00:31.599+00:00",
-   "last_seen": "2026-11-20T15:27:14.869+00:00",
+   "last_seen": "2026-11-20T16:41:14.672+00:00",
    "last_changed": "2026-11-19T11:00:31.599+00:00",
    "score": 30,
    "priority": "low",
@@ -63066,7 +63106,7 @@
     }
    ],
    "first_seen": "2026-11-19T11:00:31.599+00:00",
-   "last_seen": "2026-11-20T15:27:14.869+00:00",
+   "last_seen": "2026-11-20T16:41:14.672+00:00",
    "last_changed": "2026-11-19T11:00:31.599+00:00",
    "score": 30,
    "priority": "low",
@@ -63126,7 +63166,7 @@
     }
    ],
    "first_seen": "2026-11-19T11:00:31.599+00:00",
-   "last_seen": "2026-11-20T15:27:14.869+00:00",
+   "last_seen": "2026-11-20T16:41:14.672+00:00",
    "last_changed": "2026-11-19T11:00:31.599+00:00",
    "score": 25,
    "priority": "low",
@@ -63179,7 +63219,7 @@
    ],
    "award_published": "2026-10-14",
    "first_seen": "2026-11-19T11:00:31.599+00:00",
-   "last_seen": "2026-11-20T15:27:14.869+00:00",
+   "last_seen": "2026-11-20T16:41:14.672+00:00",
    "last_changed": "2026-11-19T11:00:31.599+00:00",
    "score": 34,
    "priority": "low",
@@ -63245,7 +63285,7 @@
     }
    ],
    "first_seen": "2026-11-19T11:00:31.599+00:00",
-   "last_seen": "2026-11-20T15:27:14.869+00:00",
+   "last_seen": "2026-11-20T16:41:14.672+00:00",
    "last_changed": "2026-11-19T11:00:31.599+00:00",
    "score": 25,
    "priority": "low",
@@ -63295,7 +63335,7 @@
     }
    ],
    "first_seen": "2026-11-19T11:00:31.599+00:00",
-   "last_seen": "2026-11-20T15:27:14.869+00:00",
+   "last_seen": "2026-11-20T16:41:14.672+00:00",
    "last_changed": "2026-11-19T11:00:31.599+00:00",
    "score": 30,
    "priority": "low",
@@ -63356,7 +63396,7 @@
     }
    ],
    "first_seen": "2026-11-19T11:00:31.599+00:00",
-   "last_seen": "2026-11-20T15:27:14.869+00:00",
+   "last_seen": "2026-11-20T16:41:14.672+00:00",
    "last_changed": "2026-11-19T11:00:31.599+00:00",
    "score": 30,
    "priority": "low",
@@ -63417,7 +63457,7 @@
     }
    ],
    "first_seen": "2026-11-19T11:00:31.599+00:00",
-   "last_seen": "2026-11-20T15:27:14.869+00:00",
+   "last_seen": "2026-11-20T16:41:14.672+00:00",
    "last_changed": "2026-11-19T11:00:31.599+00:00",
    "score": 30,
    "priority": "low",
@@ -63477,7 +63517,7 @@
     }
    ],
    "first_seen": "2026-11-19T11:00:31.599+00:00",
-   "last_seen": "2026-11-20T15:27:14.869+00:00",
+   "last_seen": "2026-11-20T16:41:14.672+00:00",
    "last_changed": "2026-11-19T11:00:31.599+00:00",
    "score": 20,
    "priority": "low",
@@ -63542,7 +63582,7 @@
     }
    ],
    "first_seen": "2026-11-19T11:00:31.599+00:00",
-   "last_seen": "2026-11-20T15:27:14.869+00:00",
+   "last_seen": "2026-11-20T16:41:14.672+00:00",
    "last_changed": "2026-11-19T11:00:31.599+00:00",
    "score": 25,
    "priority": "low",
@@ -63591,7 +63631,7 @@
     }
    ],
    "first_seen": "2026-11-19T11:00:31.599+00:00",
-   "last_seen": "2026-11-20T15:27:14.869+00:00",
+   "last_seen": "2026-11-20T16:41:14.672+00:00",
    "last_changed": "2026-11-19T11:00:31.599+00:00",
    "score": 39,
    "priority": "medium",
@@ -63658,7 +63698,7 @@
     }
    ],
    "first_seen": "2026-11-19T11:00:31.599+00:00",
-   "last_seen": "2026-11-20T15:27:14.869+00:00",
+   "last_seen": "2026-11-20T16:41:14.672+00:00",
    "last_changed": "2026-11-19T11:00:31.599+00:00",
    "score": 47,
    "priority": "medium",
@@ -63731,7 +63771,7 @@
     }
    ],
    "first_seen": "2026-11-19T11:00:31.599+00:00",
-   "last_seen": "2026-11-20T15:27:14.869+00:00",
+   "last_seen": "2026-11-20T16:41:14.672+00:00",
    "last_changed": "2026-11-19T11:00:31.599+00:00",
    "score": 30,
    "priority": "low",
@@ -63792,7 +63832,7 @@
     }
    ],
    "first_seen": "2026-11-19T11:00:31.599+00:00",
-   "last_seen": "2026-11-20T15:27:14.869+00:00",
+   "last_seen": "2026-11-20T16:41:14.672+00:00",
    "last_changed": "2026-11-19T11:00:31.599+00:00",
    "score": 30,
    "priority": "low",
@@ -63854,7 +63894,7 @@
     }
    ],
    "first_seen": "2026-11-19T11:00:31.599+00:00",
-   "last_seen": "2026-11-20T15:27:14.869+00:00",
+   "last_seen": "2026-11-20T16:41:14.672+00:00",
    "last_changed": "2026-11-19T11:00:31.599+00:00",
    "score": 42,
    "priority": "medium",
@@ -63921,7 +63961,7 @@
     }
    ],
    "first_seen": "2026-11-19T11:00:31.599+00:00",
-   "last_seen": "2026-11-20T15:27:14.869+00:00",
+   "last_seen": "2026-11-20T16:41:14.672+00:00",
    "last_changed": "2026-11-19T11:00:31.599+00:00",
    "score": 34,
    "priority": "low",
@@ -63982,7 +64022,7 @@
     }
    ],
    "first_seen": "2026-11-19T11:00:31.599+00:00",
-   "last_seen": "2026-11-20T15:27:14.869+00:00",
+   "last_seen": "2026-11-20T16:41:14.672+00:00",
    "last_changed": "2026-11-19T11:00:31.599+00:00",
    "score": 30,
    "priority": "low",
@@ -64043,7 +64083,7 @@
     }
    ],
    "first_seen": "2026-11-19T11:00:31.599+00:00",
-   "last_seen": "2026-11-20T15:27:14.869+00:00",
+   "last_seen": "2026-11-20T16:41:14.672+00:00",
    "last_changed": "2026-11-19T11:00:31.599+00:00",
    "score": 30,
    "priority": "low",
@@ -64229,6 +64269,15 @@
     "buyer": "Diputación Foral de Gipuzkoa - Departamento de Cuidados y de Políticas Sociales",
     "pub": "2026-11-18",
     "value": 296478.0,
+    "winners": [],
+    "practices": []
+   },
+   {
+    "id": "TED:801638-2026",
+    "title": "Norvège – Conseil en affaires et en gestion et services connexes – Prolonging agreement on temporary tenderers for financial resources",
+    "buyer": "Kviteseid Kommune",
+    "pub": "2026-11-18",
+    "value": null,
     "winners": [],
     "practices": []
    },
@@ -64571,29 +64620,13 @@
     ]
    },
    {
-    "id": "BOAMP:26-109522",
-    "title": "Assistance à maîtrise d'ouvrage dans le cadre du contrat de concession du réseau de chaleur sur la commune de Brétigny-sur-Orge.",
-    "buyer": "Commune de Brétigny sur Orge",
+    "id": "TED:780319-2026",
+    "title": "Pays-Bas – Services de documentation et de certification juridiques – Landelijk - Juridische informatie",
+    "buyer": "ProRail B.V.",
     "pub": "2026-11-10",
     "value": null,
     "winners": [],
-    "practices": [
-     "PPP & Concessions",
-     "Energie, Nucleaire & Renouvelables",
-     "Construction & Immobilier",
-     "Project Finance & Infrastructure"
-    ]
-   },
-   {
-    "id": "BOAMP:26-108737",
-    "title": "PROGRAMMATION ET ASSISTANCE A MAITRISE D'OUVRAGE (AMO) DANS LE CADRE D'UN MARCHE GLOBAL DE PERFORMANCE COMPRENANT DES PRESTATIONS DE CONCEPTION, REALISATION ET MAINTENANCE RELATIF A LA FUTURE CUISINE",
-    "buyer": "Euro-Métropole de Metz",
-    "pub": "2026-11-10",
-    "value": 291815.0,
-    "winners": [],
-    "practices": [
-     "Construction & Immobilier"
-    ]
+    "practices": []
    }
   ]
  }

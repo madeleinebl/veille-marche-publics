@@ -63,9 +63,9 @@ def map_type(notice_type, form_type):
     ft = (form_type or "").lower()
     if nt.startswith("corr") or ft == "change":
         return "corr"
-    if nt.startswith("can") or nt.startswith("compl") or ft == "result":
+    if nt.startswith("can") or nt.startswith("compl") or nt.startswith("veat") or ft == "result":
         return "award"
-    if nt.startswith("pin") or ft == "planning":
+    if nt.startswith("pin") or nt.startswith("pmc") or ft == "planning":
         return "prior"
     if nt.startswith("cn") or nt.startswith("subco") or ft == "competition":
         return "call"

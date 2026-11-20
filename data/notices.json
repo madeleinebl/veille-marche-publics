@@ -3756,7 +3756,7 @@
   "country": "NOR",
   "pub": "2026-11-18",
   "dl": null,
-  "type": "other",
+  "type": "award",
   "type_label": "veat",
   "cpv": [
    "79400000",
@@ -3795,8 +3795,13 @@
   "priority": "low",
   "practices": [],
   "matched": [],
-  "why": "Pas de signal juridique explicite — à vérifier.",
-  "breakdown": [],
+  "why": "Pas de signal juridique explicite — à vérifier · avis d'attribution (veille concurrentielle).",
+  "breakdown": [
+   {
+    "label": "Type d'avis (award)",
+    "points": -10
+   }
+  ],
   "has_legal_signal": false
  },
  {
@@ -12465,7 +12470,7 @@
   "country": "IRL",
   "pub": "2026-11-11",
   "dl": null,
-  "type": "other",
+  "type": "prior",
   "type_label": "pmc",
   "cpv": [
    "79130000",
@@ -13316,7 +13321,7 @@
   "country": "NLD",
   "pub": "2026-11-10",
   "dl": null,
-  "type": "other",
+  "type": "award",
   "type_label": "veat",
   "cpv": [
    "79130000"
@@ -13354,8 +13359,13 @@
   "priority": "low",
   "practices": [],
   "matched": [],
-  "why": "Pas de signal juridique explicite — à vérifier.",
-  "breakdown": [],
+  "why": "Pas de signal juridique explicite — à vérifier · avis d'attribution (veille concurrentielle).",
+  "breakdown": [
+   {
+    "label": "Type d'avis (award)",
+    "points": -10
+   }
+  ],
   "has_legal_signal": false
  },
  {
@@ -13620,7 +13630,7 @@
   "country": "FIN",
   "pub": "2026-11-10",
   "dl": null,
-  "type": "other",
+  "type": "prior",
   "type_label": "pmc",
   "cpv": [
    "79411000",
@@ -16518,7 +16528,7 @@
   "country": "NLD",
   "pub": "2026-11-06",
   "dl": null,
-  "type": "other",
+  "type": "prior",
   "type_label": "pmc",
   "cpv": [
    "79411000"
@@ -20380,7 +20390,7 @@
   "country": "NLD",
   "pub": "2026-11-04",
   "dl": null,
-  "type": "other",
+  "type": "prior",
   "type_label": "pmc",
   "cpv": [
    "66171000",
@@ -23018,7 +23028,7 @@
   "country": "DNK",
   "pub": "2026-11-02",
   "dl": null,
-  "type": "other",
+  "type": "award",
   "type_label": "veat",
   "cpv": [
    "79000000",
@@ -23054,7 +23064,7 @@
   "matched_queries": [
    "CPV conseil financier"
   ],
-  "score": 20,
+  "score": 10,
   "priority": "low",
   "practices": [
    "Corporate / M&A",
@@ -23064,7 +23074,7 @@
    "due diligence",
    "infrastructure"
   ],
-  "why": "Pas de signal juridique explicite — à vérifier · domaine(s) : Corporate / M&A, Project Finance & Infrastructure.",
+  "why": "Pas de signal juridique explicite — à vérifier · domaine(s) : Corporate / M&A, Project Finance & Infrastructure · avis d'attribution (veille concurrentielle).",
   "breakdown": [
    {
     "label": "Corporate / M&A : due diligence",
@@ -23073,6 +23083,10 @@
    {
     "label": "Project Finance & Infrastructure : infrastructure",
     "points": 8
+   },
+   {
+    "label": "Type d'avis (award)",
+    "points": -10
    }
   ],
   "has_legal_signal": false
@@ -24289,7 +24303,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-20T15:27:14.869+00:00",
+  "last_seen": "2026-11-20T16:41:14.672+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [
    {
@@ -25598,7 +25612,7 @@
   "country": "NLD",
   "pub": "2026-10-30",
   "dl": null,
-  "type": "other",
+  "type": "award",
   "type_label": "veat",
   "cpv": [
    "79100000",
@@ -25634,7 +25648,7 @@
    "CPV juridiques",
    "legal services"
   ],
-  "score": 20,
+  "score": 10,
   "priority": "low",
   "practices": [
    "Conseil juridique général"
@@ -25642,11 +25656,15 @@
   "matched": [
    "services juridiques"
   ],
-  "why": "Mission juridique/conseil (« services juridiques »).",
+  "why": "Mission juridique/conseil (« services juridiques ») · avis d'attribution (veille concurrentielle).",
   "breakdown": [
    {
     "label": "Mission juridique : services juridiques",
     "points": 20
+   },
+   {
+    "label": "Type d'avis (award)",
+    "points": -10
    }
   ],
   "has_legal_signal": true
@@ -32109,7 +32127,7 @@
   "country": "NLD",
   "pub": "2026-10-27",
   "dl": null,
-  "type": "other",
+  "type": "prior",
   "type_label": "pmc",
   "cpv": [
    "75210000",
@@ -37520,7 +37538,7 @@
   "country": "FIN",
   "pub": "2026-10-21",
   "dl": null,
-  "type": "other",
+  "type": "prior",
   "type_label": "pmc",
   "cpv": [
    "79100000",
@@ -46292,7 +46310,7 @@
   "country": "DEU",
   "pub": "2026-10-14",
   "dl": null,
-  "type": "other",
+  "type": "award",
   "type_label": "veat",
   "cpv": [
    "72320000",
@@ -46332,8 +46350,13 @@
   "priority": "low",
   "practices": [],
   "matched": [],
-  "why": "Pas de signal juridique explicite — à vérifier.",
-  "breakdown": [],
+  "why": "Pas de signal juridique explicite — à vérifier · avis d'attribution (veille concurrentielle).",
+  "breakdown": [
+   {
+    "label": "Type d'avis (award)",
+    "points": -10
+   }
+  ],
   "has_legal_signal": false
  },
  {
@@ -46929,7 +46952,7 @@
   "country": "NOR",
   "pub": "2026-10-14",
   "dl": null,
-  "type": "other",
+  "type": "award",
   "type_label": "veat",
   "cpv": [
    "79411100",
@@ -46968,8 +46991,13 @@
   "priority": "low",
   "practices": [],
   "matched": [],
-  "why": "Pas de signal juridique explicite — à vérifier.",
-  "breakdown": [],
+  "why": "Pas de signal juridique explicite — à vérifier · avis d'attribution (veille concurrentielle).",
+  "breakdown": [
+   {
+    "label": "Type d'avis (award)",
+    "points": -10
+   }
+  ],
   "has_legal_signal": false,
   "lot_count": 4
  },
@@ -50918,7 +50946,7 @@
   "country": "ISL",
   "pub": "2026-10-09",
   "dl": null,
-  "type": "other",
+  "type": "prior",
   "type_label": "pmc",
   "cpv": [
    "66171000",
@@ -52545,7 +52573,7 @@
   "country": "FIN",
   "pub": "2026-10-08",
   "dl": null,
-  "type": "other",
+  "type": "prior",
   "type_label": "pmc",
   "cpv": [
    "79100000"
@@ -52738,7 +52766,7 @@
   "country": "DEU",
   "pub": "2026-10-08",
   "dl": null,
-  "type": "other",
+  "type": "award",
   "type_label": "veat",
   "cpv": [
    "79100000",
@@ -52774,7 +52802,7 @@
    "CPV juridiques",
    "legal services"
   ],
-  "score": 20,
+  "score": 10,
   "priority": "low",
   "practices": [
    "Conseil juridique général"
@@ -52782,11 +52810,15 @@
   "matched": [
    "services juridiques"
   ],
-  "why": "Mission juridique/conseil (« services juridiques »).",
+  "why": "Mission juridique/conseil (« services juridiques ») · avis d'attribution (veille concurrentielle).",
   "breakdown": [
    {
     "label": "Mission juridique : services juridiques",
     "points": 20
+   },
+   {
+    "label": "Type d'avis (award)",
+    "points": -10
    }
   ],
   "has_legal_signal": true
@@ -55242,7 +55274,7 @@
   "country": "MLT",
   "pub": "2026-10-06",
   "dl": null,
-  "type": "other",
+  "type": "award",
   "type_label": "veat",
   "cpv": [
    "79100000"
@@ -55278,7 +55310,7 @@
    "legal services",
    "legal advisory"
   ],
-  "score": 20,
+  "score": 10,
   "priority": "low",
   "practices": [
    "Conseil juridique général"
@@ -55287,11 +55319,15 @@
    "services juridiques",
    "legal advisory"
   ],
-  "why": "Mission juridique/conseil (« services juridiques »).",
+  "why": "Mission juridique/conseil (« services juridiques ») · avis d'attribution (veille concurrentielle).",
   "breakdown": [
    {
     "label": "Mission juridique : services juridiques, legal advisory",
     "points": 20
+   },
+   {
+    "label": "Type d'avis (award)",
+    "points": -10
    }
   ],
   "has_legal_signal": true
@@ -71191,7 +71227,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-20T15:27:14.869+00:00",
+  "last_seen": "2026-11-20T16:41:14.672+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -71267,7 +71303,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-20T15:27:14.869+00:00",
+  "last_seen": "2026-11-20T16:41:14.672+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -71337,7 +71373,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-20T15:27:14.869+00:00",
+  "last_seen": "2026-11-20T16:41:14.672+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -71403,7 +71439,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-20T15:27:14.869+00:00",
+  "last_seen": "2026-11-20T16:41:14.672+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -71471,7 +71507,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-20T15:27:14.869+00:00",
+  "last_seen": "2026-11-20T16:41:14.672+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -71540,7 +71576,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-20T15:27:14.869+00:00",
+  "last_seen": "2026-11-20T16:41:14.672+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -71600,7 +71636,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-20T15:27:14.869+00:00",
+  "last_seen": "2026-11-20T16:41:14.672+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -71675,7 +71711,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-20T15:27:14.869+00:00",
+  "last_seen": "2026-11-20T16:41:14.672+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -71734,7 +71770,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-20T15:27:14.869+00:00",
+  "last_seen": "2026-11-20T16:41:14.672+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -71803,7 +71839,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-20T15:27:14.869+00:00",
+  "last_seen": "2026-11-20T16:41:14.672+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -71873,7 +71909,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-20T15:27:14.869+00:00",
+  "last_seen": "2026-11-20T16:41:14.672+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -71941,7 +71977,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-20T15:27:14.869+00:00",
+  "last_seen": "2026-11-20T16:41:14.672+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -72014,7 +72050,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-20T15:27:14.869+00:00",
+  "last_seen": "2026-11-20T16:41:14.672+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -72072,7 +72108,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-20T15:27:14.869+00:00",
+  "last_seen": "2026-11-20T16:41:14.672+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -72147,7 +72183,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-20T15:27:14.869+00:00",
+  "last_seen": "2026-11-20T16:41:14.672+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -72228,7 +72264,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-20T15:27:14.869+00:00",
+  "last_seen": "2026-11-20T16:41:14.672+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -72297,7 +72333,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-20T15:27:14.869+00:00",
+  "last_seen": "2026-11-20T16:41:14.672+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -72366,7 +72402,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-20T15:27:14.869+00:00",
+  "last_seen": "2026-11-20T16:41:14.672+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -72440,7 +72476,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-20T15:27:14.869+00:00",
+  "last_seen": "2026-11-20T16:41:14.672+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -72508,7 +72544,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-20T15:27:14.869+00:00",
+  "last_seen": "2026-11-20T16:41:14.672+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -72577,7 +72613,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-20T15:27:14.869+00:00",
+  "last_seen": "2026-11-20T16:41:14.672+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [

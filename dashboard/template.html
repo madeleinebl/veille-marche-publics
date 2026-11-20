@@ -68,6 +68,8 @@ thead th:hover{color:var(--text)}
 tbody td{padding:.7rem .85rem;border-bottom:1px solid #f0f2f5;vertical-align:top}
 .nr:hover{background:#f8f9ff}
 .nr.exp{opacity:.5}
+.nr.res{opacity:.6;background:#fafafa}
+.badge-res{display:inline-block;font-size:.62rem;font-weight:800;padding:.08rem .4rem;border-radius:4px;background:#455a64;color:#fff;margin-left:.3rem;vertical-align:middle;letter-spacing:.02em}
 
 .cd{white-space:nowrap;color:var(--text-2);min-width:85px}
 .cc{white-space:nowrap;min-width:60px}
@@ -254,6 +256,11 @@ button.fi{cursor:pointer}
           <option value="award">Attributions</option>
           <option value="prior">Avis préalables</option>
         </select>
+        <select class="fi fi-s" id="rf" title="Avis de résultat = marché déjà attribué">
+          <option value="hide" selected>Sans les résultats</option>
+          <option value="all">Avec les résultats</option>
+          <option value="only">Résultats uniquement</option>
+        </select>
         <select class="fi fi-s" id="df">
           <option value="">Toutes échéances</option>
           <option value="7">&le; 7 jours</option>
@@ -426,9 +433,15 @@ function detailBlock(n){
 function dlBadge(dl){var d=daysLeft(dl);if(d===null)return"—";var ds=fmtDate(dl);
   if(d<0)return ds+' <span class="bdg bdg-e">Expiré</span>';if(d<=7)return ds+' <span class="bdg bdg-u">'+d+'j</span>';
   if(d<=30)return ds+' <span class="bdg bdg-s">'+d+'j</span>';return ds+' <span class="bdg bdg-o">'+d+'j</span>';}
+/* avis de résultat : marché attribué (avis d'attribution, annulation, ou appel suivi d'un résultat) */
+function isResult(n){return n.type==="award"||n.type==="cancel"||!!n.award_published;}
+function resultFilter(items){var rf=$("rf")?$("rf").value:"hide",tf=$("tf")?$("tf").value:"";
+  if(rf==="only")return items.filter(isResult);
+  if(rf==="hide"&&tf!=="award")return items.filter(function(n){return!isResult(n);});
+  return items;}
 function row(n){
   var dl=daysLeft(n.dl),t=trackingFor(n.id);
-  var cls="nr"+(dl!==null&&dl<0?" exp":"")+(n.priority==="high"?" kw-row":"");
+  var cls="nr"+(dl!==null&&dl<0?" exp":"")+(n.priority==="high"&&!isResult(n)?" kw-row":"")+(isResult(n)?" res":"");
   var flag=FLAGS[n.country]||"🏳️";
   var cpvH=(n.cpv||[]).slice(0,4).map(function(c){return'<span class="cpv">'+esc(c)+'</span>';}).join("");
   var lotsH=n.lots?'<div style="font-size:.7rem;color:var(--text-3);margin-top:.15rem">'+esc(String(n.lots).slice(0,400))+'</div>':'';
@@ -439,6 +452,7 @@ function row(n){
     '<td class="cd">'+flag+' '+esc(fmtDate(n.pub))+'</td>'+
     '<td class="ct"><a href="'+esc(n.url)+'" target="_blank" rel="noopener">'+esc(String(n.title).slice(0,180))+'</a>'+
       (isNew(n)?'<span class="badge-new">NOUVEAU</span>':'')+
+      (isResult(n)?'<span class="badge-res" title="Avis de résultat : le marché est déjà attribué">🏁 RÉSULTAT — marché attribué</span>':'')+
       (n.award_published?'<span class="badge-awd">Attribué '+fmtDate(n.award_published)+'</span>':'')+
       '<div class="bn">'+esc(n.buyer||"Acheteur non renseigné")+'</div>'+
       '<div class="cpvs">'+cpvH+'</div>'+lotsH+
@@ -462,7 +476,7 @@ function row(n){
 
 /* ---------- filtres ---------- */
 function getFiltered(tab){
-  var items=DATA.filter(function(n){return tab==="fr"?n.country==="FRA":n.country!=="FRA";});
+  var items=resultFilter(DATA.filter(function(n){return tab==="fr"?n.country==="FRA":n.country!=="FRA";}));
   var q=norm($("q").value),pf=$("pf").value,tf=$("tf").value,df=$("df").value,sf=$("sf").value,
       st=$("statusFilter").value,of=$("of").value,pr=$("practf").value;
   if(q)items=items.filter(function(n){return norm([n.title,n.buyer,n.id,(n.cpv||[]).join(" "),n.lots,n.description,(n.matched||[]).join(" "),(n.practices||[]).join(" "),trackingFor(n.id).note].join(" ")).indexOf(q)!==-1;});
@@ -503,9 +517,11 @@ var QUICK={
   "high":{l:"⚑ Pertinence BDGS",f:function(n){return n.priority==="high";},cls:"hot"},
 };
 function buildStats(){
-  var html=Object.keys(QUICK).map(function(k){var c=DATA.filter(QUICK[k].f).length;
+  var base=resultFilter(DATA),nres=DATA.filter(isResult).length;
+  var html=Object.keys(QUICK).map(function(k){var c=base.filter(QUICK[k].f).length;
     return'<div class="sc clk'+(quick===k?' on':'')+'" data-quick="'+k+'" title="Cliquer pour filtrer"><div class="v '+(QUICK[k].cls||"")+'">'+c+'</div><div class="l">'+QUICK[k].l+'</div></div>';}).join("");
   html+='<div class="sc"><div class="v">'+DATA.length+'</div><div class="l">📊 Avis en base</div></div>';
+  html+='<div class="sc clk" id="resCard" title="Cliquer pour afficher ou masquer les résultats"><div class="v" style="color:#455a64">'+nres+'</div><div class="l">🏁 Résultats (marchés attribués) '+($("rf").value==="hide"?"— masqués":"— affichés")+'</div></div>';
   $("statsGrid").innerHTML=html;
 }
 
@@ -616,6 +632,8 @@ function saveFile(fn,data,type){
 function refresh(){buildStats();render();}
 ["q"].forEach(function(id){$(id).addEventListener("input",render);});
 ["pf","practf","tf","df","statusFilter","of","sf"].forEach(function(id){$(id).addEventListener("change",render);});
+$("rf").addEventListener("change",function(){buildStats();render();});
+$("statsGrid").addEventListener("click",function(e){if(e.target.closest("#resCard")){$("rf").value=$("rf").value==="hide"?"all":"hide";buildStats();render();}});
 $("statusFilter").innerHTML='<option value="">Tous les suivis</option>'+TRACK_STATUSES.map(function(s){return'<option>'+esc(s)+'</option>';}).join("");
 $("btnExport").addEventListener("change",function(){var v=this.value;this.value="";if(v==="pdf")exportPDF();else if(v==="word")exportWord();else if(v==="csv")exportCSV();});
 $("btnTrkExp").addEventListener("click",function(){saveFile("suivi-veille-bdgs.json",JSON.stringify(TRACKING,null,1),"application/json");});
