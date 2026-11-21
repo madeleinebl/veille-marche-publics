@@ -317,11 +317,6 @@ button.fi{cursor:pointer}
         <div id="kwStats" style="margin-top:.5rem;font-size:.72rem;color:#e65100"></div>
       </div>
       <div class="sbc"><h3>Domaines de pratique</h3><div id="domainBars"></div><div class="dom-filter-msg" id="domFilterMsg">Filtre actif : <strong id="domFilterName"></strong> &mdash; <span id="domClear">effacer</span></div></div>
-      <div class="sbc">
-        <h3>Suivi interne</h3>
-        <div class="small">Statuts et notes sont enregistrés dans ce navigateur et conservés à chaque actualisation des données. Exportez-les pour les sauvegarder ou les transmettre.</div>
-        <div class="btnrow"><button class="btn-s" id="btnTrkExp">&#11015; Exporter le suivi</button><label class="btn-s">&#11014; Importer<input type="file" id="trkFile" accept=".json" class="hidden"></label></div>
-      </div>
       <div class="sbc"><h3>Répartition par pays</h3><div id="countryBars"></div></div>
       <div class="sbc">
         <h3>Codes CPV surveillés</h3>
@@ -632,8 +627,8 @@ $("rf").addEventListener("change",function(){buildStats();render();});
 $("statsGrid").addEventListener("click",function(e){if(e.target.closest("#resCard")){$("rf").value=$("rf").value==="hide"?"all":"hide";buildStats();render();}});
 $("statusFilter").innerHTML='<option value="">Tous les suivis</option>'+TRACK_STATUSES.map(function(s){return'<option>'+esc(s)+'</option>';}).join("");
 $("btnExport").addEventListener("change",function(){var v=this.value;this.value="";if(v==="pdf")exportPDF();else if(v==="word")exportWord();else if(v==="csv")exportCSV();});
-$("btnTrkExp").addEventListener("click",function(){saveFile("suivi-veille-bdgs.json",JSON.stringify(TRACKING,null,1),"application/json");});
-$("trkFile").addEventListener("change",function(e){var f=e.target.files[0];if(!f)return;var r=new FileReader();r.onload=function(){try{var o=JSON.parse(r.result);Object.keys(o).forEach(function(k){TRACKING[k]=o[k];});saveTracking();refresh();}catch(err){window.alert("Fichier de suivi illisible.");}};r.readAsText(f);});
+if($("btnTrkExp"))$("btnTrkExp").addEventListener("click",function(){saveFile("suivi-veille-bdgs.json",JSON.stringify(TRACKING,null,1),"application/json");});
+if($("trkFile"))$("trkFile").addEventListener("change",function(e){var f=e.target.files[0];if(!f)return;var r=new FileReader();r.onload=function(){try{var o=JSON.parse(r.result);Object.keys(o).forEach(function(k){TRACKING[k]=o[k];});saveTracking();refresh();}catch(err){window.alert("Fichier de suivi illisible.");}};r.readAsText(f);});
 document.querySelectorAll(".tab").forEach(function(b){b.addEventListener("click",function(){curTab=b.getAttribute("data-tab");
   document.querySelectorAll(".tab").forEach(function(x){x.classList.toggle("on",x===b);});
   $("pnl-fr").classList.toggle("on",curTab==="fr");$("pnl-eu").classList.toggle("on",curTab==="eu");});});
