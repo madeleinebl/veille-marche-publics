@@ -1,40 +1,40 @@
 {
- "generated_at": "2026-11-20T16:41:22+00:00",
+ "generated_at": "2026-11-21T06:54:52+00:00",
  "data_mode": "live",
  "last_run": {
-  "run_id": "2026-11-20T13:40:51.664+00:00",
-  "started_at": "2026-11-20T13:40:51.664+00:00",
+  "run_id": "2026-11-21T06:53:51.413+00:00",
+  "started_at": "2026-11-21T06:53:51.413+00:00",
   "mode": "collect",
-  "since": "2026-11-10",
+  "since": "2026-11-11",
   "lookback_days": 10,
   "sources": {
    "BOAMP": {
     "status": "ok",
-    "records": 94,
-    "kept": 64,
-    "new": 1,
+    "records": 70,
+    "kept": 40,
+    "new": 0,
     "updated": 0,
     "merged": 0,
     "corrigenda": 0,
     "filtered_low_score": 30,
     "errors": [],
-    "queries": 36,
-    "raw_rows": 124,
-    "duration_s": 24.4
+    "queries": 19,
+    "raw_rows": 90,
+    "duration_s": 10.7
    },
    "TED": {
     "status": "ok",
-    "records": 208,
-    "kept": 159,
+    "records": 73,
+    "kept": 68,
     "new": 0,
     "updated": 0,
     "merged": 0,
     "corrigenda": 0,
-    "filtered_low_score": 49,
+    "filtered_low_score": 5,
     "errors": [],
-    "queries": 14,
-    "raw_rows": 326,
-    "duration_s": 23.9
+    "queries": 13,
+    "raw_rows": 132,
+    "duration_s": 34.7
    },
    "Saisie manuelle": {
     "status": "ok",
@@ -43,47 +43,47 @@
   },
   "totals": {
    "notices": 1051,
-   "new": 1,
-   "high": 13
+   "new": 0,
+   "high": 9
   },
   "status": "ok",
-  "finished_at": "2026-11-20T13:41:50.282+00:00",
-  "duration_s": 58.6
+  "finished_at": "2026-11-21T06:54:52.656+00:00",
+  "duration_s": 61.2
  },
  "last_success": {
-  "run_id": "2026-11-20T13:40:51.664+00:00",
-  "started_at": "2026-11-20T13:40:51.664+00:00",
+  "run_id": "2026-11-21T06:53:51.413+00:00",
+  "started_at": "2026-11-21T06:53:51.413+00:00",
   "mode": "collect",
-  "since": "2026-11-10",
+  "since": "2026-11-11",
   "lookback_days": 10,
   "sources": {
    "BOAMP": {
     "status": "ok",
-    "records": 94,
-    "kept": 64,
-    "new": 1,
+    "records": 70,
+    "kept": 40,
+    "new": 0,
     "updated": 0,
     "merged": 0,
     "corrigenda": 0,
     "filtered_low_score": 30,
     "errors": [],
-    "queries": 36,
-    "raw_rows": 124,
-    "duration_s": 24.4
+    "queries": 19,
+    "raw_rows": 90,
+    "duration_s": 10.7
    },
    "TED": {
     "status": "ok",
-    "records": 208,
-    "kept": 159,
+    "records": 73,
+    "kept": 68,
     "new": 0,
     "updated": 0,
     "merged": 0,
     "corrigenda": 0,
-    "filtered_low_score": 49,
+    "filtered_low_score": 5,
     "errors": [],
-    "queries": 14,
-    "raw_rows": 326,
-    "duration_s": 23.9
+    "queries": 13,
+    "raw_rows": 132,
+    "duration_s": 34.7
    },
    "Saisie manuelle": {
     "status": "ok",
@@ -92,12 +92,12 @@
   },
   "totals": {
    "notices": 1051,
-   "new": 1,
-   "high": 13
+   "new": 0,
+   "high": 9
   },
   "status": "ok",
-  "finished_at": "2026-11-20T13:41:50.282+00:00",
-  "duration_s": 58.6
+  "finished_at": "2026-11-21T06:54:52.656+00:00",
+  "duration_s": 61.2
  },
  "runs": [
   {
@@ -184,6 +184,52 @@
      "queries": 14,
      "raw_rows": 326,
      "duration_s": 23.9
+    },
+    "Saisie manuelle": {
+     "status": "ok",
+     "records": 22
+    }
+   },
+   "mode": "collect"
+  },
+  {
+   "run_id": "2026-11-21T06:53:51.413+00:00",
+   "status": "ok",
+   "duration_s": 61.2,
+   "since": "2026-11-11",
+   "totals": {
+    "notices": 1051,
+    "new": 0,
+    "high": 9
+   },
+   "sources": {
+    "BOAMP": {
+     "status": "ok",
+     "records": 70,
+     "kept": 40,
+     "new": 0,
+     "updated": 0,
+     "merged": 0,
+     "corrigenda": 0,
+     "filtered_low_score": 30,
+     "errors": [],
+     "queries": 19,
+     "raw_rows": 90,
+     "duration_s": 10.7
+    },
+    "TED": {
+     "status": "ok",
+     "records": 73,
+     "kept": 68,
+     "new": 0,
+     "updated": 0,
+     "merged": 0,
+     "corrigenda": 0,
+     "filtered_low_score": 5,
+     "errors": [],
+     "queries": 13,
+     "raw_rows": 132,
+     "duration_s": 34.7
     },
     "Saisie manuelle": {
      "status": "ok",
@@ -539,7 +585,7 @@
      "type": "call",
      "type_label": "cn-standard",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T10:16:31+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     },
     {
      "source": "TED",
@@ -553,7 +599,7 @@
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T10:15:58.451+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 29,
    "priority": "low",
@@ -653,11 +699,11 @@
      "type": "call",
      "type_label": "cn-standard",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T10:16:31+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T10:15:58.451+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 38,
    "priority": "medium",
@@ -832,11 +878,11 @@
      "type": "call",
      "type_label": "cn-standard",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T10:16:31+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T10:15:58.451+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 44,
    "priority": "medium",
@@ -1134,11 +1180,11 @@
      "type": "call",
      "type_label": "Avis de marché",
      "family": "Marchés entre 90 k€ et seuils européens",
-     "fetched_at": "2026-11-20T13:40:51+00:00"
+     "fetched_at": "2026-11-21T06:53:51+00:00"
     }
    ],
    "first_seen": "2026-11-20T13:40:51.664+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T13:40:51.664+00:00",
    "score": 10,
    "priority": "low",
@@ -1187,11 +1233,11 @@
      "type": "award",
      "type_label": "Résultat de marché",
      "family": "Marchés entre 90 k€ et seuils européens",
-     "fetched_at": "2026-11-20T13:40:51+00:00"
+     "fetched_at": "2026-11-21T06:53:51+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 2,
    "priority": "low",
@@ -1309,11 +1355,11 @@
      "type": "award",
      "type_label": "can-standard",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T10:16:31+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 0,
    "priority": "low",
@@ -1371,11 +1417,11 @@
      "type": "call",
      "type_label": "Avis de marché",
      "family": "Marchés européens",
-     "fetched_at": "2026-11-20T13:40:51+00:00"
+     "fetched_at": "2026-11-21T06:53:51+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 16,
    "priority": "low",
@@ -1429,11 +1475,11 @@
      "type": "call",
      "type_label": "Avis de marché",
      "family": "Marchés européens",
-     "fetched_at": "2026-11-20T13:40:51+00:00"
+     "fetched_at": "2026-11-21T06:53:51+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 38,
    "priority": "medium",
@@ -1648,11 +1694,11 @@
      "type": "award",
      "type_label": "Résultat de marché",
      "family": "Marchés européens",
-     "fetched_at": "2026-11-20T13:40:51+00:00"
+     "fetched_at": "2026-11-21T06:53:51+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 17,
    "priority": "low",
@@ -1751,7 +1797,7 @@
      "type": "call",
      "type_label": "cn-standard",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T13:41:16+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     },
     {
      "source": "TED",
@@ -1765,7 +1811,7 @@
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 24,
    "priority": "low",
@@ -1821,11 +1867,11 @@
      "type": "award",
      "type_label": "can-social",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T13:41:16+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 18,
    "priority": "low",
@@ -2006,11 +2052,11 @@
      "type": "call",
      "type_label": "cn-standard",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T13:41:16+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 8,
    "priority": "low",
@@ -2405,7 +2451,7 @@
      "type": "call",
      "type_label": "cn-standard",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T13:41:16+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     },
     {
      "source": "TED",
@@ -2419,7 +2465,7 @@
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 8,
    "priority": "low",
@@ -2512,11 +2558,11 @@
      "type": "award",
      "type_label": "can-standard",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T13:41:16+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 20,
    "priority": "low",
@@ -2789,7 +2835,7 @@
      "type": "award",
      "type_label": "Résultat de marché",
      "family": "Marchés entre 90 k€ et seuils européens",
-     "fetched_at": "2026-11-20T13:40:51+00:00"
+     "fetched_at": "2026-11-21T06:53:51+00:00"
     }
    ],
    "corrigenda": [
@@ -2808,7 +2854,7 @@
    ],
    "last_corrigendum": "2026-10-05",
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 20,
    "priority": "low",
@@ -2964,11 +3010,11 @@
      "type": "call",
      "type_label": "Avis de marché",
      "family": "Marchés européens",
-     "fetched_at": "2026-11-20T13:40:51+00:00"
+     "fetched_at": "2026-11-21T06:53:51+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 12,
    "priority": "low",
@@ -3029,7 +3075,7 @@
      "type": "call",
      "type_label": "Avis de marché",
      "family": "Marchés européens",
-     "fetched_at": "2026-11-20T13:40:51+00:00"
+     "fetched_at": "2026-11-21T06:53:51+00:00"
     },
     {
      "source": "TED",
@@ -3039,11 +3085,11 @@
      "type": "call",
      "type_label": "cn-standard",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T13:41:16+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 36,
    "priority": "medium",
@@ -3108,7 +3154,7 @@
      "type": "call",
      "type_label": "cn-standard",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T13:41:16+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     },
     {
      "source": "TED",
@@ -3122,7 +3168,7 @@
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 8,
    "priority": "low",
@@ -3214,11 +3260,11 @@
      "type": "award",
      "type_label": "can-standard",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T13:41:16+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 20,
    "priority": "low",
@@ -3286,11 +3332,11 @@
      "type": "call",
      "type_label": "cn-standard",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T13:41:16+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 46,
    "priority": "medium",
@@ -3361,11 +3407,11 @@
      "type": "call",
      "type_label": "cn-standard",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T13:41:16+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 55,
    "priority": "high",
@@ -3812,11 +3858,11 @@
      "type": "call",
      "type_label": "cn-standard",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T13:41:16+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 30,
    "priority": "low",
@@ -3984,11 +4030,11 @@
      "type": "call",
      "type_label": "Avis de marché",
      "family": "Marchés entre 90 k€ et seuils européens",
-     "fetched_at": "2026-11-20T13:40:51+00:00"
+     "fetched_at": "2026-11-21T06:53:51+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 30,
    "priority": "low",
@@ -4045,11 +4091,11 @@
      "type": "corr",
      "type_label": "Rectificatif",
      "family": "Délégation de service public",
-     "fetched_at": "2026-11-20T13:40:51+00:00"
+     "fetched_at": "2026-11-21T06:53:51+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 22,
    "priority": "low",
@@ -4100,7 +4146,7 @@
      "type": "award",
      "type_label": "Résultat de marché",
      "family": "Marchés européens",
-     "fetched_at": "2026-11-20T13:40:51+00:00"
+     "fetched_at": "2026-11-21T06:53:51+00:00"
     },
     {
      "source": "TED",
@@ -4110,11 +4156,11 @@
      "type": "award",
      "type_label": "can-standard",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T13:41:16+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 10,
    "priority": "low",
@@ -4170,7 +4216,7 @@
      "type": "call",
      "type_label": "Avis de marché",
      "family": "Marchés européens",
-     "fetched_at": "2026-11-20T13:40:51+00:00"
+     "fetched_at": "2026-11-21T06:53:51+00:00"
     },
     {
      "source": "BOAMP",
@@ -4180,11 +4226,11 @@
      "type": "call",
      "type_label": "Avis de marché",
      "family": "Marchés européens",
-     "fetched_at": "2026-11-20T13:40:51+00:00"
+     "fetched_at": "2026-11-21T06:53:51+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 22,
    "priority": "low",
@@ -4307,11 +4353,11 @@
      "type": "call",
      "type_label": "Avis de marché",
      "family": "Marchés européens",
-     "fetched_at": "2026-11-20T13:40:51+00:00"
+     "fetched_at": "2026-11-21T06:53:51+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 14,
    "priority": "low",
@@ -4370,11 +4416,11 @@
      "type": "call",
      "type_label": "Avis de marché",
      "family": "Marchés européens",
-     "fetched_at": "2026-11-20T13:40:51+00:00"
+     "fetched_at": "2026-11-21T06:53:51+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 16,
    "priority": "low",
@@ -4428,11 +4474,11 @@
      "type": "award",
      "type_label": "can-modif",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T13:41:16+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 0,
    "priority": "low",
@@ -4478,12 +4524,12 @@
      "type": "call",
      "type_label": "cn-social",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T13:41:16+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     }
    ],
    "award_published": "2026-11-05",
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 24,
    "priority": "low",
@@ -4636,7 +4682,7 @@
      "type": "call",
      "type_label": "cn-standard",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T13:41:16+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     },
     {
      "source": "TED",
@@ -4650,7 +4696,7 @@
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 8,
    "priority": "low",
@@ -4693,7 +4739,7 @@
      "type": "call",
      "type_label": "cn-social",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T13:41:16+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     },
     {
      "source": "TED",
@@ -4707,7 +4753,7 @@
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 20,
    "priority": "low",
@@ -4758,7 +4804,7 @@
      "type": "call",
      "type_label": "cn-standard",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T13:41:16+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     },
     {
      "source": "TED",
@@ -4772,7 +4818,7 @@
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 45,
    "priority": "medium",
@@ -4923,11 +4969,11 @@
      "type": "call",
      "type_label": "cn-standard",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T13:41:16+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 30,
    "priority": "low",
@@ -5103,7 +5149,7 @@
      "type": "call",
      "type_label": "cn-social",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T13:41:16+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     },
     {
      "source": "TED",
@@ -5117,7 +5163,7 @@
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 34,
    "priority": "low",
@@ -5177,11 +5223,11 @@
      "type": "award",
      "type_label": "can-standard",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T13:41:16+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 18,
    "priority": "low",
@@ -5291,11 +5337,11 @@
      "type": "award",
      "type_label": "can-standard",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T13:41:16+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 0,
    "priority": "low",
@@ -5343,11 +5389,11 @@
      "type": "corr",
      "type_label": "Rectificatif",
      "family": "Marchés entre 90 k€ et seuils européens",
-     "fetched_at": "2026-11-20T13:40:51+00:00"
+     "fetched_at": "2026-11-21T06:53:51+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 20,
    "priority": "low",
@@ -5407,11 +5453,11 @@
      "type": "call",
      "type_label": "Avis de marché",
      "family": "Délégation de service public",
-     "fetched_at": "2026-11-20T13:40:51+00:00"
+     "fetched_at": "2026-11-21T06:53:51+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 12,
    "priority": "low",
@@ -5686,11 +5732,11 @@
      "type": "award",
      "type_label": "can-standard",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T13:41:16+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 21,
    "priority": "low",
@@ -5752,11 +5798,11 @@
      "type": "call",
      "type_label": "cn-social",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T13:41:16+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 4,
    "priority": "low",
@@ -5801,11 +5847,11 @@
      "type": "award",
      "type_label": "can-standard",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T13:41:16+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 18,
    "priority": "low",
@@ -6026,7 +6072,7 @@
      "type": "call",
      "type_label": "cn-standard",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T13:41:16+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     },
     {
      "source": "TED",
@@ -6040,7 +6086,7 @@
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 0,
    "priority": "low",
@@ -6202,11 +6248,11 @@
      "type": "award",
      "type_label": "can-standard",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T13:41:16+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 21,
    "priority": "low",
@@ -6413,7 +6459,7 @@
      "type": "call",
      "type_label": "cn-standard",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T13:41:16+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     },
     {
      "source": "TED",
@@ -6468,7 +6514,7 @@
    ],
    "award_published": "2026-10-20",
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 34,
    "priority": "low",
@@ -6625,7 +6671,7 @@
      "type": "call",
      "type_label": "cn-standard",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T13:41:16+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     },
     {
      "source": "TED",
@@ -6639,7 +6685,7 @@
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 0,
    "priority": "low",
@@ -6726,11 +6772,11 @@
      "type": "call",
      "type_label": "cn-standard",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T13:41:16+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 25,
    "priority": "low",
@@ -6800,11 +6846,11 @@
      "type": "call",
      "type_label": "cn-standard",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T13:41:16+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 47,
    "priority": "medium",
@@ -6877,11 +6923,11 @@
      "type": "call",
      "type_label": "Avis de marché",
      "family": "Délégation de service public",
-     "fetched_at": "2026-11-20T13:40:51+00:00"
+     "fetched_at": "2026-11-21T06:53:51+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 12,
    "priority": "low",
@@ -6932,11 +6978,11 @@
      "type": "call",
      "type_label": "Avis de marché",
      "family": "Marchés entre 90 k€ et seuils européens",
-     "fetched_at": "2026-11-20T13:40:51+00:00"
+     "fetched_at": "2026-11-21T06:53:51+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 46,
    "priority": "medium",
@@ -7049,11 +7095,11 @@
      "type": "corr",
      "type_label": "Rectificatif",
      "family": "Délégation de service public",
-     "fetched_at": "2026-11-20T13:40:51+00:00"
+     "fetched_at": "2026-11-21T06:53:51+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 22,
    "priority": "low",
@@ -7104,11 +7150,11 @@
      "type": "call",
      "type_label": "Avis de marché",
      "family": "Délégation de service public",
-     "fetched_at": "2026-11-20T13:40:51+00:00"
+     "fetched_at": "2026-11-21T06:53:51+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 12,
    "priority": "low",
@@ -7159,11 +7205,11 @@
      "type": "call",
      "type_label": "Avis de marché",
      "family": "Marchés entre 90 k€ et seuils européens",
-     "fetched_at": "2026-11-20T13:40:51+00:00"
+     "fetched_at": "2026-11-21T06:53:51+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 16,
    "priority": "low",
@@ -7222,11 +7268,11 @@
      "type": "call",
      "type_label": "Avis de marché",
      "family": "Marchés entre 90 k€ et seuils européens",
-     "fetched_at": "2026-11-20T13:40:51+00:00"
+     "fetched_at": "2026-11-21T06:53:51+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 20,
    "priority": "low",
@@ -7281,7 +7327,7 @@
      "type": "call",
      "type_label": "Avis de marché",
      "family": "Marchés européens",
-     "fetched_at": "2026-11-20T13:40:51+00:00"
+     "fetched_at": "2026-11-21T06:53:51+00:00"
     },
     {
      "source": "TED",
@@ -7291,11 +7337,11 @@
      "type": "call",
      "type_label": "cn-standard",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T13:41:16+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 48,
    "priority": "medium",
@@ -7451,7 +7497,7 @@
      "type": "call",
      "type_label": "Avis de marché",
      "family": "Marchés européens",
-     "fetched_at": "2026-11-20T13:40:51+00:00"
+     "fetched_at": "2026-11-21T06:53:51+00:00"
     },
     {
      "source": "TED",
@@ -7461,11 +7507,11 @@
      "type": "call",
      "type_label": "cn-standard",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T13:41:16+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 25,
    "priority": "low",
@@ -7517,11 +7563,11 @@
      "type": "call",
      "type_label": "Avis de marché",
      "family": "Marchés européens",
-     "fetched_at": "2026-11-20T13:40:51+00:00"
+     "fetched_at": "2026-11-21T06:53:51+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 53,
    "priority": "medium",
@@ -7596,11 +7642,11 @@
      "type": "award",
      "type_label": "Résultat de marché",
      "family": "Marchés européens",
-     "fetched_at": "2026-11-20T13:40:51+00:00"
+     "fetched_at": "2026-11-21T06:53:51+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 29,
    "priority": "low",
@@ -7669,11 +7715,11 @@
      "type": "call",
      "type_label": "Avis de marché",
      "family": "Marchés européens",
-     "fetched_at": "2026-11-20T13:40:51+00:00"
+     "fetched_at": "2026-11-21T06:53:51+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 39,
    "priority": "medium",
@@ -7853,7 +7899,7 @@
      "type": "call",
      "type_label": "cn-standard",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T13:41:16+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     },
     {
      "source": "TED",
@@ -7867,7 +7913,7 @@
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 8,
    "priority": "low",
@@ -7913,11 +7959,11 @@
      "type": "call",
      "type_label": "Avis de marché",
      "family": "Marchés européens",
-     "fetched_at": "2026-11-20T13:40:51+00:00"
+     "fetched_at": "2026-11-21T06:53:51+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 13,
    "priority": "low",
@@ -7974,7 +8020,7 @@
      "type": "call",
      "type_label": "Avis de marché",
      "family": "Marchés européens",
-     "fetched_at": "2026-11-20T13:40:51+00:00"
+     "fetched_at": "2026-11-21T06:53:51+00:00"
     },
     {
      "source": "BOAMP",
@@ -7988,7 +8034,7 @@
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 32,
    "priority": "low",
@@ -8049,11 +8095,11 @@
      "type": "call",
      "type_label": "cn-standard",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T13:41:16+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 56,
    "priority": "medium",
@@ -8341,11 +8387,11 @@
      "type": "call",
      "type_label": "cn-social",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T13:41:16+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 24,
    "priority": "low",
@@ -8405,11 +8451,11 @@
      "type": "award",
      "type_label": "can-standard",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T13:41:16+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 23,
    "priority": "low",
@@ -8494,11 +8540,11 @@
      "type": "call",
      "type_label": "qu-sy",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T13:41:16+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 29,
    "priority": "low",
@@ -8559,11 +8605,11 @@
      "type": "call",
      "type_label": "cn-standard",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T13:41:16+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 32,
    "priority": "low",
@@ -8720,7 +8766,7 @@
      "type": "call",
      "type_label": "cn-standard",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T13:41:16+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     },
     {
      "source": "TED",
@@ -8744,7 +8790,7 @@
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 16,
    "priority": "low",
@@ -8808,11 +8854,11 @@
      "type": "call",
      "type_label": "cn-standard",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T13:41:16+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 4,
    "priority": "low",
@@ -8858,11 +8904,11 @@
      "type": "call",
      "type_label": "cn-social",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T13:41:16+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 0,
    "priority": "low",
@@ -8900,11 +8946,11 @@
      "type": "award",
      "type_label": "can-standard",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T13:41:16+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 14,
    "priority": "low",
@@ -9022,11 +9068,11 @@
      "type": "call",
      "type_label": "cn-standard",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T13:41:16+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 4,
    "priority": "low",
@@ -9129,11 +9175,11 @@
      "type": "corr",
      "type_label": "Rectificatif",
      "family": "Marchés entre 90 k€ et seuils européens",
-     "fetched_at": "2026-11-20T13:40:51+00:00"
+     "fetched_at": "2026-11-21T06:53:51+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 18,
    "priority": "low",
@@ -9193,11 +9239,11 @@
      "type": "call",
      "type_label": "Avis de marché",
      "family": "Marchés européens",
-     "fetched_at": "2026-11-20T13:40:51+00:00"
+     "fetched_at": "2026-11-21T06:53:51+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 14,
    "priority": "low",
@@ -9255,7 +9301,7 @@
      "type": "award",
      "type_label": "Résultat de marché",
      "family": "Marchés européens",
-     "fetched_at": "2026-11-20T13:40:51+00:00"
+     "fetched_at": "2026-11-21T06:53:51+00:00"
     },
     {
      "source": "TED",
@@ -9265,11 +9311,11 @@
      "type": "award",
      "type_label": "can-standard",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T13:41:16+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 34,
    "priority": "low",
@@ -9354,11 +9400,11 @@
      "type": "call",
      "type_label": "Avis de marché",
      "family": "Marchés européens",
-     "fetched_at": "2026-11-20T13:40:51+00:00"
+     "fetched_at": "2026-11-21T06:53:51+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 32,
    "priority": "low",
@@ -9416,11 +9462,11 @@
      "type": "call",
      "type_label": "Avis de marché",
      "family": "Marchés européens",
-     "fetched_at": "2026-11-20T13:40:51+00:00"
+     "fetched_at": "2026-11-21T06:53:51+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 41,
    "priority": "medium",
@@ -9489,11 +9535,11 @@
      "type": "call",
      "type_label": "cn-standard",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T13:41:16+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 4,
    "priority": "low",
@@ -9537,11 +9583,11 @@
      "type": "call",
      "type_label": "cn-standard",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T13:41:16+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 32,
    "priority": "low",
@@ -9698,7 +9744,7 @@
      "type": "call",
      "type_label": "cn-standard",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T13:41:16+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     },
     {
      "source": "TED",
@@ -9712,7 +9758,7 @@
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 30,
    "priority": "low",
@@ -9772,11 +9818,11 @@
      "type": "call",
      "type_label": "cn-social",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T13:41:16+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 20,
    "priority": "low",
@@ -9922,11 +9968,11 @@
      "type": "call",
      "type_label": "cn-social",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T13:41:16+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 28,
    "priority": "low",
@@ -10045,11 +10091,11 @@
      "type": "call",
      "type_label": "Avis de marché",
      "family": "Marchés entre 90 k€ et seuils européens",
-     "fetched_at": "2026-11-20T13:40:51+00:00"
+     "fetched_at": "2026-11-21T06:53:51+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 43,
    "priority": "medium",
@@ -10290,11 +10336,11 @@
      "type": "award",
      "type_label": "can-standard",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T13:41:16+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 9,
    "priority": "low",
@@ -10433,11 +10479,11 @@
      "type": "award",
      "type_label": "can-social",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T13:41:16+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 0,
    "priority": "low",
@@ -10486,11 +10532,11 @@
      "type": "award",
      "type_label": "can-social",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T13:41:16+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 18,
    "priority": "low",
@@ -10548,11 +10594,11 @@
      "type": "award",
      "type_label": "can-standard",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T13:41:16+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 10,
    "priority": "low",
@@ -10607,11 +10653,11 @@
      "type": "call",
      "type_label": "cn-standard",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T13:41:16+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 30,
    "priority": "low",
@@ -10672,7 +10718,7 @@
      "type": "call",
      "type_label": "cn-standard",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T13:41:16+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     },
     {
      "source": "TED",
@@ -10686,7 +10732,7 @@
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 0,
    "priority": "low",
@@ -10726,7 +10772,7 @@
      "type": "call",
      "type_label": "cn-standard",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T13:41:16+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     },
     {
      "source": "TED",
@@ -10740,7 +10786,7 @@
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 0,
    "priority": "low",
@@ -10782,11 +10828,11 @@
      "type": "call",
      "type_label": "cn-standard",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T13:41:16+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 33,
    "priority": "low",
@@ -10842,11 +10888,11 @@
      "type": "call",
      "type_label": "cn-standard",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T13:41:16+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 8,
    "priority": "low",
@@ -10949,7 +10995,7 @@
      "type": "award",
      "type_label": "can-standard",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T13:41:16+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     },
     {
      "source": "TED",
@@ -10959,11 +11005,11 @@
      "type": "award",
      "type_label": "can-standard",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T13:41:16+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 10,
    "priority": "low",
@@ -11016,11 +11062,11 @@
      "type": "award",
      "type_label": "can-standard",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T13:41:16+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 2,
    "priority": "low",
@@ -11135,11 +11181,11 @@
      "type": "award",
      "type_label": "can-standard",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T13:41:16+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 0,
    "priority": "low",
@@ -11305,11 +11351,11 @@
      "type": "call",
      "type_label": "cn-standard",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T13:41:16+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 25,
    "priority": "low",
@@ -11365,11 +11411,11 @@
      "type": "call",
      "type_label": "cn-standard",
      "family": "TED / JOUE",
-     "fetched_at": "2026-11-20T13:41:16+00:00"
+     "fetched_at": "2026-11-21T06:54:02+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 4,
    "priority": "low",
@@ -11472,7 +11518,7 @@
      "type": "call",
      "type_label": "Avis de marché",
      "family": "Marchés européens",
-     "fetched_at": "2026-11-20T13:40:51+00:00"
+     "fetched_at": "2026-11-21T06:53:51+00:00"
     },
     {
      "source": "BOAMP",
@@ -11486,7 +11532,7 @@
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 23,
    "priority": "low",
@@ -11554,11 +11600,11 @@
      "type": "call",
      "type_label": "Avis de marché",
      "family": "Marchés européens",
-     "fetched_at": "2026-11-20T13:40:51+00:00"
+     "fetched_at": "2026-11-21T06:53:51+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 36,
    "priority": "medium",
@@ -11620,11 +11666,11 @@
      "type": "corr",
      "type_label": "Modification",
      "family": "Marchés européens",
-     "fetched_at": "2026-11-20T13:40:51+00:00"
+     "fetched_at": "2026-11-21T06:53:51+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 31,
    "priority": "low",
@@ -11758,11 +11804,11 @@
      "type": "call",
      "type_label": "Avis de marché",
      "family": "Marchés européens",
-     "fetched_at": "2026-11-20T13:40:51+00:00"
+     "fetched_at": "2026-11-21T06:53:51+00:00"
     }
    ],
    "first_seen": "2026-11-20T10:15:58.451+00:00",
-   "last_seen": "2026-11-20T13:40:51.664+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 12,
    "priority": "low",
@@ -21722,7 +21768,7 @@
     }
    ],
    "first_seen": "2026-11-19T11:00:31.599+00:00",
-   "last_seen": "2026-11-20T16:41:14.672+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-20T10:15:58.451+00:00",
    "score": 65,
    "priority": "high",
@@ -62858,7 +62904,7 @@
     }
    ],
    "first_seen": "2026-11-19T11:00:31.599+00:00",
-   "last_seen": "2026-11-20T16:41:14.672+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-19T11:00:31.599+00:00",
    "score": 35,
    "priority": "low",
@@ -62927,7 +62973,7 @@
     }
    ],
    "first_seen": "2026-11-19T11:00:31.599+00:00",
-   "last_seen": "2026-11-20T16:41:14.672+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-19T11:00:31.599+00:00",
    "score": 30,
    "priority": "low",
@@ -62989,7 +63035,7 @@
     }
    ],
    "first_seen": "2026-11-19T11:00:31.599+00:00",
-   "last_seen": "2026-11-20T16:41:14.672+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-19T11:00:31.599+00:00",
    "score": 10,
    "priority": "low",
@@ -63046,7 +63092,7 @@
     }
    ],
    "first_seen": "2026-11-19T11:00:31.599+00:00",
-   "last_seen": "2026-11-20T16:41:14.672+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-19T11:00:31.599+00:00",
    "score": 30,
    "priority": "low",
@@ -63106,7 +63152,7 @@
     }
    ],
    "first_seen": "2026-11-19T11:00:31.599+00:00",
-   "last_seen": "2026-11-20T16:41:14.672+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-19T11:00:31.599+00:00",
    "score": 30,
    "priority": "low",
@@ -63166,7 +63212,7 @@
     }
    ],
    "first_seen": "2026-11-19T11:00:31.599+00:00",
-   "last_seen": "2026-11-20T16:41:14.672+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-19T11:00:31.599+00:00",
    "score": 25,
    "priority": "low",
@@ -63219,7 +63265,7 @@
    ],
    "award_published": "2026-10-14",
    "first_seen": "2026-11-19T11:00:31.599+00:00",
-   "last_seen": "2026-11-20T16:41:14.672+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-19T11:00:31.599+00:00",
    "score": 34,
    "priority": "low",
@@ -63285,7 +63331,7 @@
     }
    ],
    "first_seen": "2026-11-19T11:00:31.599+00:00",
-   "last_seen": "2026-11-20T16:41:14.672+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-19T11:00:31.599+00:00",
    "score": 25,
    "priority": "low",
@@ -63335,7 +63381,7 @@
     }
    ],
    "first_seen": "2026-11-19T11:00:31.599+00:00",
-   "last_seen": "2026-11-20T16:41:14.672+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-19T11:00:31.599+00:00",
    "score": 30,
    "priority": "low",
@@ -63396,7 +63442,7 @@
     }
    ],
    "first_seen": "2026-11-19T11:00:31.599+00:00",
-   "last_seen": "2026-11-20T16:41:14.672+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-19T11:00:31.599+00:00",
    "score": 30,
    "priority": "low",
@@ -63457,7 +63503,7 @@
     }
    ],
    "first_seen": "2026-11-19T11:00:31.599+00:00",
-   "last_seen": "2026-11-20T16:41:14.672+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-19T11:00:31.599+00:00",
    "score": 30,
    "priority": "low",
@@ -63517,7 +63563,7 @@
     }
    ],
    "first_seen": "2026-11-19T11:00:31.599+00:00",
-   "last_seen": "2026-11-20T16:41:14.672+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-19T11:00:31.599+00:00",
    "score": 20,
    "priority": "low",
@@ -63582,7 +63628,7 @@
     }
    ],
    "first_seen": "2026-11-19T11:00:31.599+00:00",
-   "last_seen": "2026-11-20T16:41:14.672+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-19T11:00:31.599+00:00",
    "score": 25,
    "priority": "low",
@@ -63631,7 +63677,7 @@
     }
    ],
    "first_seen": "2026-11-19T11:00:31.599+00:00",
-   "last_seen": "2026-11-20T16:41:14.672+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-19T11:00:31.599+00:00",
    "score": 39,
    "priority": "medium",
@@ -63698,7 +63744,7 @@
     }
    ],
    "first_seen": "2026-11-19T11:00:31.599+00:00",
-   "last_seen": "2026-11-20T16:41:14.672+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-19T11:00:31.599+00:00",
    "score": 47,
    "priority": "medium",
@@ -63771,7 +63817,7 @@
     }
    ],
    "first_seen": "2026-11-19T11:00:31.599+00:00",
-   "last_seen": "2026-11-20T16:41:14.672+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-19T11:00:31.599+00:00",
    "score": 30,
    "priority": "low",
@@ -63832,7 +63878,7 @@
     }
    ],
    "first_seen": "2026-11-19T11:00:31.599+00:00",
-   "last_seen": "2026-11-20T16:41:14.672+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-19T11:00:31.599+00:00",
    "score": 30,
    "priority": "low",
@@ -63894,7 +63940,7 @@
     }
    ],
    "first_seen": "2026-11-19T11:00:31.599+00:00",
-   "last_seen": "2026-11-20T16:41:14.672+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-19T11:00:31.599+00:00",
    "score": 42,
    "priority": "medium",
@@ -63961,7 +64007,7 @@
     }
    ],
    "first_seen": "2026-11-19T11:00:31.599+00:00",
-   "last_seen": "2026-11-20T16:41:14.672+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-19T11:00:31.599+00:00",
    "score": 34,
    "priority": "low",
@@ -64022,7 +64068,7 @@
     }
    ],
    "first_seen": "2026-11-19T11:00:31.599+00:00",
-   "last_seen": "2026-11-20T16:41:14.672+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-19T11:00:31.599+00:00",
    "score": 30,
    "priority": "low",
@@ -64083,7 +64129,7 @@
     }
    ],
    "first_seen": "2026-11-19T11:00:31.599+00:00",
-   "last_seen": "2026-11-20T16:41:14.672+00:00",
+   "last_seen": "2026-11-21T06:53:51.413+00:00",
    "last_changed": "2026-11-19T11:00:31.599+00:00",
    "score": 30,
    "priority": "low",
