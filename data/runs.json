@@ -495,5 +495,54 @@
   "status": "ok",
   "finished_at": "2026-11-23T07:14:15.254+00:00",
   "duration_s": 59.8
+ },
+ {
+  "run_id": "2026-11-23T13:48:59.807+00:00",
+  "started_at": "2026-11-23T13:48:59.807+00:00",
+  "mode": "collect",
+  "since": "2026-11-13",
+  "lookback_days": 10,
+  "sources": {
+   "BOAMP": {
+    "status": "ok",
+    "records": 68,
+    "kept": 40,
+    "new": 0,
+    "updated": 0,
+    "merged": 0,
+    "corrigenda": 0,
+    "filtered_low_score": 28,
+    "errors": [],
+    "queries": 19,
+    "raw_rows": 86,
+    "duration_s": 10.4
+   },
+   "TED": {
+    "status": "ok",
+    "records": 56,
+    "kept": 54,
+    "new": 0,
+    "updated": 0,
+    "merged": 0,
+    "corrigenda": 0,
+    "filtered_low_score": 2,
+    "errors": [],
+    "queries": 13,
+    "raw_rows": 116,
+    "duration_s": 32.4
+   },
+   "Saisie manuelle": {
+    "status": "ok",
+    "records": 22
+   }
+  },
+  "totals": {
+   "notices": 1059,
+   "new": 0,
+   "high": 9
+  },
+  "status": "ok",
+  "finished_at": "2026-11-23T13:49:55.304+00:00",
+  "duration_s": 55.5
  }
 ]
