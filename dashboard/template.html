@@ -454,7 +454,7 @@ function row(n){
       (n.related_call?'<div><span class="link-badge link-call" onclick="window.highlightNotice(\''+esc(n.related_call)+'\')">📋 Voir l\'appel initial</span></div>':'')+
       (n.related_award?'<div><span class="link-badge link-award" onclick="window.highlightNotice(\''+esc(n.related_award)+'\')">✅ Voir le résultat</span></div>':'')+
       (matchesAlert(n)?'<span style="display:inline-block;font-size:.6rem;font-weight:800;padding:.05rem .35rem;border-radius:4px;background:#e53935;color:#fff;margin-left:.3rem;vertical-align:middle">🔔 ALERTE</span>':'')+
-      srcBadges(n)+detailBlock(n)+'</td>'+
+      srcBadges(n)+'</td>'+
     '<td class="cty"><span class="tb '+(TCLS[n.type]||"tb-other")+'">'+esc(TLABELS[n.type]||n.type)+'</span></td>'+
     '<td class="cv">'+fmtVal(n.value)+'</td>'+
     '<td class="cdl">'+dlBadge(n.dl)+'</td>'+
