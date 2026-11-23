@@ -1,5 +1,514 @@
 [
  {
+  "id": "TED:812773-2026",
+  "origin": "auto",
+  "src": "TED",
+  "url": "https://ted.europa.eu/fr/notice/-/detail/812773-2026",
+  "title": "Norvège – Services juridiques – Legal services within Property with particular emphasis on rent contracts for commercial properties.",
+  "buyer": "Politiets fellestjenester",
+  "country": "NOR",
+  "pub": "2026-11-23",
+  "dl": null,
+  "type": "call",
+  "type_label": "cn-social",
+  "cpv": [
+   "79100000",
+   "79110000",
+   "79111000",
+   "79130000",
+   "79140000"
+  ],
+  "value": 10000000.0,
+  "description": "The contracting authority needs to enter into a framework agreement for legal services within Eiendom. Legal services means i.a. consultancy, strategic assessments, reviews and transfer of competence/courses.",
+  "lots": "Legal services within Property with particular emphasis on rent contracts for commercial properties. — The contracting authority needs to enter into a framework agreement for legal services within Eiendom. Legal services means i.a. consultancy, strategic assessments, reviews and transfer of competence/courses.",
+  "procedure_id": "632fbb77-7942-4980-a36a-58b348001c75",
+  "uuids": [
+   "632fbb77-7942-4980-a36a-58b348001c75"
+  ],
+  "family": "TED / JOUE",
+  "procedure_label": null,
+  "sources": [
+   {
+    "source": "TED",
+    "source_id": "812773-2026",
+    "url": "https://ted.europa.eu/fr/notice/-/detail/812773-2026",
+    "pub": "2026-11-23",
+    "type": "call",
+    "type_label": "cn-social",
+    "family": "TED / JOUE",
+    "fetched_at": "2026-11-23T07:13:31+00:00"
+   }
+  ],
+  "corrigenda": [],
+  "first_seen": "2026-11-23T07:13:15.409+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
+  "last_changed": "2026-11-23T07:13:15.409+00:00",
+  "changes": [],
+  "matched_queries": [
+   "CPV juridiques",
+   "conseil juridique",
+   "legal services",
+   "legal advisory"
+  ],
+  "score": 38,
+  "priority": "medium",
+  "practices": [
+   "Conseil juridique général"
+  ],
+  "matched": [
+   "services juridiques",
+   "legal services"
+  ],
+  "why": "Mission juridique/conseil (CPV 79111000 + « services juridiques »).",
+  "breakdown": [
+   {
+    "label": "CPV juridique 79111000",
+    "points": 25
+   },
+   {
+    "label": "Mission juridique : services juridiques, legal services",
+    "points": 20
+   },
+   {
+    "label": "Plafond signal juridique",
+    "points": -15
+   },
+   {
+    "label": "Valeur ≥ 1 000 000 €",
+    "points": 8
+   }
+  ],
+  "has_legal_signal": true,
+  "lot_count": 2
+ },
+ {
+  "id": "TED:812640-2026",
+  "origin": "auto",
+  "src": "TED",
+  "url": "https://ted.europa.eu/fr/notice/-/detail/812640-2026",
+  "title": "Pays-Bas – Services de médecine du travail – Dienstverlening ERD Ziektewet & WGA",
+  "buyer": "Gemeente Den Haag",
+  "country": "NLD",
+  "pub": "2026-11-23",
+  "dl": "2027-01-22",
+  "type": "call",
+  "type_label": "cn-standard",
+  "cpv": [
+   "85147000",
+   "75310000",
+   "75311000",
+   "79111000",
+   "79414000",
+   "79610000"
+  ],
+  "value": 4416000.0,
+  "description": "De gemeente Den Haag is eigenrisicodrager voor de Ziektewet (ZW) en de Werkhervattingsregeling Gedeeltelijk Arbeidsgeschikten (WGA). Vanuit deze verantwoordelijkheid draagt de gemeente zorg voor een zorgvuldige uitvoering van het eigen risicodragerschap, de ondersteuning van personen die onder deze regelingen vallen en de financiële gevolgen die hieruit voortvloeien. De huidige overeenkomst voor de uitvoering van de Ziektewetdienstverlening loopt af. Daarnaast heeft de gemeente besloten de dienstverlening binnen het eigen risicodragerschap voor de WGA, die momenteel nog grotendeels binnen de gemeentelijke organisatie wordt uitgevoerd, onderdeel te maken van deze aanbesteding. Met deze aanbesteding kiest de gemeente voor een integrale benadering van het eigen risicodragerschap voor zowel de Ziektewet als de WGA. De scope van de opdracht omvat de uitvoering van dienstverlening binnen het eigen risicodragerschap voor zowel de Ziektewet als de WGA.",
+  "lots": "Dienstverlening ERD Ziektewet & WGA — De gemeente Den Haag is eigenrisicodrager voor de Ziektewet (ZW) en de Werkhervattingsregeling Gedeeltelijk Arbeidsgeschikten (WGA). Vanuit deze verantwoordelijkheid draagt de gemeente zorg voor een zorgvuldige uitvoering van het eigen risicodragerschap, de ondersteuning van personen die onder deze regelingen vallen en de financiële gevolgen die hieruit voortvloeien. De huidige overeenkomst voor de uitvoering van de Ziektewetdienstverlening loopt af. Daarnaast heeft de gemeente besloten de dienstverlening binnen het eigen risicodragerschap voor de WGA, die momenteel nog grotendeels binnen de gemeentelijke organisatie wordt uitgevoerd, onderdeel te maken van deze aanbesteding. Met deze aanbesteding kiest de gemeente voor een integrale benadering van het eigen risicodragerschap voor zowel de Ziektewet als de WGA. De scope van de opdracht omvat de uitvoering van dienstverlening binnen het eigen risicodragerschap voor zowel de Ziektewet als de WGA.",
+  "procedure_id": "1ce49364-c9c3-4562-bfad-40fcdf9670b6",
+  "uuids": [
+   "1ce49364-c9c3-4562-bfad-40fcdf9670b6"
+  ],
+  "family": "TED / JOUE",
+  "procedure_label": null,
+  "sources": [
+   {
+    "source": "TED",
+    "source_id": "812640-2026",
+    "url": "https://ted.europa.eu/fr/notice/-/detail/812640-2026",
+    "pub": "2026-11-23",
+    "type": "call",
+    "type_label": "cn-standard",
+    "family": "TED / JOUE",
+    "fetched_at": "2026-11-23T07:13:31+00:00"
+   }
+  ],
+  "corrigenda": [],
+  "first_seen": "2026-11-23T07:13:15.409+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
+  "last_changed": "2026-11-23T07:13:15.409+00:00",
+  "changes": [],
+  "matched_queries": [
+   "CPV juridiques",
+   "conseil juridique",
+   "legal advisory"
+  ],
+  "score": 33,
+  "priority": "low",
+  "practices": [
+   "Conseil juridique général"
+  ],
+  "matched": [],
+  "why": "Mission juridique/conseil (CPV 79111000).",
+  "breakdown": [
+   {
+    "label": "CPV juridique 79111000",
+    "points": 25
+   },
+   {
+    "label": "Valeur ≥ 1 000 000 €",
+    "points": 8
+   }
+  ],
+  "has_legal_signal": true
+ },
+ {
+  "id": "TED:812582-2026",
+  "origin": "auto",
+  "src": "TED",
+  "url": "https://ted.europa.eu/fr/notice/-/detail/812582-2026",
+  "title": "Allemagne – Travaux d'équipement électrique – PRO-2879502764 - D4450 – LED Lighting Installation Works - DA-PRE-CPM",
+  "buyer": "European Central Bank",
+  "country": "DEU",
+  "pub": "2026-11-23",
+  "dl": null,
+  "type": "call",
+  "type_label": "cn-standard",
+  "cpv": [
+   "45310000",
+   "31500000",
+   "31520000",
+   "45311000"
+  ],
+  "value": 10000000.0,
+  "description": "PRO-2879502764 - D4450 – LED Lighting Installation Works including Supply, Integration, Commissioning and Documentation - FWA Construction works",
+  "lots": "LED Lighting Installation Works including Supply, Integration, Commissioning and Documentation. — The main works cover: Electrical installation works as the main principal subject Electrical wiring and fitting works Lamps and light fittings, for the supply of LED luminaires - supply related Lighting equipment and electric lamps - supply related",
+  "procedure_id": "2fe02021-8711-4008-ac1d-28de3a8cb6eb",
+  "uuids": [
+   "2fe02021-8711-4008-ac1d-28de3a8cb6eb"
+  ],
+  "family": "TED / JOUE",
+  "procedure_label": null,
+  "sources": [
+   {
+    "source": "TED",
+    "source_id": "812582-2026",
+    "url": "https://ted.europa.eu/fr/notice/-/detail/812582-2026",
+    "pub": "2026-11-23",
+    "type": "call",
+    "type_label": "cn-standard",
+    "family": "TED / JOUE",
+    "fetched_at": "2026-11-23T07:13:31+00:00"
+   }
+  ],
+  "corrigenda": [],
+  "first_seen": "2026-11-23T07:13:15.409+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
+  "last_changed": "2026-11-23T07:13:15.409+00:00",
+  "changes": [],
+  "matched_queries": [
+   "legal advice"
+  ],
+  "score": 14,
+  "priority": "low",
+  "practices": [
+   "Construction & Immobilier"
+  ],
+  "matched": [
+   "construction",
+   "travaux"
+  ],
+  "why": "Pas de signal juridique explicite — à vérifier · domaine(s) : Construction & Immobilier.",
+  "breakdown": [
+   {
+    "label": "Construction & Immobilier : construction, travaux",
+    "points": 6
+   },
+   {
+    "label": "Valeur ≥ 1 000 000 €",
+    "points": 8
+   }
+  ],
+  "has_legal_signal": false
+ },
+ {
+  "id": "TED:811826-2026",
+  "origin": "auto",
+  "src": "TED",
+  "url": "https://ted.europa.eu/fr/notice/-/detail/811826-2026",
+  "title": "France – Services de conseil juridique – Conseil juridique, assistance et représentation en justice",
+  "buyer": "APEC Siège PARIS",
+  "country": "FRA",
+  "pub": "2026-11-23",
+  "dl": null,
+  "type": "award",
+  "type_label": "can-standard",
+  "cpv": [
+   "79111000",
+   "79110000"
+  ],
+  "value": 900000.0,
+  "description": "Les prestations se répartissent en 3 domaines : - Conseil : consultation téléphonique / courriel, consultation juridique écrite, - Conseil et assistance précontentieuse : participation à la négociation à l'amiable, accompagnement dans la prise de décision et dans l'élaboration d'écriture, rédaction de protocole d'accord, - Contentieux : rédaction des actes de procédure, représentation",
+  "lots": "Conseil en direction générale / Matières sociales / Droit public général / Affaires juridiques / Matières financières — Conseil en direction générale, conseil institutionnel, responsabilité générale des dirigeants sociaux, évolutions législatives, droit public / Droit du travail, droit de la sécurité sociale, droit de la protection sociale, droit de la formation professionnelle, accompagnement au dialogue social (élection RP ...), droit pénal du travail, conseil en évolution professionnelle (négociation collective ...) / Droit de la commande publique, droit européen / Droit des affaires général, droit de la propriété intellectuelle, droit des nouvelles technologies de l'information et de la communication (règlementation protection des données à caractère personnel en droit interne et droit de l'union européenne), règlementation Open data, droit immobilier, droit des baux, droit des assurances, droit pénal, droit de la concurrence, droit des obligations, droit des associations et des organismes paritaires, droit de l'Union Européenne des aides d'Etat applicables au financement par cotisations obligatoires / Droit fiscal financier, droit bancaire",
+  "procedure_id": "59c3d226-f3b8-44a1-94d5-7365dae8f2c1",
+  "uuids": [
+   "59c3d226-f3b8-44a1-94d5-7365dae8f2c1"
+  ],
+  "family": "TED / JOUE",
+  "procedure_label": null,
+  "sources": [
+   {
+    "source": "TED",
+    "source_id": "811826-2026",
+    "url": "https://ted.europa.eu/fr/notice/-/detail/811826-2026",
+    "pub": "2026-11-23",
+    "type": "award",
+    "type_label": "can-standard",
+    "family": "TED / JOUE",
+    "fetched_at": "2026-11-23T07:13:31+00:00"
+   }
+  ],
+  "corrigenda": [],
+  "first_seen": "2026-11-23T07:13:15.409+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
+  "last_changed": "2026-11-23T07:13:15.409+00:00",
+  "changes": [],
+  "matched_queries": [
+   "CPV juridiques",
+   "conseil juridique",
+   "legal advisory"
+  ],
+  "score": 43,
+  "priority": "medium",
+  "practices": [
+   "Finance & Bancaire",
+   "Capital Markets & Dette",
+   "Construction & Immobilier"
+  ],
+  "matched": [
+   "conseil juridique",
+   "consultation juridique",
+   "representation en justice",
+   "financement",
+   "bancaire",
+   "obligations",
+   "immobilier"
+  ],
+  "why": "Mission juridique/conseil (CPV 79111000 + « conseil juridique ») · domaine(s) : Finance & Bancaire, Capital Markets & Dette, Construction & Immobilier · pénalisé : formation · avis d'attribution (veille concurrentielle).",
+  "breakdown": [
+   {
+    "label": "CPV juridique 79111000",
+    "points": 25
+   },
+   {
+    "label": "Mission juridique : conseil juridique, consultation juridique, representation en justice",
+    "points": 20
+   },
+   {
+    "label": "Plafond signal juridique",
+    "points": -15
+   },
+   {
+    "label": "Finance & Bancaire : financement, bancaire",
+    "points": 14
+   },
+   {
+    "label": "Capital Markets & Dette : obligations",
+    "points": 6
+   },
+   {
+    "label": "Construction & Immobilier : immobilier",
+    "points": 5
+   },
+   {
+    "label": "Valeur ≥ 300 000 €",
+    "points": 4
+   },
+   {
+    "label": "Hors cible : formation",
+    "points": -6
+   },
+   {
+    "label": "Type d'avis (award)",
+    "points": -10
+   }
+  ],
+  "has_legal_signal": true,
+  "lot_count": 9
+ },
+ {
+  "id": "BOAMP:26-112979",
+  "origin": "auto",
+  "src": "BOAMP",
+  "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-112979",
+  "title": "DELEGATION DE SERVICE PUBLIC POUR L'EXPLOITATION DE L'AIRE DE CARENAGE ET DE GRUTAGE DU PORT DE SAINT-TROPEZ",
+  "buyer": "VILLE DE SAINT-TROPEZ",
+  "country": "FRA",
+  "pub": "2026-11-22",
+  "dl": "2027-01-11",
+  "type": "call",
+  "type_label": "Avis de marché",
+  "cpv": [
+   "63721200",
+   "98362000"
+  ],
+  "value": null,
+  "description": "VILLE DE SAINT-TROPEZ Tribunal Administratif de Toulon bdc2f8ce-a9c3-4763-9ff6-8d1440ba5458 epo-procurement-document DELEGATION DE SERVICE PUBLIC POUR L'EXPLOITATION DE L'AIRE DE CARENAGE ET DE GRUTAGE DU PORT DE SAINT-TROPEZ",
+  "lots": "permission / not-allowed / eu-funded / no-eu-funds / selection-criteria-source / epo-procurement-document / reserved-procurement / reserved-execution / conditions / performance / einvoicing / ecatalog-submission / esignature-submission / number-weight / award-criterion-type / Critère n° 1 — Programme d'investissement (40 points) - Sous-critères: \"1.1 — Qualité technique, performances et pertinence des solutions proposées, notamment pour les postes imposés et pour le moyen de levage principal au regard de la capacité structurelle du quai (15 points)\" valant pour % de la note finale - \" 1.2 — Crédibilité et cohérence de l'échéancier de réalisation au regard de l'objectif de réalisation intégrale à douze mois, des délais d'approvisionnement et des délais d'obtention des autorisations administratives (15 points)\" valant pour % de la note finale - \"1.3 — Niveau global d'investissement, consistance des investissements et solidité du plan de financement (10 points)\" valant pour % de la note finale / Critère n° 2 — Conditions économiques, tarifaires et financières (30 points) - Sous-critères: \"2.1 — Montant de la redevance : part fixe proposée et part variable résultant du chiffre d'affaires prévisionnel (la part fixe annuelle étant d’un montant minimum annuel de 245 000 € HT) (15 points)\" valant pour % de la note finale - \"2.2 — Cohérence et crédibilité du compte d'exploitation prévisionnel (10 points)\" valant pour % de la note finale - \"2.3 — Qualité, cohérence et niveau de la grille tarifaire proposée (5 points)\" valant pour % de la note finale / Critère n° 3 — Qualité du service rendu et respect des obligations de service public (30 points) - Sous-critères: \"3.1 — Pertinence de l'organisation de l'exploitation (moyens humains affectés, qualification des personnels, amplitudes d'ouverture proposées) (15 points)\" valant pour % de la note finale - \"3.2 — Qualité du plan de maintenance et taux de disponibilité annuel garanti du moyen de levage principal (10 points)\" valant ",
+  "procedure_id": "0a599446-e460-41c7-b663-061c98a0af13",
+  "uuids": [
+   "0a599446-e460-41c7-b663-061c98a0af13",
+   "bdc2f8ce-a9c3-4763-9ff6-8d1440ba5458"
+  ],
+  "family": "Marchés européens",
+  "procedure_label": "Procédure Ouverte",
+  "sources": [
+   {
+    "source": "BOAMP",
+    "source_id": "26-112979",
+    "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-112979",
+    "pub": "2026-11-22",
+    "type": "call",
+    "type_label": "Avis de marché",
+    "family": "Marchés européens",
+    "fetched_at": "2026-11-23T07:13:15+00:00"
+   }
+  ],
+  "corrigenda": [],
+  "first_seen": "2026-11-23T07:13:15.409+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
+  "last_changed": "2026-11-23T07:13:15.409+00:00",
+  "changes": [],
+  "matched_queries": [
+   "délégation de service public"
+  ],
+  "score": 21,
+  "priority": "low",
+  "practices": [
+   "PPP & Concessions",
+   "Finance & Bancaire",
+   "Capital Markets & Dette",
+   "Project Finance & Infrastructure"
+  ],
+  "matched": [
+   "delegation de service public",
+   "financement",
+   "obligations",
+   "port"
+  ],
+  "why": "Pas de signal juridique explicite — à vérifier · domaine(s) : PPP & Concessions, Finance & Bancaire, Capital Markets & Dette · pénalisé : maintenance.",
+  "breakdown": [
+   {
+    "label": "PPP & Concessions : delegation de service public",
+    "points": 12
+   },
+   {
+    "label": "Finance & Bancaire : financement",
+    "points": 6
+   },
+   {
+    "label": "Capital Markets & Dette : obligations",
+    "points": 6
+   },
+   {
+    "label": "Project Finance & Infrastructure : port",
+    "points": 3
+   },
+   {
+    "label": "Hors cible : maintenance",
+    "points": -6
+   }
+  ],
+  "has_legal_signal": false,
+  "lot_count": 18
+ },
+ {
+  "id": "BOAMP:26-112801",
+  "origin": "auto",
+  "src": "BOAMP",
+  "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-112801",
+  "title": "Délégation de service public pour la construction et l'exploitation d'un réseau de chaleur et d'une chaufferie biomasse sur le territoire de la commune de Les Belleville",
+  "buyer": "Commune Les Belleville",
+  "country": "FRA",
+  "pub": "2026-11-22",
+  "dl": null,
+  "type": "call",
+  "type_label": "Avis de marché",
+  "cpv": [
+   "45232140",
+   "09323000",
+   "50720000",
+   "71314200"
+  ],
+  "value": 38000000.0,
+  "description": "Avenue-Web Systèmes B2335AFB-E4C8-FF2C-DCEB55D1445C4910 Commune Les Belleville Commande publique B2335B1D-DCEA-F22A-8F8DF33849742DFD Tribunal administratif de Grenoble B2335B3E-C570-5EF9-DBF5BBE84F8C1AE5 B2335B5D-F7FD-F23C-352F2E826E08C976 87c9bcdd-64d2-4fed-aded-095e5536ba54 epo-procurement-document Délégation de service public pour la construction et l'exploitation d'un réseau de chaleur et d'une chaufferie biomasse sur le territoire de la commune de Les Belleville La présente consultation vise à confier à un concessionnaire la conception, le financement, la réalisation et l'exploitation du réseau de chaleur urbain des Menuires, incluant la chaufferie centrale, les moyens d'appoint/secours, le réseau primaire, les branchements, les sous-stations, le comptage, l'exploitation-maintenance, le GER, la commercialisation et la relation avec les abonnés",
+  "lots": "eu-funded / no-eu-funds / linguistic-status / selection-criteria-source / epo-procurement-document / reserved-procurement / einvoicing / esignature-submission / reserved-execution / touchpoint / organization / AW Solutions / esubmission / InternalID / T-PF-1889676 / Délégation de service public pour la construction et l'exploitation d'un réseau de chaleur et d'une chaufferie biomasse sur le territoire de la commune de Les Belleville / La présente consultation vise à confier à un concessionnaire la conception, le financement, la réalisation et l'exploitation du réseau de chaleur urbain des Menuires, incluant la chaufferie centrale, les moyens d'appoint/secours, le réseau primaire, les branchements, les sous-stations, le comptage, l'exploitation-maintenance, le GER, la commercialisation et la relation avec les abonnés / contract-nature / Les Menuires / Les Belleville",
+  "procedure_id": "1434fa20-669b-4ae2-af8d-0b54288aec90",
+  "uuids": [
+   "1434fa20-669b-4ae2-af8d-0b54288aec90",
+   "87c9bcdd-64d2-4fed-aded-095e5536ba54"
+  ],
+  "family": "Marchés européens",
+  "procedure_label": "Procédure NC",
+  "sources": [
+   {
+    "source": "BOAMP",
+    "source_id": "26-112801",
+    "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-112801",
+    "pub": "2026-11-22",
+    "type": "call",
+    "type_label": "Avis de marché",
+    "family": "Marchés européens",
+    "fetched_at": "2026-11-23T07:13:15+00:00"
+   }
+  ],
+  "corrigenda": [],
+  "first_seen": "2026-11-23T07:13:15.409+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
+  "last_changed": "2026-11-23T07:13:15.409+00:00",
+  "changes": [],
+  "matched_queries": [
+   "délégation de service public"
+  ],
+  "score": 35,
+  "priority": "low",
+  "practices": [
+   "PPP & Concessions",
+   "Energie, Nucleaire & Renouvelables",
+   "Finance & Bancaire",
+   "Construction & Immobilier",
+   "Project Finance & Infrastructure"
+  ],
+  "matched": [
+   "delegation de service public",
+   "reseau de chaleur",
+   "financement",
+   "construction"
+  ],
+  "why": "Pas de signal juridique explicite — à vérifier · domaine(s) : PPP & Concessions, Energie, Nucleaire & Renouvelables, Finance & Bancaire · pénalisé : maintenance.",
+  "breakdown": [
+   {
+    "label": "PPP & Concessions : delegation de service public",
+    "points": 12
+   },
+   {
+    "label": "Energie, Nucleaire & Renouvelables : reseau de chaleur",
+    "points": 8
+   },
+   {
+    "label": "Finance & Bancaire : financement",
+    "points": 6
+   },
+   {
+    "label": "Construction & Immobilier : construction",
+    "points": 4
+   },
+   {
+    "label": "Project Finance & Infrastructure : reseau",
+    "points": 3
+   },
+   {
+    "label": "Valeur ≥ 1 000 000 €",
+    "points": 8
+   },
+   {
+    "label": "Hors cible : maintenance",
+    "points": -6
+   }
+  ],
+  "has_legal_signal": false,
+  "lot_count": 21
+ },
+ {
   "id": "BOAMP:26-112671",
   "origin": "auto",
   "src": "BOAMP",
@@ -33,12 +542,12 @@
     "type": "call",
     "type_label": "Avis de marché",
     "family": "Marchés européens",
-    "fetched_at": "2026-11-22T06:52:48+00:00"
+    "fetched_at": "2026-11-23T07:13:15+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-22T06:52:48.325+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-22T06:52:48.325+00:00",
   "changes": [],
   "matched_queries": [
@@ -97,17 +606,28 @@
     "type": "call",
     "type_label": "Avis de marché",
     "family": "Marchés européens",
-    "fetched_at": "2026-11-22T06:52:48+00:00"
+    "fetched_at": "2026-11-23T07:13:15+00:00"
+   },
+   {
+    "source": "TED",
+    "source_id": "812480-2026",
+    "url": "https://ted.europa.eu/fr/notice/-/detail/812480-2026",
+    "pub": "2026-11-23",
+    "type": "call",
+    "type_label": "cn-standard",
+    "family": "TED / JOUE",
+    "fetched_at": "2026-11-23T07:13:31+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-22T06:52:48.325+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-22T06:52:48.325+00:00",
   "changes": [],
   "matched_queries": [
    "conseil juridique",
-   "services juridiques"
+   "services juridiques",
+   "legal advisory"
   ],
   "score": 33,
   "priority": "low",
@@ -233,7 +753,7 @@
     "type": "call",
     "type_label": "cn-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-22T06:52:59+00:00"
+    "fetched_at": "2026-11-23T07:13:31+00:00"
    },
    {
     "source": "TED",
@@ -248,7 +768,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -365,12 +885,12 @@
     "type": "call",
     "type_label": "cn-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-22T06:52:59+00:00"
+    "fetched_at": "2026-11-23T07:13:31+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -570,12 +1090,12 @@
     "type": "call",
     "type_label": "cn-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-22T06:52:59+00:00"
+    "fetched_at": "2026-11-23T07:13:31+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -914,12 +1434,12 @@
     "type": "call",
     "type_label": "Avis de marché",
     "family": "Marchés entre 90 k€ et seuils européens",
-    "fetched_at": "2026-11-22T06:52:48+00:00"
+    "fetched_at": "2026-11-23T07:13:15+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T13:40:51.664+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T13:40:51.664+00:00",
   "changes": [],
   "matched_queries": [
@@ -974,12 +1494,12 @@
     "type": "award",
     "type_label": "Résultat de marché",
     "family": "Marchés entre 90 k€ et seuils européens",
-    "fetched_at": "2026-11-22T06:52:48+00:00"
+    "fetched_at": "2026-11-23T07:13:15+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -1114,12 +1634,12 @@
     "type": "award",
     "type_label": "can-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-22T06:52:59+00:00"
+    "fetched_at": "2026-11-23T07:13:31+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -1184,12 +1704,12 @@
     "type": "call",
     "type_label": "Avis de marché",
     "family": "Marchés européens",
-    "fetched_at": "2026-11-22T06:52:48+00:00"
+    "fetched_at": "2026-11-23T07:13:15+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -1251,12 +1771,12 @@
     "type": "call",
     "type_label": "Avis de marché",
     "family": "Marchés européens",
-    "fetched_at": "2026-11-22T06:52:48+00:00"
+    "fetched_at": "2026-11-23T07:13:15+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -1497,12 +2017,12 @@
     "type": "award",
     "type_label": "Résultat de marché",
     "family": "Marchés européens",
-    "fetched_at": "2026-11-22T06:52:48+00:00"
+    "fetched_at": "2026-11-23T07:13:15+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -1608,7 +2128,7 @@
     "type": "call",
     "type_label": "cn-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-22T06:52:59+00:00"
+    "fetched_at": "2026-11-23T07:13:31+00:00"
    },
    {
     "source": "TED",
@@ -1623,7 +2143,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -1686,12 +2206,12 @@
     "type": "award",
     "type_label": "can-social",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-22T06:52:59+00:00"
+    "fetched_at": "2026-11-23T07:13:31+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -1898,12 +2418,12 @@
     "type": "call",
     "type_label": "cn-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-22T06:52:59+00:00"
+    "fetched_at": "2026-11-23T07:13:31+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -2357,7 +2877,7 @@
     "type": "call",
     "type_label": "cn-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-22T06:52:59+00:00"
+    "fetched_at": "2026-11-23T07:13:31+00:00"
    },
    {
     "source": "TED",
@@ -2372,7 +2892,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -2485,12 +3005,12 @@
     "type": "award",
     "type_label": "can-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-22T06:52:59+00:00"
+    "fetched_at": "2026-11-23T07:13:31+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -2807,7 +3327,7 @@
     "type": "award",
     "type_label": "Résultat de marché",
     "family": "Marchés entre 90 k€ et seuils européens",
-    "fetched_at": "2026-11-22T06:52:48+00:00"
+    "fetched_at": "2026-11-23T07:13:15+00:00"
    }
   ],
   "corrigenda": [
@@ -2825,7 +3345,7 @@
    }
   ],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -3006,12 +3526,12 @@
     "type": "call",
     "type_label": "Avis de marché",
     "family": "Marchés européens",
-    "fetched_at": "2026-11-22T06:52:48+00:00"
+    "fetched_at": "2026-11-23T07:13:15+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -3078,7 +3598,7 @@
     "type": "call",
     "type_label": "Avis de marché",
     "family": "Marchés européens",
-    "fetched_at": "2026-11-22T06:52:48+00:00"
+    "fetched_at": "2026-11-23T07:13:15+00:00"
    },
    {
     "source": "TED",
@@ -3088,12 +3608,12 @@
     "type": "call",
     "type_label": "cn-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-22T06:52:59+00:00"
+    "fetched_at": "2026-11-23T07:13:31+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -3164,7 +3684,7 @@
     "type": "call",
     "type_label": "cn-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-22T06:52:59+00:00"
+    "fetched_at": "2026-11-23T07:13:31+00:00"
    },
    {
     "source": "TED",
@@ -3179,7 +3699,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -3291,12 +3811,12 @@
     "type": "award",
     "type_label": "can-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-22T06:52:59+00:00"
+    "fetched_at": "2026-11-23T07:13:31+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -3370,12 +3890,12 @@
     "type": "call",
     "type_label": "cn-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-22T06:52:59+00:00"
+    "fetched_at": "2026-11-23T07:13:31+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -3452,12 +3972,12 @@
     "type": "call",
     "type_label": "cn-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-22T06:52:59+00:00"
+    "fetched_at": "2026-11-23T07:13:31+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -3977,12 +4497,12 @@
     "type": "call",
     "type_label": "cn-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-22T06:52:59+00:00"
+    "fetched_at": "2026-11-23T07:13:31+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -4172,12 +4692,12 @@
     "type": "call",
     "type_label": "Avis de marché",
     "family": "Marchés entre 90 k€ et seuils européens",
-    "fetched_at": "2026-11-22T06:52:48+00:00"
+    "fetched_at": "2026-11-23T07:13:15+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -4240,12 +4760,12 @@
     "type": "corr",
     "type_label": "Rectificatif",
     "family": "Délégation de service public",
-    "fetched_at": "2026-11-22T06:52:48+00:00"
+    "fetched_at": "2026-11-23T07:13:15+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -4303,7 +4823,7 @@
     "type": "award",
     "type_label": "Résultat de marché",
     "family": "Marchés européens",
-    "fetched_at": "2026-11-22T06:52:48+00:00"
+    "fetched_at": "2026-11-23T07:13:15+00:00"
    },
    {
     "source": "TED",
@@ -4313,12 +4833,12 @@
     "type": "award",
     "type_label": "can-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-22T06:52:59+00:00"
+    "fetched_at": "2026-11-23T07:13:31+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -4382,7 +4902,7 @@
     "type": "call",
     "type_label": "Avis de marché",
     "family": "Marchés européens",
-    "fetched_at": "2026-11-22T06:52:48+00:00"
+    "fetched_at": "2026-11-23T07:13:15+00:00"
    },
    {
     "source": "BOAMP",
@@ -4392,12 +4912,12 @@
     "type": "call",
     "type_label": "Avis de marché",
     "family": "Marchés européens",
-    "fetched_at": "2026-11-22T06:52:48+00:00"
+    "fetched_at": "2026-11-23T07:13:15+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -4535,12 +5055,12 @@
     "type": "call",
     "type_label": "Avis de marché",
     "family": "Marchés européens",
-    "fetched_at": "2026-11-22T06:52:48+00:00"
+    "fetched_at": "2026-11-23T07:13:15+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -4605,12 +5125,12 @@
     "type": "call",
     "type_label": "Avis de marché",
     "family": "Marchés européens",
-    "fetched_at": "2026-11-22T06:52:48+00:00"
+    "fetched_at": "2026-11-23T07:13:15+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -4672,12 +5192,12 @@
     "type": "award",
     "type_label": "can-modif",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-22T06:52:59+00:00"
+    "fetched_at": "2026-11-23T07:13:31+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -4731,12 +5251,12 @@
     "type": "call",
     "type_label": "cn-social",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-22T06:52:59+00:00"
+    "fetched_at": "2026-11-23T07:13:31+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -4917,7 +5437,7 @@
     "type": "call",
     "type_label": "cn-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-22T06:52:59+00:00"
+    "fetched_at": "2026-11-23T07:13:31+00:00"
    },
    {
     "source": "TED",
@@ -4932,7 +5452,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -4985,7 +5505,7 @@
     "type": "call",
     "type_label": "cn-social",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-22T06:52:59+00:00"
+    "fetched_at": "2026-11-23T07:13:31+00:00"
    },
    {
     "source": "TED",
@@ -5000,7 +5520,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -5058,7 +5578,7 @@
     "type": "call",
     "type_label": "cn-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-22T06:52:59+00:00"
+    "fetched_at": "2026-11-23T07:13:31+00:00"
    },
    {
     "source": "TED",
@@ -5073,7 +5593,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -5250,12 +5770,12 @@
     "type": "call",
     "type_label": "cn-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-22T06:52:59+00:00"
+    "fetched_at": "2026-11-23T07:13:31+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -5458,7 +5978,7 @@
     "type": "call",
     "type_label": "cn-social",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-22T06:52:59+00:00"
+    "fetched_at": "2026-11-23T07:13:31+00:00"
    },
    {
     "source": "TED",
@@ -5473,7 +5993,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -5540,12 +6060,12 @@
     "type": "award",
     "type_label": "can-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-22T06:52:59+00:00"
+    "fetched_at": "2026-11-23T07:13:31+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -5671,12 +6191,12 @@
     "type": "award",
     "type_label": "can-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-22T06:52:59+00:00"
+    "fetched_at": "2026-11-23T07:13:31+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -5732,12 +6252,12 @@
     "type": "corr",
     "type_label": "Rectificatif",
     "family": "Marchés entre 90 k€ et seuils européens",
-    "fetched_at": "2026-11-22T06:52:48+00:00"
+    "fetched_at": "2026-11-23T07:13:15+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -5801,12 +6321,12 @@
     "type": "call",
     "type_label": "Avis de marché",
     "family": "Délégation de service public",
-    "fetched_at": "2026-11-22T06:52:48+00:00"
+    "fetched_at": "2026-11-23T07:13:15+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -6129,12 +6649,12 @@
     "type": "award",
     "type_label": "can-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-22T06:52:59+00:00"
+    "fetched_at": "2026-11-23T07:13:31+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -6202,12 +6722,12 @@
     "type": "call",
     "type_label": "cn-social",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-22T06:52:59+00:00"
+    "fetched_at": "2026-11-23T07:13:31+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -6261,12 +6781,12 @@
     "type": "award",
     "type_label": "can-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-22T06:52:59+00:00"
+    "fetched_at": "2026-11-23T07:13:31+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -6509,7 +7029,7 @@
     "type": "call",
     "type_label": "cn-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-22T06:52:59+00:00"
+    "fetched_at": "2026-11-23T07:13:31+00:00"
    },
    {
     "source": "TED",
@@ -6524,7 +7044,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -6715,12 +7235,12 @@
     "type": "award",
     "type_label": "can-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-22T06:52:59+00:00"
+    "fetched_at": "2026-11-23T07:13:31+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -6964,7 +7484,7 @@
     "type": "call",
     "type_label": "cn-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-22T06:52:59+00:00"
+    "fetched_at": "2026-11-23T07:13:31+00:00"
    },
    {
     "source": "TED",
@@ -7019,7 +7539,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -7204,7 +7724,7 @@
     "type": "call",
     "type_label": "cn-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-22T06:52:59+00:00"
+    "fetched_at": "2026-11-23T07:13:31+00:00"
    },
    {
     "source": "TED",
@@ -7219,7 +7739,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -7326,12 +7846,12 @@
     "type": "call",
     "type_label": "cn-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-22T06:52:59+00:00"
+    "fetched_at": "2026-11-23T07:13:31+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -7409,12 +7929,12 @@
     "type": "call",
     "type_label": "cn-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-22T06:52:59+00:00"
+    "fetched_at": "2026-11-23T07:13:31+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -7491,12 +8011,12 @@
     "type": "call",
     "type_label": "Avis de marché",
     "family": "Délégation de service public",
-    "fetched_at": "2026-11-22T06:52:48+00:00"
+    "fetched_at": "2026-11-23T07:13:15+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -7551,12 +8071,12 @@
     "type": "call",
     "type_label": "Avis de marché",
     "family": "Marchés entre 90 k€ et seuils européens",
-    "fetched_at": "2026-11-22T06:52:48+00:00"
+    "fetched_at": "2026-11-23T07:13:15+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -7683,12 +8203,12 @@
     "type": "corr",
     "type_label": "Rectificatif",
     "family": "Délégation de service public",
-    "fetched_at": "2026-11-22T06:52:48+00:00"
+    "fetched_at": "2026-11-23T07:13:15+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -7743,12 +8263,12 @@
     "type": "call",
     "type_label": "Avis de marché",
     "family": "Délégation de service public",
-    "fetched_at": "2026-11-22T06:52:48+00:00"
+    "fetched_at": "2026-11-23T07:13:15+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -7803,12 +8323,12 @@
     "type": "call",
     "type_label": "Avis de marché",
     "family": "Marchés entre 90 k€ et seuils européens",
-    "fetched_at": "2026-11-22T06:52:48+00:00"
+    "fetched_at": "2026-11-23T07:13:15+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -7871,12 +8391,12 @@
     "type": "call",
     "type_label": "Avis de marché",
     "family": "Marchés entre 90 k€ et seuils européens",
-    "fetched_at": "2026-11-22T06:52:48+00:00"
+    "fetched_at": "2026-11-23T07:13:15+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -7937,7 +8457,7 @@
     "type": "call",
     "type_label": "Avis de marché",
     "family": "Marchés européens",
-    "fetched_at": "2026-11-22T06:52:48+00:00"
+    "fetched_at": "2026-11-23T07:13:15+00:00"
    },
    {
     "source": "TED",
@@ -7947,12 +8467,12 @@
     "type": "call",
     "type_label": "cn-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-22T06:52:59+00:00"
+    "fetched_at": "2026-11-23T07:13:31+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -8122,7 +8642,7 @@
     "type": "call",
     "type_label": "Avis de marché",
     "family": "Marchés européens",
-    "fetched_at": "2026-11-22T06:52:48+00:00"
+    "fetched_at": "2026-11-23T07:13:15+00:00"
    },
    {
     "source": "TED",
@@ -8132,12 +8652,12 @@
     "type": "call",
     "type_label": "cn-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-22T06:52:59+00:00"
+    "fetched_at": "2026-11-23T07:13:31+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -8197,12 +8717,12 @@
     "type": "call",
     "type_label": "Avis de marché",
     "family": "Marchés européens",
-    "fetched_at": "2026-11-22T06:52:48+00:00"
+    "fetched_at": "2026-11-23T07:13:15+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -8285,12 +8805,12 @@
     "type": "award",
     "type_label": "Résultat de marché",
     "family": "Marchés européens",
-    "fetched_at": "2026-11-22T06:52:48+00:00"
+    "fetched_at": "2026-11-23T07:13:15+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -8366,12 +8886,12 @@
     "type": "call",
     "type_label": "Avis de marché",
     "family": "Marchés européens",
-    "fetched_at": "2026-11-22T06:52:48+00:00"
+    "fetched_at": "2026-11-23T07:13:15+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -8568,7 +9088,7 @@
     "type": "call",
     "type_label": "cn-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-22T06:52:59+00:00"
+    "fetched_at": "2026-11-23T07:13:31+00:00"
    },
    {
     "source": "TED",
@@ -8583,7 +9103,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -8639,12 +9159,12 @@
     "type": "call",
     "type_label": "Avis de marché",
     "family": "Marchés européens",
-    "fetched_at": "2026-11-22T06:52:48+00:00"
+    "fetched_at": "2026-11-23T07:13:15+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -8709,7 +9229,7 @@
     "type": "call",
     "type_label": "Avis de marché",
     "family": "Marchés européens",
-    "fetched_at": "2026-11-22T06:52:48+00:00"
+    "fetched_at": "2026-11-23T07:13:15+00:00"
    },
    {
     "source": "BOAMP",
@@ -8724,7 +9244,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -8793,12 +9313,12 @@
     "type": "call",
     "type_label": "cn-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-22T06:52:59+00:00"
+    "fetched_at": "2026-11-23T07:13:31+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -9129,12 +9649,12 @@
     "type": "call",
     "type_label": "cn-social",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-22T06:52:59+00:00"
+    "fetched_at": "2026-11-23T07:13:31+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -9201,12 +9721,12 @@
     "type": "award",
     "type_label": "can-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-22T06:52:59+00:00"
+    "fetched_at": "2026-11-23T07:13:31+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -9300,12 +9820,12 @@
     "type": "call",
     "type_label": "qu-sy",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-22T06:52:59+00:00"
+    "fetched_at": "2026-11-23T07:13:31+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -9373,12 +9893,12 @@
     "type": "call",
     "type_label": "cn-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-22T06:52:59+00:00"
+    "fetched_at": "2026-11-23T07:13:31+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -9560,7 +10080,7 @@
     "type": "call",
     "type_label": "cn-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-22T06:52:59+00:00"
+    "fetched_at": "2026-11-23T07:13:31+00:00"
    },
    {
     "source": "TED",
@@ -9585,7 +10105,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -9655,12 +10175,12 @@
     "type": "call",
     "type_label": "cn-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-22T06:52:59+00:00"
+    "fetched_at": "2026-11-23T07:13:31+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -9714,12 +10234,12 @@
     "type": "call",
     "type_label": "cn-social",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-22T06:52:59+00:00"
+    "fetched_at": "2026-11-23T07:13:31+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -9767,12 +10287,12 @@
     "type": "award",
     "type_label": "can-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-22T06:52:59+00:00"
+    "fetched_at": "2026-11-23T07:13:31+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -9903,12 +10423,12 @@
     "type": "call",
     "type_label": "cn-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-22T06:52:59+00:00"
+    "fetched_at": "2026-11-23T07:13:31+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -10026,12 +10546,12 @@
     "type": "corr",
     "type_label": "Rectificatif",
     "family": "Marchés entre 90 k€ et seuils européens",
-    "fetched_at": "2026-11-22T06:52:48+00:00"
+    "fetched_at": "2026-11-23T07:13:15+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -10097,12 +10617,12 @@
     "type": "call",
     "type_label": "Avis de marché",
     "family": "Marchés européens",
-    "fetched_at": "2026-11-22T06:52:48+00:00"
+    "fetched_at": "2026-11-23T07:13:15+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -10167,7 +10687,7 @@
     "type": "award",
     "type_label": "Résultat de marché",
     "family": "Marchés européens",
-    "fetched_at": "2026-11-22T06:52:48+00:00"
+    "fetched_at": "2026-11-23T07:13:15+00:00"
    },
    {
     "source": "TED",
@@ -10177,12 +10697,12 @@
     "type": "award",
     "type_label": "can-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-22T06:52:59+00:00"
+    "fetched_at": "2026-11-23T07:13:31+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -10274,12 +10794,12 @@
     "type": "call",
     "type_label": "Avis de marché",
     "family": "Marchés européens",
-    "fetched_at": "2026-11-22T06:52:48+00:00"
+    "fetched_at": "2026-11-23T07:13:15+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -10344,12 +10864,12 @@
     "type": "call",
     "type_label": "Avis de marché",
     "family": "Marchés européens",
-    "fetched_at": "2026-11-22T06:52:48+00:00"
+    "fetched_at": "2026-11-23T07:13:15+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -19594,12 +20114,22 @@
     "type": "call",
     "type_label": "Avis de marché",
     "family": "Marchés européens",
-    "fetched_at": "2026-11-22T06:52:48+00:00"
+    "fetched_at": "2026-11-23T07:13:15+00:00"
+   },
+   {
+    "source": "TED",
+    "source_id": "813272-2026",
+    "url": "https://ted.europa.eu/fr/notice/-/detail/813272-2026",
+    "pub": "2026-11-23",
+    "type": "call",
+    "type_label": "cn-standard",
+    "family": "TED / JOUE",
+    "fetched_at": "2026-11-23T07:13:31+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -24454,7 +24984,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [
    {
@@ -71378,7 +71908,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -71454,7 +71984,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -71524,7 +72054,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -71590,7 +72120,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -71658,7 +72188,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -71727,7 +72257,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -71787,7 +72317,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -71862,7 +72392,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -71921,7 +72451,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -71990,7 +72520,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -72060,7 +72590,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -72128,7 +72658,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -72201,7 +72731,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -72259,7 +72789,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -72334,7 +72864,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -72415,7 +72945,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -72484,7 +73014,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -72553,7 +73083,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -72627,7 +73157,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -72695,7 +73225,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -72764,7 +73294,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-22T06:52:48.325+00:00",
+  "last_seen": "2026-11-23T07:13:15.409+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
