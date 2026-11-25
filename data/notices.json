@@ -1,5 +1,214 @@
 [
  {
+  "id": "TED:819629-2026",
+  "origin": "auto",
+  "src": "TED",
+  "url": "https://ted.europa.eu/fr/notice/-/detail/819629-2026",
+  "title": "Pologne – Services juridiques – Kompleksowa obsługa prawna Departamentu Instytucji Zarządzającej i Departamentu Programów Regionalnych.",
+  "buyer": "Urząd Marszałkowski Województwa Lubuskiego w Zielonej Górze",
+  "country": "POL",
+  "pub": "2026-11-25",
+  "dl": "2026-12-28",
+  "type": "call",
+  "type_label": "cn-standard",
+  "cpv": [
+   "79100000",
+   "79110000",
+   "79112000"
+  ],
+  "value": 250439.01,
+  "description": "1. Przedmiotem zamówienia jest: „Kompleksowa obsługa prawna Departamentu Instytucji Zarządzającej i Departamentu Programów Regionalnych”. 2. Szczegółowy opis przedmiotu zamówienia określa załącznik nr 1 do SWZ.",
+  "lots": "Kompleksowa obsługa prawna Departamentu Instytucji Zarządzającej i Departamentu Programów Regionalnych. — 1. Przedmiotem zamówienia jest: „Kompleksowa obsługa prawna Departamentu Instytucji Zarządzającej i Departamentu Programów Regionalnych”. 2. Szczegółowy opis przedmiotu zamówienia określa załącznik nr 1 do SWZ.",
+  "procedure_id": "8664f381-1b1f-4d3e-892b-b4506ff0d8d1",
+  "uuids": [
+   "8664f381-1b1f-4d3e-892b-b4506ff0d8d1"
+  ],
+  "family": "TED / JOUE",
+  "procedure_label": null,
+  "sources": [
+   {
+    "source": "TED",
+    "source_id": "819629-2026",
+    "url": "https://ted.europa.eu/fr/notice/-/detail/819629-2026",
+    "pub": "2026-11-25",
+    "type": "call",
+    "type_label": "cn-standard",
+    "family": "TED / JOUE",
+    "fetched_at": "2026-11-25T07:01:30+00:00"
+   }
+  ],
+  "corrigenda": [],
+  "first_seen": "2026-11-25T07:00:26.919+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
+  "last_changed": "2026-11-25T07:00:26.919+00:00",
+  "changes": [],
+  "matched_queries": [
+   "legal services",
+   "legal advisory"
+  ],
+  "score": 20,
+  "priority": "low",
+  "practices": [
+   "Conseil juridique général"
+  ],
+  "matched": [
+   "services juridiques"
+  ],
+  "why": "Mission juridique/conseil (« services juridiques »).",
+  "breakdown": [
+   {
+    "label": "Mission juridique : services juridiques",
+    "points": 20
+   }
+  ],
+  "has_legal_signal": true
+ },
+ {
+  "id": "TED:818659-2026",
+  "origin": "auto",
+  "src": "TED",
+  "url": "https://ted.europa.eu/fr/notice/-/detail/818659-2026",
+  "title": "Italie – Services de conseil juridique – Gara europea a procedura aperta per l’affidamento del servizio di assistenza legale specialistica stragiudiziale per la Camera di commercio di Milano Monza Brianza Lodi e la società partecipata Parcam Servizi S.r.l.",
+  "buyer": "Camera di Commercio di Milano Monza Brianza Lodi",
+  "country": "ITA",
+  "pub": "2026-11-25",
+  "dl": null,
+  "type": "award",
+  "type_label": "can-standard",
+  "cpv": [
+   "79111000"
+  ],
+  "value": 388800.0,
+  "description": "Gara europea a procedura aperta per l’affidamento del servizio di assistenza legale specialistica stragiudiziale per la Camera di commercio di Milano Monza Brianza Lodi e la società partecipata Parcam Servizi S.r.l.",
+  "lots": "Gara europea a procedura aperta per l’affidamento del servizio di assistenza legale specialistica stragiudiziale per la Camera di commercio di Milano Monza Brianza Lodi e la società partecipata Parcam Servizi S.r.l.",
+  "procedure_id": "87a76bcf-cb11-4030-b4f0-8ebc31b778dd",
+  "uuids": [
+   "87a76bcf-cb11-4030-b4f0-8ebc31b778dd"
+  ],
+  "family": "TED / JOUE",
+  "procedure_label": null,
+  "sources": [
+   {
+    "source": "TED",
+    "source_id": "818659-2026",
+    "url": "https://ted.europa.eu/fr/notice/-/detail/818659-2026",
+    "pub": "2026-11-25",
+    "type": "award",
+    "type_label": "can-standard",
+    "family": "TED / JOUE",
+    "fetched_at": "2026-11-25T07:01:30+00:00"
+   }
+  ],
+  "corrigenda": [],
+  "first_seen": "2026-11-25T07:00:26.919+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
+  "last_changed": "2026-11-25T07:00:26.919+00:00",
+  "changes": [],
+  "matched_queries": [
+   "CPV juridiques",
+   "conseil juridique",
+   "legal advisory"
+  ],
+  "score": 24,
+  "priority": "low",
+  "practices": [
+   "Conseil juridique général"
+  ],
+  "matched": [
+   "conseil juridique"
+  ],
+  "why": "Mission juridique/conseil (CPV 79111000 + « conseil juridique ») · avis d'attribution (veille concurrentielle).",
+  "breakdown": [
+   {
+    "label": "CPV juridique 79111000",
+    "points": 25
+   },
+   {
+    "label": "Mission juridique : conseil juridique",
+    "points": 20
+   },
+   {
+    "label": "Plafond signal juridique",
+    "points": -15
+   },
+   {
+    "label": "Valeur ≥ 300 000 €",
+    "points": 4
+   },
+   {
+    "label": "Type d'avis (award)",
+    "points": -10
+   }
+  ],
+  "has_legal_signal": true
+ },
+ {
+  "id": "TED:818218-2026",
+  "origin": "auto",
+  "src": "TED",
+  "url": "https://ted.europa.eu/fr/notice/-/detail/818218-2026",
+  "title": "Pays-Bas – Services juridiques – Legal advice on Transport Policy Lake Tanganyika (Burundi, Zambia, Tanzania, DRC)",
+  "buyer": "Ministerie van Economische Zaken en Klimaat, Rijksdienst voor Ondernemend Nederland (RVO)",
+  "country": "NLD",
+  "pub": "2026-11-25",
+  "dl": null,
+  "type": "prior",
+  "type_label": "pmc",
+  "cpv": [
+   "79100000"
+  ],
+  "value": null,
+  "description": "Legal advise to support the harmonisation of Lake Tanganyika Transport Legislations. Support LTA and the CCTTTFA in the formulation of a protocol or model law and alignment of Member States' transport policies Duration 6 months, max. Budget €126.000,-",
+  "lots": "Legal advice on Transport Policy Lake Tanganyika (Burundi, Zambia, Tanzania, DRC) — Legal advise to support the harmonisation of Lake Tanganyika Transport Legislations. Support LTA and the CCTTTFA in the formulation of a protocol or model law and alignment of Member States' transport policies",
+  "procedure_id": null,
+  "uuids": [],
+  "family": "TED / JOUE",
+  "procedure_label": null,
+  "sources": [
+   {
+    "source": "TED",
+    "source_id": "818218-2026",
+    "url": "https://ted.europa.eu/fr/notice/-/detail/818218-2026",
+    "pub": "2026-11-25",
+    "type": "prior",
+    "type_label": "pmc",
+    "family": "TED / JOUE",
+    "fetched_at": "2026-11-25T07:01:30+00:00"
+   }
+  ],
+  "corrigenda": [],
+  "first_seen": "2026-11-25T07:00:26.919+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
+  "last_changed": "2026-11-25T07:00:26.919+00:00",
+  "changes": [],
+  "matched_queries": [
+   "legal services",
+   "legal advice"
+  ],
+  "score": 23,
+  "priority": "low",
+  "practices": [
+   "Project Finance & Infrastructure"
+  ],
+  "matched": [
+   "services juridiques",
+   "legal advice",
+   "transport"
+  ],
+  "why": "Mission juridique/conseil (« services juridiques ») · domaine(s) : Project Finance & Infrastructure.",
+  "breakdown": [
+   {
+    "label": "Mission juridique : services juridiques, legal advice",
+    "points": 20
+   },
+   {
+    "label": "Project Finance & Infrastructure : transport",
+    "points": 3
+   }
+  ],
+  "has_legal_signal": true
+ },
+ {
   "id": "TED:817343-2026",
   "origin": "auto",
   "src": "TED",
@@ -32,12 +241,12 @@
     "type": "award",
     "type_label": "can-social",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-24T13:43:25+00:00"
+    "fetched_at": "2026-11-25T07:01:30+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-24T06:57:33.776+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-24T06:57:33.776+00:00",
   "changes": [],
   "matched_queries": [
@@ -107,12 +316,12 @@
     "type": "call",
     "type_label": "cn-social",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-24T13:43:25+00:00"
+    "fetched_at": "2026-11-25T07:01:30+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-24T06:57:33.776+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-24T06:57:33.776+00:00",
   "changes": [],
   "matched_queries": [
@@ -169,12 +378,12 @@
     "type": "award",
     "type_label": "can-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-24T13:43:25+00:00"
+    "fetched_at": "2026-11-25T07:01:30+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-24T06:57:33.776+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-24T06:57:33.776+00:00",
   "changes": [],
   "matched_queries": [
@@ -239,12 +448,12 @@
     "type": "call",
     "type_label": "Avis de marché",
     "family": "Délégation de service public",
-    "fetched_at": "2026-11-24T13:43:13+00:00"
+    "fetched_at": "2026-11-25T07:00:26+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-24T13:43:13.254+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-24T13:43:13.254+00:00",
   "changes": [],
   "matched_queries": [
@@ -307,12 +516,12 @@
     "type": "award",
     "type_label": "Résultat de marché",
     "family": "Marchés européens",
-    "fetched_at": "2026-11-24T13:43:13+00:00"
+    "fetched_at": "2026-11-25T07:00:26+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-24T06:57:33.776+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-24T06:57:33.776+00:00",
   "changes": [],
   "matched_queries": [
@@ -388,12 +597,12 @@
     "type": "call",
     "type_label": "Avis de marché",
     "family": "Marchés européens",
-    "fetched_at": "2026-11-24T13:43:13+00:00"
+    "fetched_at": "2026-11-25T07:00:26+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-24T06:57:33.776+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-24T06:57:33.776+00:00",
   "changes": [],
   "matched_queries": [
@@ -467,12 +676,12 @@
     "type": "award",
     "type_label": "Résultat de marché",
     "family": "Marchés européens",
-    "fetched_at": "2026-11-24T13:43:13+00:00"
+    "fetched_at": "2026-11-25T07:00:26+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-24T06:57:33.776+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-24T06:57:33.776+00:00",
   "changes": [],
   "matched_queries": [
@@ -561,7 +770,7 @@
     "type": "call",
     "type_label": "Avis de marché",
     "family": "Marchés européens",
-    "fetched_at": "2026-11-24T13:43:13+00:00"
+    "fetched_at": "2026-11-25T07:00:26+00:00"
    },
    {
     "source": "TED",
@@ -571,12 +780,12 @@
     "type": "call",
     "type_label": "cn-social",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-24T13:43:25+00:00"
+    "fetched_at": "2026-11-25T07:01:30+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-24T06:57:33.776+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-24T06:57:33.776+00:00",
   "changes": [],
   "matched_queries": [
@@ -648,12 +857,12 @@
     "type": "call",
     "type_label": "cn-social",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-24T13:43:25+00:00"
+    "fetched_at": "2026-11-25T07:01:30+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-23T07:13:15.409+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-23T07:13:15.409+00:00",
   "changes": [],
   "matched_queries": [
@@ -731,12 +940,12 @@
     "type": "call",
     "type_label": "cn-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-24T13:43:25+00:00"
+    "fetched_at": "2026-11-25T07:01:30+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-23T07:13:15.409+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-23T07:13:15.409+00:00",
   "changes": [],
   "matched_queries": [
@@ -799,12 +1008,12 @@
     "type": "call",
     "type_label": "cn-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-24T13:43:25+00:00"
+    "fetched_at": "2026-11-25T07:01:30+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-23T07:13:15.409+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-23T07:13:15.409+00:00",
   "changes": [],
   "matched_queries": [
@@ -866,12 +1075,12 @@
     "type": "award",
     "type_label": "can-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-24T13:43:25+00:00"
+    "fetched_at": "2026-11-25T07:01:30+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-23T07:13:15.409+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-23T07:13:15.409+00:00",
   "changes": [],
   "matched_queries": [
@@ -968,12 +1177,12 @@
     "type": "award",
     "type_label": "Résultat de marché",
     "family": "Délégation de service public",
-    "fetched_at": "2026-11-24T13:43:13+00:00"
+    "fetched_at": "2026-11-25T07:00:26+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-24T06:57:33.776+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-24T06:57:33.776+00:00",
   "changes": [],
   "matched_queries": [
@@ -1035,12 +1244,12 @@
     "type": "call",
     "type_label": "Avis de marché",
     "family": "Marchés <90 k€ (MAPA)",
-    "fetched_at": "2026-11-24T13:43:13+00:00"
+    "fetched_at": "2026-11-25T07:00:26+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-24T06:57:33.776+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-24T06:57:33.776+00:00",
   "changes": [],
   "matched_queries": [
@@ -1104,12 +1313,12 @@
     "type": "call",
     "type_label": "Avis de marché",
     "family": "Marchés européens",
-    "fetched_at": "2026-11-24T13:43:13+00:00"
+    "fetched_at": "2026-11-25T07:00:26+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-23T07:13:15.409+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-23T07:13:15.409+00:00",
   "changes": [],
   "matched_queries": [
@@ -1192,12 +1401,12 @@
     "type": "call",
     "type_label": "Avis de marché",
     "family": "Marchés européens",
-    "fetched_at": "2026-11-24T13:43:13+00:00"
+    "fetched_at": "2026-11-25T07:00:26+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-23T07:13:15.409+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-23T07:13:15.409+00:00",
   "changes": [],
   "matched_queries": [
@@ -1286,12 +1495,12 @@
     "type": "call",
     "type_label": "Avis de marché",
     "family": "Marchés européens",
-    "fetched_at": "2026-11-24T13:43:13+00:00"
+    "fetched_at": "2026-11-25T07:00:26+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-22T06:52:48.325+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-22T06:52:48.325+00:00",
   "changes": [],
   "matched_queries": [
@@ -1350,7 +1559,7 @@
     "type": "call",
     "type_label": "Avis de marché",
     "family": "Marchés européens",
-    "fetched_at": "2026-11-24T13:43:13+00:00"
+    "fetched_at": "2026-11-25T07:00:26+00:00"
    },
    {
     "source": "TED",
@@ -1360,12 +1569,12 @@
     "type": "call",
     "type_label": "cn-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-24T13:43:25+00:00"
+    "fetched_at": "2026-11-25T07:01:30+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-22T06:52:48.325+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-22T06:52:48.325+00:00",
   "changes": [],
   "matched_queries": [
@@ -1497,7 +1706,7 @@
     "type": "call",
     "type_label": "cn-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-24T13:43:25+00:00"
+    "fetched_at": "2026-11-25T07:01:30+00:00"
    },
    {
     "source": "TED",
@@ -1512,7 +1721,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -1629,12 +1838,12 @@
     "type": "call",
     "type_label": "cn-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-24T13:43:25+00:00"
+    "fetched_at": "2026-11-25T07:01:30+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -1834,12 +2043,12 @@
     "type": "call",
     "type_label": "cn-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-24T13:43:25+00:00"
+    "fetched_at": "2026-11-25T07:01:30+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -2178,12 +2387,12 @@
     "type": "call",
     "type_label": "Avis de marché",
     "family": "Marchés entre 90 k€ et seuils européens",
-    "fetched_at": "2026-11-24T13:43:13+00:00"
+    "fetched_at": "2026-11-25T07:00:26+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T13:40:51.664+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-20T13:40:51.664+00:00",
   "changes": [],
   "matched_queries": [
@@ -2238,12 +2447,12 @@
     "type": "award",
     "type_label": "Résultat de marché",
     "family": "Marchés entre 90 k€ et seuils européens",
-    "fetched_at": "2026-11-24T13:43:13+00:00"
+    "fetched_at": "2026-11-25T07:00:26+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -2378,12 +2587,12 @@
     "type": "award",
     "type_label": "can-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-24T13:43:25+00:00"
+    "fetched_at": "2026-11-25T07:01:30+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -2448,12 +2657,12 @@
     "type": "call",
     "type_label": "Avis de marché",
     "family": "Marchés européens",
-    "fetched_at": "2026-11-24T13:43:13+00:00"
+    "fetched_at": "2026-11-25T07:00:26+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -2515,12 +2724,12 @@
     "type": "call",
     "type_label": "Avis de marché",
     "family": "Marchés européens",
-    "fetched_at": "2026-11-24T13:43:13+00:00"
+    "fetched_at": "2026-11-25T07:00:26+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -2761,12 +2970,12 @@
     "type": "award",
     "type_label": "Résultat de marché",
     "family": "Marchés européens",
-    "fetched_at": "2026-11-24T13:43:13+00:00"
+    "fetched_at": "2026-11-25T07:00:26+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -2872,7 +3081,7 @@
     "type": "call",
     "type_label": "cn-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-24T13:43:25+00:00"
+    "fetched_at": "2026-11-25T07:01:30+00:00"
    },
    {
     "source": "TED",
@@ -2887,7 +3096,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -2950,12 +3159,12 @@
     "type": "award",
     "type_label": "can-social",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-24T13:43:25+00:00"
+    "fetched_at": "2026-11-25T07:01:30+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -3162,12 +3371,12 @@
     "type": "call",
     "type_label": "cn-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-24T13:43:25+00:00"
+    "fetched_at": "2026-11-25T07:01:30+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -3621,7 +3830,7 @@
     "type": "call",
     "type_label": "cn-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-24T13:43:25+00:00"
+    "fetched_at": "2026-11-25T07:01:30+00:00"
    },
    {
     "source": "TED",
@@ -3636,7 +3845,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -3749,12 +3958,12 @@
     "type": "award",
     "type_label": "can-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-24T13:43:25+00:00"
+    "fetched_at": "2026-11-25T07:01:30+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -4071,7 +4280,7 @@
     "type": "award",
     "type_label": "Résultat de marché",
     "family": "Marchés entre 90 k€ et seuils européens",
-    "fetched_at": "2026-11-24T13:43:13+00:00"
+    "fetched_at": "2026-11-25T07:00:26+00:00"
    }
   ],
   "corrigenda": [
@@ -4089,7 +4298,7 @@
    }
   ],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -4270,12 +4479,12 @@
     "type": "call",
     "type_label": "Avis de marché",
     "family": "Marchés européens",
-    "fetched_at": "2026-11-24T13:43:13+00:00"
+    "fetched_at": "2026-11-25T07:00:26+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -4342,7 +4551,7 @@
     "type": "call",
     "type_label": "Avis de marché",
     "family": "Marchés européens",
-    "fetched_at": "2026-11-24T13:43:13+00:00"
+    "fetched_at": "2026-11-25T07:00:26+00:00"
    },
    {
     "source": "TED",
@@ -4352,12 +4561,12 @@
     "type": "call",
     "type_label": "cn-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-24T13:43:25+00:00"
+    "fetched_at": "2026-11-25T07:01:30+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -4428,7 +4637,7 @@
     "type": "call",
     "type_label": "cn-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-24T13:43:25+00:00"
+    "fetched_at": "2026-11-25T07:01:30+00:00"
    },
    {
     "source": "TED",
@@ -4443,7 +4652,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -4555,12 +4764,12 @@
     "type": "award",
     "type_label": "can-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-24T13:43:25+00:00"
+    "fetched_at": "2026-11-25T07:01:30+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -4634,12 +4843,12 @@
     "type": "call",
     "type_label": "cn-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-24T13:43:25+00:00"
+    "fetched_at": "2026-11-25T07:01:30+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -4716,12 +4925,12 @@
     "type": "call",
     "type_label": "cn-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-24T13:43:25+00:00"
+    "fetched_at": "2026-11-25T07:01:30+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -5241,12 +5450,12 @@
     "type": "call",
     "type_label": "cn-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-24T13:43:25+00:00"
+    "fetched_at": "2026-11-25T07:01:30+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -5436,12 +5645,12 @@
     "type": "call",
     "type_label": "Avis de marché",
     "family": "Marchés entre 90 k€ et seuils européens",
-    "fetched_at": "2026-11-24T13:43:13+00:00"
+    "fetched_at": "2026-11-25T07:00:26+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -5504,12 +5713,12 @@
     "type": "corr",
     "type_label": "Rectificatif",
     "family": "Délégation de service public",
-    "fetched_at": "2026-11-24T13:43:13+00:00"
+    "fetched_at": "2026-11-25T07:00:26+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -5567,7 +5776,7 @@
     "type": "award",
     "type_label": "Résultat de marché",
     "family": "Marchés européens",
-    "fetched_at": "2026-11-24T13:43:13+00:00"
+    "fetched_at": "2026-11-25T07:00:26+00:00"
    },
    {
     "source": "TED",
@@ -5577,12 +5786,12 @@
     "type": "award",
     "type_label": "can-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-24T13:43:25+00:00"
+    "fetched_at": "2026-11-25T07:01:30+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -5646,7 +5855,7 @@
     "type": "call",
     "type_label": "Avis de marché",
     "family": "Marchés européens",
-    "fetched_at": "2026-11-24T13:43:13+00:00"
+    "fetched_at": "2026-11-25T07:00:26+00:00"
    },
    {
     "source": "BOAMP",
@@ -5656,12 +5865,12 @@
     "type": "call",
     "type_label": "Avis de marché",
     "family": "Marchés européens",
-    "fetched_at": "2026-11-24T13:43:13+00:00"
+    "fetched_at": "2026-11-25T07:00:26+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -5799,12 +6008,12 @@
     "type": "call",
     "type_label": "Avis de marché",
     "family": "Marchés européens",
-    "fetched_at": "2026-11-24T13:43:13+00:00"
+    "fetched_at": "2026-11-25T07:00:26+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -5869,12 +6078,12 @@
     "type": "call",
     "type_label": "Avis de marché",
     "family": "Marchés européens",
-    "fetched_at": "2026-11-24T13:43:13+00:00"
+    "fetched_at": "2026-11-25T07:00:26+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -5936,12 +6145,12 @@
     "type": "award",
     "type_label": "can-modif",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-24T13:43:25+00:00"
+    "fetched_at": "2026-11-25T07:01:30+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -5995,12 +6204,12 @@
     "type": "call",
     "type_label": "cn-social",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-24T13:43:25+00:00"
+    "fetched_at": "2026-11-25T07:01:30+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -6181,7 +6390,7 @@
     "type": "call",
     "type_label": "cn-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-24T13:43:25+00:00"
+    "fetched_at": "2026-11-25T07:01:30+00:00"
    },
    {
     "source": "TED",
@@ -6196,7 +6405,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -6249,7 +6458,7 @@
     "type": "call",
     "type_label": "cn-social",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-24T13:43:25+00:00"
+    "fetched_at": "2026-11-25T07:01:30+00:00"
    },
    {
     "source": "TED",
@@ -6264,7 +6473,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -6322,7 +6531,7 @@
     "type": "call",
     "type_label": "cn-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-24T13:43:25+00:00"
+    "fetched_at": "2026-11-25T07:01:30+00:00"
    },
    {
     "source": "TED",
@@ -6337,7 +6546,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -6514,12 +6723,12 @@
     "type": "call",
     "type_label": "cn-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-24T13:43:25+00:00"
+    "fetched_at": "2026-11-25T07:01:30+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -6722,7 +6931,7 @@
     "type": "call",
     "type_label": "cn-social",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-24T13:43:25+00:00"
+    "fetched_at": "2026-11-25T07:01:30+00:00"
    },
    {
     "source": "TED",
@@ -6737,7 +6946,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -6804,12 +7013,12 @@
     "type": "award",
     "type_label": "can-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-24T13:43:25+00:00"
+    "fetched_at": "2026-11-25T07:01:30+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -6935,12 +7144,12 @@
     "type": "award",
     "type_label": "can-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-24T13:43:25+00:00"
+    "fetched_at": "2026-11-25T07:01:30+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -6996,12 +7205,12 @@
     "type": "corr",
     "type_label": "Rectificatif",
     "family": "Marchés entre 90 k€ et seuils européens",
-    "fetched_at": "2026-11-24T13:43:13+00:00"
+    "fetched_at": "2026-11-25T07:00:26+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -7065,12 +7274,12 @@
     "type": "call",
     "type_label": "Avis de marché",
     "family": "Délégation de service public",
-    "fetched_at": "2026-11-24T13:43:13+00:00"
+    "fetched_at": "2026-11-25T07:00:26+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -7393,12 +7602,12 @@
     "type": "award",
     "type_label": "can-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-24T13:43:25+00:00"
+    "fetched_at": "2026-11-25T07:01:30+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -7466,12 +7675,12 @@
     "type": "call",
     "type_label": "cn-social",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-24T13:43:25+00:00"
+    "fetched_at": "2026-11-25T07:01:30+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -7525,12 +7734,12 @@
     "type": "award",
     "type_label": "can-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-24T13:43:25+00:00"
+    "fetched_at": "2026-11-25T07:01:30+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -7773,7 +7982,7 @@
     "type": "call",
     "type_label": "cn-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-24T13:43:25+00:00"
+    "fetched_at": "2026-11-25T07:01:30+00:00"
    },
    {
     "source": "TED",
@@ -7788,7 +7997,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -7979,12 +8188,12 @@
     "type": "award",
     "type_label": "can-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-24T13:43:25+00:00"
+    "fetched_at": "2026-11-25T07:01:30+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -8228,7 +8437,7 @@
     "type": "call",
     "type_label": "cn-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-24T13:43:25+00:00"
+    "fetched_at": "2026-11-25T07:01:30+00:00"
    },
    {
     "source": "TED",
@@ -8283,7 +8492,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -8468,7 +8677,7 @@
     "type": "call",
     "type_label": "cn-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-24T13:43:25+00:00"
+    "fetched_at": "2026-11-25T07:01:30+00:00"
    },
    {
     "source": "TED",
@@ -8483,7 +8692,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -8590,12 +8799,12 @@
     "type": "call",
     "type_label": "cn-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-24T13:43:25+00:00"
+    "fetched_at": "2026-11-25T07:01:30+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -8673,12 +8882,12 @@
     "type": "call",
     "type_label": "cn-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-24T13:43:25+00:00"
+    "fetched_at": "2026-11-25T07:01:30+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -8755,12 +8964,12 @@
     "type": "call",
     "type_label": "Avis de marché",
     "family": "Délégation de service public",
-    "fetched_at": "2026-11-24T13:43:13+00:00"
+    "fetched_at": "2026-11-25T07:00:26+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -8815,12 +9024,12 @@
     "type": "call",
     "type_label": "Avis de marché",
     "family": "Marchés entre 90 k€ et seuils européens",
-    "fetched_at": "2026-11-24T13:43:13+00:00"
+    "fetched_at": "2026-11-25T07:00:26+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -8947,12 +9156,12 @@
     "type": "corr",
     "type_label": "Rectificatif",
     "family": "Délégation de service public",
-    "fetched_at": "2026-11-24T13:43:13+00:00"
+    "fetched_at": "2026-11-25T07:00:26+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -9007,12 +9216,12 @@
     "type": "call",
     "type_label": "Avis de marché",
     "family": "Délégation de service public",
-    "fetched_at": "2026-11-24T13:43:13+00:00"
+    "fetched_at": "2026-11-25T07:00:26+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -9067,12 +9276,12 @@
     "type": "call",
     "type_label": "Avis de marché",
     "family": "Marchés entre 90 k€ et seuils européens",
-    "fetched_at": "2026-11-24T13:43:13+00:00"
+    "fetched_at": "2026-11-25T07:00:26+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -9135,12 +9344,12 @@
     "type": "call",
     "type_label": "Avis de marché",
     "family": "Marchés entre 90 k€ et seuils européens",
-    "fetched_at": "2026-11-24T13:43:13+00:00"
+    "fetched_at": "2026-11-25T07:00:26+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -9201,7 +9410,7 @@
     "type": "call",
     "type_label": "Avis de marché",
     "family": "Marchés européens",
-    "fetched_at": "2026-11-24T13:43:13+00:00"
+    "fetched_at": "2026-11-25T07:00:26+00:00"
    },
    {
     "source": "TED",
@@ -9211,12 +9420,12 @@
     "type": "call",
     "type_label": "cn-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-24T13:43:25+00:00"
+    "fetched_at": "2026-11-25T07:01:30+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -9386,7 +9595,7 @@
     "type": "call",
     "type_label": "Avis de marché",
     "family": "Marchés européens",
-    "fetched_at": "2026-11-24T13:43:13+00:00"
+    "fetched_at": "2026-11-25T07:00:26+00:00"
    },
    {
     "source": "TED",
@@ -9396,12 +9605,12 @@
     "type": "call",
     "type_label": "cn-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-24T13:43:25+00:00"
+    "fetched_at": "2026-11-25T07:01:30+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -9461,12 +9670,12 @@
     "type": "call",
     "type_label": "Avis de marché",
     "family": "Marchés européens",
-    "fetched_at": "2026-11-24T13:43:13+00:00"
+    "fetched_at": "2026-11-25T07:00:26+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -9549,12 +9758,12 @@
     "type": "award",
     "type_label": "Résultat de marché",
     "family": "Marchés européens",
-    "fetched_at": "2026-11-24T13:43:13+00:00"
+    "fetched_at": "2026-11-25T07:00:26+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -9630,12 +9839,12 @@
     "type": "call",
     "type_label": "Avis de marché",
     "family": "Marchés européens",
-    "fetched_at": "2026-11-24T13:43:13+00:00"
+    "fetched_at": "2026-11-25T07:00:26+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -9832,7 +10041,7 @@
     "type": "call",
     "type_label": "cn-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-24T13:43:25+00:00"
+    "fetched_at": "2026-11-25T07:01:30+00:00"
    },
    {
     "source": "TED",
@@ -9847,7 +10056,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -12976,12 +13185,12 @@
     "type": "call",
     "type_label": "cn-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-24T13:43:25+00:00"
+    "fetched_at": "2026-11-25T07:01:30+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -16571,12 +16780,12 @@
     "type": "award",
     "type_label": "can-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-24T13:43:25+00:00"
+    "fetched_at": "2026-11-25T07:01:30+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-24T06:57:33.776+00:00",
   "changes": [],
   "matched_queries": [
@@ -20879,7 +21088,7 @@
     "type": "call",
     "type_label": "Avis de marché",
     "family": "Marchés européens",
-    "fetched_at": "2026-11-24T13:43:13+00:00"
+    "fetched_at": "2026-11-25T07:00:26+00:00"
    },
    {
     "source": "TED",
@@ -20889,12 +21098,12 @@
     "type": "call",
     "type_label": "cn-standard",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-24T13:43:25+00:00"
+    "fetched_at": "2026-11-25T07:01:30+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -25749,7 +25958,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [
    {
@@ -40277,7 +40486,7 @@
     "type": "call",
     "type_label": "Avis de marché",
     "family": "Marchés européens",
-    "fetched_at": "2026-11-24T13:43:13+00:00"
+    "fetched_at": "2026-11-25T07:00:26+00:00"
    },
    {
     "source": "TED",
@@ -40287,12 +40496,12 @@
     "type": "call",
     "type_label": "cn-social",
     "family": "TED / JOUE",
-    "fetched_at": "2026-11-24T13:43:25+00:00"
+    "fetched_at": "2026-11-25T07:01:30+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-20T10:15:58.451+00:00",
   "changes": [],
   "matched_queries": [
@@ -70787,12 +70996,22 @@
     "type_label": "cn-standard",
     "family": "TED / JOUE",
     "fetched_at": "2026-11-20T10:16:31+00:00"
+   },
+   {
+    "source": "TED",
+    "source_id": "819584-2026",
+    "url": "https://ted.europa.eu/fr/notice/-/detail/819584-2026",
+    "pub": "2026-11-25",
+    "type": "award",
+    "type_label": "can-standard",
+    "family": "TED / JOUE",
+    "fetched_at": "2026-11-25T07:01:30+00:00"
    }
   ],
   "corrigenda": [],
   "first_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_seen": "2026-11-20T10:15:58.451+00:00",
-  "last_changed": "2026-11-20T10:15:58.451+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
+  "last_changed": "2026-11-25T07:00:26.919+00:00",
   "changes": [],
   "matched_queries": [
    "CPV juridiques",
@@ -70817,7 +71036,8 @@
     "points": 8
    }
   ],
-  "has_legal_signal": true
+  "has_legal_signal": true,
+  "award_published": "2026-11-25"
  },
  {
   "id": "TED:651000-2026",
@@ -72694,7 +72914,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -72770,7 +72990,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -72840,7 +73060,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -72906,7 +73126,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -72974,7 +73194,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -73043,7 +73263,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -73103,7 +73323,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -73178,7 +73398,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -73237,7 +73457,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -73306,7 +73526,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -73376,7 +73596,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -73444,7 +73664,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -73517,7 +73737,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -73575,7 +73795,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -73650,7 +73870,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -73731,7 +73951,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -73800,7 +74020,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -73869,7 +74089,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -73943,7 +74163,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -74011,7 +74231,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
@@ -74080,7 +74300,7 @@
   ],
   "corrigenda": [],
   "first_seen": "2026-11-19T11:00:31.599+00:00",
-  "last_seen": "2026-11-24T13:43:13.254+00:00",
+  "last_seen": "2026-11-25T07:00:26.919+00:00",
   "last_changed": "2026-11-19T11:00:31.599+00:00",
   "changes": [],
   "matched_queries": [
