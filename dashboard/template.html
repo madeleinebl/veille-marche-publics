@@ -513,7 +513,6 @@ function buildStats(){
   var html=Object.keys(QUICK).map(function(k){var c=base.filter(QUICK[k].f).length;
     return'<div class="sc clk'+(quick===k?' on':'')+'" data-quick="'+k+'" title="Cliquer pour filtrer"><div class="v '+(QUICK[k].cls||"")+'">'+c+'</div><div class="l">'+QUICK[k].l+'</div></div>';}).join("");
   html+='<div class="sc"><div class="v">'+DATA.length+'</div><div class="l">📊 Avis en base</div></div>';
-  html+='<div class="sc clk" id="resCard" title="Cliquer pour afficher ou masquer les résultats"><div class="v" style="color:#455a64">'+nres+'</div><div class="l">🏁 Résultats (marchés attribués) '+($("rf").value==="hide"?"— masqués":"— affichés")+'</div></div>';
   $("statsGrid").innerHTML=html;
 }
 
@@ -626,7 +625,6 @@ function refresh(){buildStats();render();}
 ["q"].forEach(function(id){$(id).addEventListener("input",render);});
 ["pf","practf","tf","df","statusFilter","of","sf"].forEach(function(id){$(id).addEventListener("change",render);});
 $("rf").addEventListener("change",function(){buildStats();render();});
-$("statsGrid").addEventListener("click",function(e){if(e.target.closest("#resCard")){$("rf").value=$("rf").value==="hide"?"all":"hide";buildStats();render();}});
 $("statusFilter").innerHTML='<option value="">Tous les suivis</option>'+TRACK_STATUSES.map(function(s){return'<option>'+esc(s)+'</option>';}).join("");
 $("btnExport").addEventListener("change",function(){var v=this.value;this.value="";if(v==="pdf")exportPDF();else if(v==="word")exportWord();else if(v==="csv")exportCSV();});
 if($("btnTrkExp"))$("btnTrkExp").addEventListener("click",function(){saveFile("suivi-veille.json",JSON.stringify(TRACKING,null,1),"application/json");});
