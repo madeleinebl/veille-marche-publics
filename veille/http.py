@@ -3,7 +3,7 @@ import time
 
 import requests
 
-USER_AGENT = "veille-bdgs/1.0 (veille marches publics; contact via depot GitHub)"
+USER_AGENT = "veille-marches-publics/1.0 (veille marches publics; contact via depot GitHub)"
 
 
 class SourceError(Exception):

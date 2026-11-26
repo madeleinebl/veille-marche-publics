@@ -1,4 +1,4 @@
-"""Score de pertinence BDGS — transparent : chaque point est expliqué."""
+"""Score de pertinence — transparent : chaque point est expliqué."""
 import json
 
 from . import CONFIG_DIR
@@ -48,7 +48,7 @@ def score_notice(n, cfg, cpv_legal, cpv_advisory):
         breakdown.append({"label": "Plafond signal juridique", "points": legal_pts - sum(b["points"] for b in breakdown)})
     has_legal = legal_pts > 0
 
-    # 2. Domaines de pratique BDGS
+    # 2. Domaines de pratique
     practices = []
     practice_pts_total = 0
     per_practice = []

@@ -1,5 +1,5 @@
 {
-  "_comment": "Grille de pertinence BDGS. Chaque mot-clé trouvé rapporte des points. Les accents et majuscules sont ignorés. Un mot-clé ne compte qu'une fois par avis.",
+  "_comment": "Grille de pertinence. Chaque mot-clé trouvé rapporte des points. Les accents et majuscules sont ignorés. Un mot-clé ne compte qu'une fois par avis.",
 
   "thresholds": {
     "high": 50,

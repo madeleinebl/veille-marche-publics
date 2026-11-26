@@ -1,8 +1,8 @@
-# Veille marchés publics — BDGS Associés
+# Veille marchés publics — services juridiques
 
 Veille automatique des appels d'offres français et européens intéressant un cabinet d'avocats en **Finance, Project Finance, Infrastructure & Énergie, Corporate/M&A, LBO, Capital Markets, Restructuring et PPP/Concessions**.
 
-Chaque jour, GitHub interroge les **sources officielles** (BOAMP et TED), attribue à chaque avis un **score de pertinence BDGS** expliqué, et met à jour un **tableau de bord** consultable dans le navigateur.
+Chaque jour, GitHub interroge les **sources officielles** (BOAMP et TED), attribue à chaque avis un **score de pertinence** expliqué, et met à jour un **tableau de bord** consultable dans le navigateur.
 
 > Aucune donnée inventée : le tableau de bord n'affiche que des avis réellement collectés sur les API officielles, ou des avis que vous avez saisis vous-même (signalés « Saisie manuelle »).
 
@@ -31,7 +31,7 @@ Chaque jour, GitHub interroge les **sources officielles** (BOAMP et TED), attrib
 | **Fusion** | Un même marché publié au BOAMP **et** à TED n'apparaît qu'une fois, avec les deux liens officiels. |
 | **Rectificatifs** | Un avis rectificatif est rattaché à l'avis initial ; la nouvelle échéance est appliquée et l'historique conservé. |
 | **Mises à jour** | Si un avis change (titre, échéance, valeur…), le changement est enregistré dans son historique. |
-| **Score BDGS** | Score sur 100 environ, priorité **Haute / Moyenne / Faible**, domaines de pratique, mots-clés trouvés, et une phrase expliquant pourquoi l'avis est remonté. |
+| **Score de pertinence** | Score sur 100 environ, priorité **Haute / Moyenne / Faible**, domaines de pratique, mots-clés trouvés, et une phrase expliquant pourquoi l'avis est remonté. |
 | **Historique** | Rien n'est supprimé : tous les avis restent dans `data/notices.json`, et chaque exécution est journalisée dans `data/runs.json` (durée, erreurs, nombre d'avis). |
 | **Alertes** | Si BOAMP ou TED est indisponible, GitHub vous envoie un e-mail ; les données précédentes restent affichées. |
 
@@ -43,7 +43,7 @@ Le score additionne des points visibles dans le tableau de bord (bouton **« Dé
 |---|---|
 | Mission juridique : CPV 79111000 (conseil juridique) | +25 |
 | Mots « conseil juridique », « assistance juridique », « legal advice », « avocat »… | jusqu'à +20 (plafond juridique total : 30) |
-| Mots-clés de chaque domaine BDGS (ex. « sûretés », « financement de projet », « LBO », « émission obligataire », « BESS »…) | jusqu'à +25 par domaine (total plafonné à 50) |
+| Mots-clés de chaque domaine de pratique (ex. « sûretés », « financement de projet », « LBO », « émission obligataire », « BESS »…) | jusqu'à +25 par domaine (total plafonné à 50) |
 | Acheteur stratégique (Bpifrance, Caisse des Dépôts, EDF, SNCF, APE…) | +6 |
 | Valeur estimée ≥ 300 k€ / ≥ 1 M€ | +4 / +8 |
 | Hors cible (nettoyage, traduction, formation…) | −6 à −15 |
@@ -72,7 +72,7 @@ Allez sur <https://github.com/signup> et créez un compte (gratuit).
 
 ### Étape 3 — Déposer les fichiers
 1. Dans le nouveau dépôt, cliquez sur **uploading an existing file** (ou **Add file → Upload files**).
-2. Décompressez le fichier `veille-bdgs.zip` sur votre ordinateur, ouvrez le dossier `veille-bdgs`, sélectionnez **tout son contenu** et glissez-le dans la page GitHub.
+2. Décompressez le fichier zip du projet sur votre ordinateur, ouvrez le dossier obtenu, sélectionnez **tout son contenu** et glissez-le dans la page GitHub.
 3. Cliquez sur **Commit changes**.
 
 > ⚠️ **Le dossier `.github` est invisible sur Mac et Windows** (son nom commence par un point) et n'est souvent pas envoyé. Vérifiez qu'il apparaît dans le dépôt. Sinon :
@@ -211,11 +211,11 @@ Les heures `cron` sont en **UTC** (Paris = UTC+1 en hiver, UTC+2 en été). GitH
 ## 9. Organisation des fichiers
 
 ```
-veille-bdgs/
+veille-marche-publics/
 ├── README.md                     ← ce guide
 ├── config/
 │   ├── sources.json              ← requêtes BOAMP/TED, CPV, nombre de jours
-│   └── scoring.json              ← grille de pertinence BDGS
+│   └── scoring.json              ← grille de pertinence
 ├── data/
 │   ├── notices.json              ← base des avis (historique complet, mise à jour automatique)
 │   ├── runs.json                 ← journal des exécutions

@@ -39,7 +39,7 @@ def apply_score(n, scfg, cfg):
 
 
 def main(argv=None):
-    ap = argparse.ArgumentParser(description="Veille marchés publics BDGS")
+    ap = argparse.ArgumentParser(description="Veille marchés publics")
     ap.add_argument("--lookback", type=int, help="nombre de jours à couvrir")
     ap.add_argument("--sources", default="", help="ex. boamp,ted (par défaut : toutes celles activées)")
     ap.add_argument("--idweb", default="", help="identifiant(s) BOAMP à ajouter, séparés par des virgules")

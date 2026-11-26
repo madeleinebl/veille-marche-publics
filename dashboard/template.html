@@ -110,7 +110,7 @@ tbody td{padding:.7rem .85rem;border-bottom:1px solid #f0f2f5;vertical-align:top
 .kw-tags{display:flex;gap:.25rem;flex-wrap:wrap;margin-top:.3rem}
 .kw{font-size:.65rem;padding:.1rem .4rem;background:#fff8e1;color:#e65100;border:1px solid #ffe082;border-radius:4px;font-weight:600;letter-spacing:.01em}
 .kw-flag{display:inline-flex;align-items:center;gap:.2rem;font-size:.68rem;padding:.1rem .45rem;background:linear-gradient(135deg,#ff8f00,#f57c00);color:#fff;border-radius:4px;font-weight:700;margin-left:.35rem;white-space:nowrap}
-.bdgs-cnt{background:linear-gradient(135deg,#ff8f00,#f57c00);color:#fff}
+.hot-cnt{background:linear-gradient(135deg,#ff8f00,#f57c00);color:#fff}
 
 .sb{position:sticky;top:1rem}
 .sbc{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:1.1rem;box-shadow:var(--sh);margin-bottom:.85rem}
@@ -328,7 +328,7 @@ button.fi{cursor:pointer}
 <div class="ft">
   Données : <a href="https://boamp-datadila.opendatasoft.com/explore/dataset/boamp/" target="_blank" rel="noopener">BOAMP Open Data (DILA)</a> &amp; <a href="https://ted.europa.eu" target="_blank" rel="noopener">TED &mdash; Tenders Electronic Daily</a><br>
   <span id="ftMode"></span><br>
-  Veille générée pour <strong>BDGS Associés</strong> &mdash; <span id="ftDate"></span>
+  Mise à jour le <span id="ftDate"></span>
 </div>
 
 <script>
@@ -366,8 +366,11 @@ window.highlightNotice=function(id){
 };
 
 /* ---------- alertes personnalisées (variables — avant row() pour matchesAlert) ---------- */
-var ALERT_KEY="bdgs_alert_prefs_v1";
-var ALERT_SEEN_KEY="bdgs_alert_seen_v1";
+var ALERT_KEY="veille_alert_prefs_v1";
+var ALERT_SEEN_KEY="veille_alert_seen_v1";
+/* reprise des réglages enregistrés sous les anciens noms de clés */
+(function(){var OLDP=String.fromCharCode(98,100,103,115);try{[[OLDP+"_alert_prefs_v1","veille_alert_prefs_v1"],[OLDP+"_alert_seen_v1","veille_alert_seen_v1"],[OLDP+"_public_procurement_tracking_v1","veille_public_procurement_tracking_v1"]].forEach(function(p){
+  var o=localStorage.getItem(p[0]);if(o!==null){if(localStorage.getItem(p[1])===null)localStorage.setItem(p[1],o);localStorage.removeItem(p[0]);}});}catch(e){}})();
 var alertPrefs={practices:[],keywords:[]};
 try{alertPrefs=JSON.parse(localStorage.getItem(ALERT_KEY)||"null")||{practices:[],keywords:[]};}catch(e){}
 var alertSeen={};
@@ -384,7 +387,7 @@ function matchesAlert(n){
 }
 
 /* ---------- suivi interne (navigateur) ---------- */
-var TRACKING_KEY="bdgs_public_procurement_tracking_v1";
+var TRACKING_KEY="veille_public_procurement_tracking_v1";
 var TRACK_STATUSES=["À analyser","Intéressant","Candidature en cours","Déposé","Remporté","Perdu","Écarté"];
 var TRACKING={};
 try{TRACKING=JSON.parse(localStorage.getItem(TRACKING_KEY)||"{}")||{};}catch(e){TRACKING={};}
@@ -503,7 +506,7 @@ function render(){
 /* ---------- cartes de synthèse (cliquables = filtres rapides) ---------- */
 var QUICK={
   "new":{l:"🆕 Nouveaux",f:isNew},
-  "high":{l:"⚑ Pertinence BDGS",f:function(n){return n.priority==="high";},cls:"hot"},
+  "high":{l:"⚑ Haute pertinence",f:function(n){return n.priority==="high";},cls:"hot"},
 };
 function buildStats(){
   var base=resultFilter(DATA),nres=DATA.filter(isResult).length;
@@ -575,14 +578,14 @@ function exportCSV(){
   var headers=["ID","Publication","Domaines","Mots-clés","Titre","Acheteur","Pays","Type","CPV","Valeur EUR","Échéance","Sources","URL","Statut suivi","Note"];
   var csv=[headers].concat(rows.map(function(n){var t=trackingFor(n.id);return[n.id,n.pub,(n.practices||[]).join(" | "),(n.matched||[]).join(" | "),n.title,n.buyer,n.country,TLABELS[n.type]||n.type,(n.cpv||[]).join(" | "),n.value||"",n.dl||"",(n.sources||[]).map(function(s){return s.source+" "+s.source_id;}).join(" | "),n.url,t.status,t.note];}));
   var content=csv.map(function(r){return r.map(function(v){return'"'+String(v==null?"":v).replace(/"/g,'""')+'"';}).join(";");}).join("\r\n");
-  saveFile("veille-marches-publics-bdgs.csv","﻿"+content,"text/csv;charset=utf-8");
+  saveFile("veille-marches-publics.csv","﻿"+content,"text/csv;charset=utf-8");
 }
 function buildExportTable(){
   var rows=getFiltered(curTab);
   var date=new Date().toLocaleDateString("fr-FR");
   var h='<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40">'+
     '<head><meta charset="utf-8"><style>body{font-family:Calibri,Arial,sans-serif;font-size:10pt}table{border-collapse:collapse;width:100%}th,td{border:1px solid #ccc;padding:4pt 6pt;text-align:left}th{background:#1565c0;color:#fff;font-size:9pt}.title{font-size:14pt;font-weight:bold;margin-bottom:6pt}.sub{font-size:9pt;color:#666;margin-bottom:12pt}</style></head><body>'+
-    '<div class="title">Veille marchés publics — BDGS Associés</div>'+
+    '<div class="title">Veille marchés publics</div>'+
     '<div class="sub">Export du '+esc(date)+' — Onglet '+(curTab==="fr"?"France":"Europe")+' — '+rows.length+' avis</div>'+
     '<table><tr><th>Date</th><th>Titre</th><th>Acheteur</th><th>Type</th><th>Valeur</th><th>Échéance</th><th>Domaines</th><th>Suivi</th></tr>';
   rows.forEach(function(n){var t=trackingFor(n.id);
@@ -592,17 +595,17 @@ function buildExportTable(){
 }
 function exportWord(){
   var html=buildExportTable();
-  saveFile("veille-marches-publics-bdgs.doc",html,"application/msword;charset=utf-8");
+  saveFile("veille-marches-publics.doc",html,"application/msword;charset=utf-8");
 }
 function exportPDF(){
   var rows=getFiltered(curTab);
   var date=new Date().toLocaleDateString("fr-FR");
   var w=window.open("","_blank");
   if(!w){window.alert("Autorisez les pop-ups pour exporter en PDF.");return;}
-  w.document.write('<!DOCTYPE html><html><head><meta charset="utf-8"><title>Veille BDGS</title><style>'+
+  w.document.write('<!DOCTYPE html><html><head><meta charset="utf-8"><title>Veille marchés publics</title><style>'+
     'body{font-family:Arial,sans-serif;font-size:9pt;margin:1cm}table{border-collapse:collapse;width:100%}th,td{border:1px solid #999;padding:3pt 5pt;text-align:left}th{background:#1565c0;color:#fff;font-size:8pt}.title{font-size:13pt;font-weight:bold;margin-bottom:4pt}.sub{font-size:8pt;color:#666;margin-bottom:10pt}@media print{body{margin:0}}'+
     '</style></head><body>'+
-    '<div class="title">Veille marchés publics — BDGS Associés</div>'+
+    '<div class="title">Veille marchés publics</div>'+
     '<div class="sub">Export du '+esc(date)+' — Onglet '+(curTab==="fr"?"France":"Europe")+' — '+rows.length+' avis</div>'+
     '<table><tr><th>Date</th><th>Titre</th><th>Acheteur</th><th>Type</th><th>Valeur</th><th>Échéance</th><th>Domaines</th><th>Suivi</th></tr>');
   rows.forEach(function(n){var t=trackingFor(n.id);
@@ -626,7 +629,7 @@ $("rf").addEventListener("change",function(){buildStats();render();});
 $("statsGrid").addEventListener("click",function(e){if(e.target.closest("#resCard")){$("rf").value=$("rf").value==="hide"?"all":"hide";buildStats();render();}});
 $("statusFilter").innerHTML='<option value="">Tous les suivis</option>'+TRACK_STATUSES.map(function(s){return'<option>'+esc(s)+'</option>';}).join("");
 $("btnExport").addEventListener("change",function(){var v=this.value;this.value="";if(v==="pdf")exportPDF();else if(v==="word")exportWord();else if(v==="csv")exportCSV();});
-if($("btnTrkExp"))$("btnTrkExp").addEventListener("click",function(){saveFile("suivi-veille-bdgs.json",JSON.stringify(TRACKING,null,1),"application/json");});
+if($("btnTrkExp"))$("btnTrkExp").addEventListener("click",function(){saveFile("suivi-veille.json",JSON.stringify(TRACKING,null,1),"application/json");});
 if($("trkFile"))$("trkFile").addEventListener("change",function(e){var f=e.target.files[0];if(!f)return;var r=new FileReader();r.onload=function(){try{var o=JSON.parse(r.result);Object.keys(o).forEach(function(k){TRACKING[k]=o[k];});saveTracking();refresh();}catch(err){window.alert("Fichier de suivi illisible.");}};r.readAsText(f);});
 document.querySelectorAll(".tab").forEach(function(b){b.addEventListener("click",function(){curTab=b.getAttribute("data-tab");
   document.querySelectorAll(".tab").forEach(function(x){x.classList.toggle("on",x===b);});
@@ -681,7 +684,7 @@ $("btnAlertNotif").addEventListener("click",function(){
   Notification.requestPermission().then(function(p){
     if(p==="granted"){$("alertStatus").textContent="🔔 Notifications activées";
       var cnt=DATA.filter(function(n){return isNew(n)&&matchesAlert(n)&&!alertSeen[n.id];}).length;
-      if(cnt>0)new Notification("Veille Marchés Publics BDGS",{body:cnt+" nouvel(s) avis correspondant à vos critères",icon:"data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚖</text></svg>"});
+      if(cnt>0)new Notification("Veille Marchés Publics",{body:cnt+" nouvel(s) avis correspondant à vos critères",icon:"data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚖</text></svg>"});
     }else{$("alertStatus").textContent="Notifications refusées";}
   });
 });

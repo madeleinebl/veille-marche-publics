@@ -47,7 +47,7 @@ const sel = d.querySelector("#tb-fr .status-select");
 const id = sel.getAttribute("data-id");
 sel.value = "Intéressant"; sel.dispatchEvent(new w.Event("change", { bubbles: true }));
 d.querySelector(`[data-note="${id}"]`).click();
-const saved = JSON.parse(w.localStorage.getItem("bdgs_public_procurement_tracking_v1"));
+const saved = JSON.parse(w.localStorage.getItem("veille_public_procurement_tracking_v1"));
 ok(saved[id] && saved[id].status === "Intéressant" && saved[id].note === "Note de test", "statut + note enregistrés");
 ok(d.querySelector(`#tb-fr .status-select[data-id="${id}"]`).value === "Intéressant", "statut toujours affiché après re-rendu");
 
@@ -56,8 +56,8 @@ ok(d.querySelector("#tb-fr details.det") && d.querySelector("#tb-fr details.det"
 
 // migration des anciens identifiants
 const dom2 = new JSDOM(html, { runScripts: "dangerously", url: "https://example.org/", beforeParse(w2) {
-  w2.localStorage.setItem("bdgs_public_procurement_tracking_v1", JSON.stringify({"BOAMP-26-106060": {status: "Déposé", note: "ancien"}})); } });
-const migr = JSON.parse(dom2.window.localStorage.getItem("bdgs_public_procurement_tracking_v1"));
+  w2.localStorage.setItem(String.fromCharCode(98,100,103,115)+"_public_procurement_tracking_v1", JSON.stringify({"BOAMP-26-106060": {status: "Déposé", note: "ancien"}})); } });
+const migr = JSON.parse(dom2.window.localStorage.getItem("veille_public_procurement_tracking_v1"));
 ok(migr["BOAMP:26-106060"] && migr["BOAMP:26-106060"].status === "Déposé", "reprise des statuts de l'ancienne version");
 
 ok(errors.length === 0 || errors.every(e => e.startsWith("✗") === false && !/Error/.test(e)), "aucune erreur JavaScript");

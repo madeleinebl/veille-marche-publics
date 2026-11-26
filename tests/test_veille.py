@@ -36,7 +36,7 @@ def test_keywords_whole_words_and_accents():
 
 
 # ---------------- scoring ----------------
-def test_scoring_bdgs_target_is_high_and_explained():
+def test_scoring_target_is_high_and_explained():
     n = {"title": "Conseil juridique pour la mise en place de garanties rehaussées", "buyer": "Bpifrance Assurance Export",
          "description": "financements structurés, assurance-crédit", "cpv": ["79111000"], "value": 600012, "type": "call"}
     s = score(n)
